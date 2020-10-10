@@ -1,0 +1,205 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header.mb-0
+                        h3.personal-content--header--title Добавить автомобиль
+                    .personal-content--body
+                        .personal-add--car--list
+                            .personal-add--car--item
+                                .personal-add--car--title Какая у Вас машина?
+                                p.personal-add--car--desc Для определения направлени поездки.
+                                .col-xl-6.col-lg-6.personal-add--car__wrap
+                                    .all-trip--popup__col.personal-content--select
+                                        label Тип авто:
+                                        select.gogocar-select
+                                            option(value="Легковая") Легковая
+                                            option(value="Грузовая") Грузовая
+
+                            .personal-add--car--item
+                                .personal-add--car--title Какие номера у машины?
+                                p.personal-add--car--desc Их увидят только ваши пассажиры.
+                                .col-xl-6.col-lg-6.p-0.personal-add--car__wrap--input--select
+                                    .personal-add--car__wrap.mr-3
+                                        .all-trip--popup__col.personal-content--select
+                                            label Тип авто:
+                                            .choise-country--gogocar
+                                                .choise-country--flag--code
+                                                    .choise-country--flag(style="background-image:url('static/img/general/lang/uz.png')")
+                                                    .choise-country--code UZ
+                                                .choise-country--show--list
+                                                    +icon('arrow-right')
+                                            .choise-country--gogocar--list
+                                                li.choise-country--gogocar--item
+                                                    .choise-country--flag(style="background-image:url('static/img/general/lang/ru.png')")
+                                                    .choise-country--code(data-code="RU" data-placeholder="А000АА 00") RU
+                                                li.choise-country--gogocar--item
+                                                    .choise-country--flag(style="background-image:url('static/img/general/lang/uz.png')")
+                                                    .choise-country--code(data-code="UZ" data-placeholder="00 A000 AA") UZ
+                                    .personal-add--car__wrap
+                                        .all-trip--popup__col.personal-content--select
+                                            label  
+                                            input.gogocar-input--filter.personal-content--input.text-center.ccp--gogocar(type="text" placeholder="00 A000 AA")
+
+                            .personal-add--car--item
+                                .personal-add--car--title Какая марка у вашего авто?
+                                .col-xl-6.col-lg-6.p-0.all-trip--popup__col
+                                    label  
+                                    .notific-input-icon.personal-w
+                                        input.gogocar-input--filter.personal-content--input.personal-search-car--input(type="text" placeholder="Искать...")
+                                        .notific-calendar-icon
+                                            +icon('search')
+                                    .personal-add--car--mark
+                                        .personal-car-mark--title Популярные марки
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name ВАЗ
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name TOYOTA
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name HYUNDAI
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name LADA
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name VOLKSWAGEN
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+
+                            .personal-add--car--item
+                                .personal-add--car--title Какая модель у вашего авто?
+                                .col-xl-6.col-lg-6.p-0.all-trip--popup__col
+                                    label  
+                                    .notific-input-icon.personal-w
+                                        input.gogocar-input--filter.personal-content--input.personal-search-car--input(type="text" placeholder="Искать...")
+                                        .notific-calendar-icon
+                                            +icon('search')
+                                    .personal-add--car--mark
+                                        .personal-car-mark--title Популярные марки
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name COROLLA
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name YARIS
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name AVENSIS
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name CAMRY
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                                        .personal-add--car--mark--item
+                                            span.personal-add--car--mark--name AURIS
+                                            .personal-add--car--mark--arrow
+                                                +icon('arrow-right3')
+                            .personal-add--car--item
+                                .personal-add--car--title Какой тип кузова у вашего авто?
+                                .col-xl-10.col-lg-10.p-0.all-trip--popup__col
+                                    ul.personal-type-car--list
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Фургон
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name "Jumbo" Полуприцеп
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Тентованный полуприцеп (еврофура)
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Открытая платформа
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Открытая платформа
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name "Автосцепка"
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Рефрижераторный фургон
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Контейнеровоз
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Открытый бортовой полуприцеп
+                                            .personal-type-car--item__checkbox
+                            .personal-add--car--item
+                                .personal-add--car--title Какое типы грузов можно перевозить?
+                                .col-xl-10.col-lg-10.p-0.all-trip--popup__col
+                                    ul.personal-type-car--list
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Обычный
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Ценный
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Габаритный
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Негабаритный
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Скоропортящиеся
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Опасный
+                                            .personal-type-car--item__checkbox
+                                        li.personal-type-car--item
+                                            .personal-type-car--item__icon
+                                                .personal-type-car--item--name Сборный
+                                            .personal-type-car--item__checkbox
+                            .personal-add--car--item
+                                .personal-add--car--title.mb-4 Какого он цвета?
+                                .col-xl-10.col-lg-10.p-0.all-trip--popup__col
+                                    ul.personal-color-car--list.row
+                                        li.personal-color-car--item(data-car-color="000000")
+                                        li.personal-color-car--item(data-car-color="FFFFFF")
+                                        li.personal-color-car--item(data-car-color="FDAB3E")
+                                        li.personal-color-car--item(data-car-color="F37535")
+                                        li.personal-color-car--item(data-car-color="09B983")
+                                        li.personal-color-car--item(data-car-color="41479B")
+                                        li.personal-color-car--item(data-car-color="EE6161")
+                                        li.personal-color-car--item(data-car-color="EC4343")
+                                        li.personal-color-car--item(data-car-color="95662F")
+                                        li.personal-color-car--item(data-car-color="C1C1C1")
+                                        li.personal-color-car--item(data-car-color="6D6D6D")
+                                        li.personal-color-car--item(data-car-color="45AFE3")
+                                        li.personal-color-car--item(data-car-color="CAF8FF")
+                                        li.personal-color-car--item(data-car-color="F9B1B1")
+                            .personal-add--car--item.mb-5
+                                .personal-add--car--title В каком году выпущен автомобиль?
+                                p.personal-add--car--desc Пассажирам будет интересно узнать, современный у вас автомобиль или винтажный
+                                .col-xl-6.col-lg-6.personal-add--car__wrap
+                                    .all-trip--popup__col.personal-content--select
+                                        label Введите год:
+                                        input.gogocar-input--filter.personal-content--input.mask-year(type="text" placeholder="Введите год")
+                        .gogocar-yellow-button.m-0.gogocar-mobile-m-0-auto Сохранить

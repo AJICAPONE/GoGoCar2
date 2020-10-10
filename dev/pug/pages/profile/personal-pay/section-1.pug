@@ -1,0 +1,116 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Оплата
+                        .personal-pay--header
+                            .gogocar-yellow-button.m-0.mr-4 Недавние
+                            .gogocar-gray-button.m-0 Архив
+                    .personal-content--body.personal-content--body-order
+                        .gogocar-ready-plan--covid.personal-pay--book--wrap.mb-4
+                            .personal-pay--book
+                                .gogocar-gray-icons
+                                    +icon('info')
+                                .gogocar-ready-plan--covid--info
+                                    .gogocar-ready-plan--covid--title Здесь вы найдете все ваши бронирования
+                                    .gogocar-ready-plan--covid--desc А также обрабатываемые и выполненные возвраты за последние два года.
+                            .personal-pay--to__book Все бронирования
+                        .personal-pay--filter--wrap.gogocar-box
+                            .personal-pay--filter--top
+                                .personal-filter--title Фильтр
+                                .personal-filter--icon
+                                    +icon('arrow-right')
+                            .personal-pay--filter--top.personal-pay--filter--top--mobile
+                                .personal-filter--title 3 транзакции
+                                .gogocar-yellow-icons
+                                    +icon('filter')
+                            .personal-pay--filter--bottom--footer
+                                .personal-pay--filter--bottom
+                                    .personal-pay--filter--bottom--wrap.row
+                                        .col-xl-4.personal-pay-inputs
+                                            .all-trip--popup__col
+                                                label Детали:
+                                                input.gogocar-input--filter(type="text" placeholder="")
+                                        .col-xl-8.personal-pay-inputs.personal-pay-inputs--flex
+                                            .all-trip--popup__col
+                                                label Сумма:
+                                                .all-trip--popup__time
+                                                    input.gogocar-input--filter(type="text" placeholder="от")
+                                                    span.all-trip--space –
+                                                    input.gogocar-input--filter(type="text" placeholder="до")
+                                        .col-xl-4.personal-pay-inputs
+                                            .all-trip--popup__col
+                                                label Интервал:
+                                                select.gogocar-select
+                                                    option(value="Сегодня") Сегодня
+                                                    option(value="День") День
+                                                    option(value="Месяц") Месяц
+                                                    option(value="Год") Год
+                                        .col-xl-8.personal-pay-inputs.personal-pay-inputs--flex
+                                            .all-trip--popup__col
+                                                label Дата:
+                                                .all-trip--popup__time.all-trip--popup__time--mobile
+                                                    .notific-input-icon.personal-w
+                                                        input.gogocar-input--filter.personal-calendar(type="text" readonly="readonly")
+                                                        .notific-calendar-icon
+                                                            +icon('calendar2')
+                                                    span.all-trip--space –
+                                                    .notific-input-icon.personal-w
+                                                        input.gogocar-input--filter.personal-calendar(type="text" readonly="readonly")
+                                                        .notific-calendar-icon
+                                                            +icon('calendar2')
+
+                                .personal-pay--filter--footer
+                                    .personal-pay--filter--buttons
+                                        .gogocar-yellow-button.w-100.m-0.mr-4 Найти
+                                        .gogocar-gray-button.w-100 Отмена
+                                    .gogocar-gray-icons
+                                        +icon('setting-car')
+                        .personal-pay--header.personal-pay--header__mobile
+                            .gogocar-yellow-button.m-0.mr-4 Недавние
+                            .gogocar-gray-button.m-0 Архив
+                        .personal-pay--data
+                            ul.personal-pay--header
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Дата
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item 05.06.2020
+                                        li.personal-pay--header--childen__item 05.06.2020
+                                        li.personal-pay--header--childen__item 05.06.2020
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Детали
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item Ташкент → Андижан
+                                        li.personal-pay--header--childen__item Ташкент → Бухара
+                                        li.personal-pay--header--childen__item Ташкент → Гулистан
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Описание
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item Поездка в одну сторону
+                                        li.personal-pay--header--childen__item Поездка в одну сторону
+                                        li.personal-pay--header--childen__item Поездка в одну сторону
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Сумма
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item.pp-price 90 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price 90 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price 90 000 UZS
+
+                        .personal-pay--data--mobile
+                            ul.personal-pay--header
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Дата/Детали
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item Ташкент → Андижан #[span.pp-date 05.06.2020]
+                                        li.personal-pay--header--childen__item Ташкент → Андижан #[span.pp-date 05.06.2020]
+                                        li.personal-pay--header--childen__item Ташкент → Андижан #[span.pp-date 05.06.2020]
+                                li.personal-pay--header--item.text-right
+                                    .personal-pay--header--item__name Описание/Сумма
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item В одну сторону #[span.pp-price 90 000 UZS]
+                                        li.personal-pay--header--childen__item В одну сторону #[span.pp-price 90 000 UZS]
+                                        li.personal-pay--header--childen__item Туда и обратно #[span.pp-price 90 000 UZS]

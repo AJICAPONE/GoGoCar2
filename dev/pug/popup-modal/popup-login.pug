@@ -1,0 +1,36 @@
+#popup-login.modal.fade(tabindex='-1' role='dialog' aria-labelledby='popup-login' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.popup-title Войти
+            form.popup-inputs--wrapper
+                .popup-input--wrapper
+                    .popup-input-icon.gogocar-gray-icons
+                        +icon('email')
+                    input.popup-input.gogocar-input-v1(type="email" placeholder="Email или логин")
+                .popup-input--wrapper
+                    .popup-input-icon.gogocar-gray-icons
+                        +icon('key')
+                    input.popup-input.gogocar-input-v1(type="password" placeholder="Пароль")
+                .popup-checkbox-remember
+                    input#popup-checkbox-remember(type="checkbox")
+                    label(for="popup-checkbox-remember") Запомнить меня
+                button.gogocar-yellow-button(type="submit") Войти
+            .popup-login-social--wrap
+                h3.popup-title-light Или войдите через другой аккаунт:
+                .popup-login-social
+                    .gogocar-gray-icons
+                        .popup-social--block
+                            +icon('facebook')
+                    .gogocar-gray-icons
+                        .popup-social--block
+                            +icon('vk')
+                    .gogocar-gray-icons
+                        .popup-social--block
+                            +icon('google')
+        .popup-register-login Ещё не с нами?  #[.popup-register--link.popup-reg--link(data-toggle="modal" data-target="#popup-register") Зарегистрируйтесь!]
+
+
+

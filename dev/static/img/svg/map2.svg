@@ -1,0 +1,11 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 28.75">
+  <title>map2</title>
+  <g>
+    <path d="M27.5,46.7323,20,49V27.77l7.5-2.2677Z" transform="translate(-20 -20.25)" style="fill: #fdab3e"/>
+    <path d="M42.5,46.7323,50,49V27.77L42.5,25.502Z" transform="translate(-20 -20.25)" style="fill: #e39124"/>
+    <path d="M42.5,46.7323,35,49V27.77l7.5-2.2677Z" transform="translate(-20 -20.25)" style="fill: #fdab3e"/>
+    <path d="M27.5,46.7323,35,49V27.77L27.5,25.502Z" transform="translate(-20 -20.25)" style="fill: #e39124"/>
+    <path d="M40.3017,22.375a7.6762,7.6762,0,0,0-10.6034,0,7.0732,7.0732,0,0,0,0,10.25L35,37.75l5.3017-5.125A7.0732,7.0732,0,0,0,40.3017,22.375Z" transform="translate(-20 -20.25)" style="fill: #77849c"/>
+    <path d="M35,22.75a4.375,4.375,0,1,0,4.375,4.3959A4.37,4.37,0,0,0,35,22.75Z" transform="translate(-20 -20.25)" style="fill: #fff"/>
+  </g>
+</svg>

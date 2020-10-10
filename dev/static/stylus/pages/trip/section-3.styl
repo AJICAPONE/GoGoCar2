@@ -1,0 +1,167 @@
+.all-trip--filter--wrap
+  background-color #424B5B
+  height 60px
+  display flex
+  align-items center
+  justify-content center
+
+  .container
+    height 100%
+.all-trip--left__right
+  display flex
+  align-items center
+  justify-content space-between
+  font-family 'Montserrat 400',sans-serif
+  font-size 15px
+  height 100%
+
+.all-trip--right
+  display flex
+  align-items center
+  height 100%
+.all-trip--left
+
+  span
+    color rgba(255, 255, 255, 0.5)
+
+.all-trip--sort
+  display flex
+  align-items center
+  color rgba(255, 255, 255, 0.5)
+  cursor pointer
+  padding-right 30px
+  border-right 2px solid #545C6A
+  height 100%
+
+  span
+    color #fff
+    margin-right 40px
+
+  .icon
+    transform rotate(90deg)
+    size(11px)
+
+.all-trip--filter--button
+  display flex
+  align-items center
+  justify-content center
+  cursor pointer
+  border-radius 10px
+  box-shadow 0px 0px 20px rgba(0,0,0,0.3)
+  background-color #363D4A
+  size(42px)
+  margin-left 30px
+  transition all linear .2s
+
+  //&:hover
+  //  box-shadow 0px 0px 20px rgba(253,191,90,0.3)
+  //  background-color #FDAB3E
+
+  .icon
+    size(22px)
+.all-trip--filter--button.active
+  box-shadow 0px 0px 20px rgba(253,191,90,0.3)
+  background-color #FDAB3E
+.all-trip--popup__time
+  display flex
+  align-items center
+  justify-content center
+
+.all-trip--popup__time--after,.all-trip--popup__time--before
+  width 100%
+  position relative
+  .gogocar-input--filter
+    padding-left 33px
+  .select-input
+    padding-left 33px
+
+  .onCF li ul
+    background-color #363d4a
+    display flex
+    flex-wrap wrap
+    width 225%
+    box-shadow 0px 0px 40px rgba(27,33,43,0.85)
+
+  span
+    absolute-center()
+    left 20px
+    font-family 'Montserrat 400',sans-serif
+    font-size 14px
+    color #9A9EA4
+    z-index 4
+    line-height 0.5
+
+  .select-options li
+    width 87.5px
+    border-radius 10px
+    transition all linear .1s
+    &:hover
+      background-color #FDAB3E
+  .select-options li.selected
+    background-color #fff
+    color #000
+
+
+.all-trip--popup__col
+
+  label
+    font-family 'Oswald 400',sans-serif
+    font-size 15px
+    color #fff
+
+.all-trip--popup--wrap
+  background-color #363D4A
+  display none
+
+.all-trip--popup--content
+  padding 30px 0
+
+.all-trip--space
+  color rgba(255, 255, 255, 0.5)
+  margin 0 15px
+  display block
+
+.gogocar-input--filter
+  width 100%
+  background-color #424B5B
+  border-radius 10px
+  color #fff
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  height 47px
+  padding 15px
+  border none
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.5)
+
+.all-trip--popup__col
+  display flex
+  flex-direction column
+
+.all-trip--popup--to--book
+  display flex
+  align-items center
+  height 47px
+  label
+    margin-bottom 0
+    font-family 'Montserrat 500',sans-serif
+    font-size 14px
+    color #9A9EA4
+
+.all-trip--popup--to--book input:checked + label
+  color #fff
+
+.atpc-filter
+  margin-bottom 30px
+  &:nth-last-child(-n+3)
+    margin-bottom 0
+
+.all-trip--result
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  color #fff
+  text-align center
+  width 100%
+  padding-bottom 30px
+

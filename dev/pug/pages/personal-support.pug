@@ -1,0 +1,11 @@
+extends ../layout/personal
+
+block variables
+    - var title = 'Поддержка'
+    - var pageClass = 'other-page'
+
+block content
+    include ../modules/breadcrumbs
+    include profile/personal-support/section-1
+    include ../popup-modal/popup-appear
+    include ../popup-modal/popup-appear-step2

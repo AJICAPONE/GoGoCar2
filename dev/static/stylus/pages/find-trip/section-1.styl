@@ -1,0 +1,127 @@
+.find-trips-tab
+  display flex
+  align-items center
+  justify-content space-between
+  background: #363D4A;
+  border-radius: 15px;
+  height 140px
+  padding 30px
+  width 48%
+  cursor pointer
+
+  .icon
+    width 160px
+    min-width 160px
+    margin-right 25px
+  span
+    font-family 'Oswald 500',sans-serif
+    font-size 22px
+    color rgba(255, 255, 255, 0.6)
+    width 120px
+.find-trip-icon__text
+  display flex
+  align-items center
+
+.find-trip-checkbox
+  min-width 25px
+  size(25px)
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius 50%
+
+.find-trips-tab.active
+  background-color #424B5B
+  .find-trip-checkbox
+    size(20px)
+    min-width 20px
+    background-color #FDAB3E
+    box-shadow 0px 0px 0px 5px rgba(253,171,62,0.3)
+  span
+    color #fff
+
+.find-trip-choise--wrap
+  display flex
+  justify-content space-between
+  align-items center
+  margin 0 auto
+  margin-bottom 100px
+
+.gogocar-input-icon
+  size(42px)
+  min-width 42px
+  background-color #4c5463
+  border-radius 10px
+
+  .icon
+    size(22px)
+
+.find-trip-form--wrapper
+  margin 0 auto
+
+.gogocar-input--wrapper
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #363D4A;
+  border-radius: 15px;
+  margin-bottom: 30px;
+
+.find-trip-change,.find-trip-change--cargo
+  absolute-center()
+  left auto
+  right 0
+  size(50px)
+
+  .icon
+    size(24px)
+    transition all linear .2s
+.rotate-trip
+  transform rotate(180deg);
+.find-trip-change--wrap
+  position relative
+
+.find-trip-data__count,.find-trip-data__weight
+  display flex
+  justify-content space-between
+
+.w-48
+  width 48%
+.find-trip-data__count
+  margin-bottom 30px
+
+.find-trip-form
+  display none
+
+.find-trip-form.active
+  display block
+
+.gogocar-placeholder
+  label
+    position absolute
+    width 100%
+    padding-left 70px
+    pointer-events none
+    font-family 'Montserrat 500',sans-serif
+    font-size 14px
+    color #fff
+    transition all linear .2s
+    opacity 1
+
+    span
+      color #FDAB3E
+      font-size 14px
+
+  .gogocar-input-v1:focus ~ label
+    opacity 0
+
+.gogocar-add-cargo-type
+  size(42px)
+  right 15px
+  left auto
+  cursor pointer
+
+  .icon
+    size(16px)
+
+
+

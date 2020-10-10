@@ -1,0 +1,19 @@
+#popup-appear-step2.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap.modal-770(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-support--appear.popup-icon-size
+                h3.main-section--title--v2.font-size-25.mb-5 Создание обращения (Шаг 2)
+                form.popup-appear-form-step2
+                    textarea.input-appear--textarea(rows="5" cols="10" placeholder="Подробно опишите возникшую проблему...")
+                    .personal-appear--file--wrap.row
+                        .gogocar-yellow-button.personal-file-button--added.m-0
+                            +icon('skrepka')
+                            span Добавить файл
+                            input.personal-upload-files--input(type="file" multiple)
+                    .personal-form-buttons--appeal
+                        .gogocar-yellow-button Отправить
+                        .gogocar-gray-button Отмена
+

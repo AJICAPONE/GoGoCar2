@@ -1,0 +1,83 @@
+header
+    .header-container
+        .container
+            .header-wrap
+                .header-sandwich-menu
+                    +icon('menu')
+                .header-logo
+                    a(href="/")
+                        +icon('logo2')
+                .header-trip
+                    .header-trip--wrap
+                        a.header-trip--wrap__link(href="/") Найти #[span поездку]
+                        a.header-trip--wrap__link(href="/") Предложить #[span поездку]
+                .header-profile
+                    .header-profile--menu
+                        +icon('menu')
+                        ul.header-profile--menu--list
+                            a.header-profile--menu--item(href="/")
+                                +icon('home')
+                                span Управление
+                            a.header-profile--menu--item(href="/")
+                                +icon('profile')
+                                span Профиль
+                            a.header-profile--menu--item(href="/")
+                                +icon('message')
+                                span Сообщение
+                            a.header-profile--menu--item(href="/")
+                                +icon('notific')
+                                span Уведомления
+                            a.header-profile--menu--item(href="/")
+                                +icon('wheel')
+                                span Ваши поездки
+                            a.header-profile--menu--logout
+                                +icon('logout')
+                                span Выйти
+                    .header-profile--menu__mobile
+                        +icon('menu')
+                    .header-user-profile
+                        a.header-user-profile--link(href="/acc-control.html")
+                            .header-user-profile--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                .header-user-profile--notific 3
+                            span Татьяна Гусева
+                    .header-profile--reg(data-toggle="modal" data-target="#popup-register") Регистрация
+                    .header-profile--login(data-toggle="modal" data-target="#popup-login") Войти
+        .header-mobile-menu
+            .personal-sidebar--content--wrap
+                .personal-sidebar--content.gogocar-box
+                    .account-control--bottom__panel--header
+                        .account-control--title--wrap
+                            h3.account-control--title Информация профиля
+                    ul.personal-sidebar--list
+                        a.personal-sidebar--item(href="/") Персональные данные
+                        a.personal-sidebar--item(href="/") Фото профиля
+                        a.personal-sidebar--item(href="/") Мои предпочтенияния
+                        a.personal-sidebar--item(href="/") Надежность пользователя
+                        a.personal-sidebar--item(href="/") Мой автомобиль
+                        a.personal-sidebar--item(href="/") Почтовый адрес
+
+                .personal-sidebar--content.gogocar-box
+                    .account-control--bottom__panel--header
+                        .account-control--title--wrap
+                            h3.account-control--title Отзывы
+                    ul.personal-sidebar--list
+                        a.personal-sidebar--item(href="/") Полученные отзывы
+                        a.personal-sidebar--item(href="/") Оставленные отзывы
+
+                .personal-sidebar--content.gogocar-box
+                    .account-control--bottom__panel--header
+                        .account-control--title--wrap
+                            h3.account-control--title Учётная запись
+                    ul.personal-sidebar--list
+                        a.personal-sidebar--item(href="") Оплата
+                        a.personal-sidebar--item(href="") Оповещения
+                        a.personal-sidebar--item(href="") Сообщения
+                        a.personal-sidebar--item(href="") Счет аккаунта
+                        a.personal-sidebar--item(href="") Поддержка
+                        a.personal-sidebar--item(href="") Пароль
+                        a.personal-sidebar--item(href="") Закрыть аккаунт
+
+
+
+
+

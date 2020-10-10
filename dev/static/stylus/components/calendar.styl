@@ -1,0 +1,76 @@
+.datepicker-container
+  width 280px
+  background-color: #363D4A;
+  box-shadow: 0px 0px 20px rgba(41, 47, 57, 0.6);
+  border-radius: 15px;
+  padding 10px
+  border none
+.datepicker-panel>ul
+  width 100%
+.datepicker-panel>ul>li
+  background-color transparent
+.datepicker-container:after, .datepicker-container:before
+  display none
+.datepicker-panel>ul[data-view=week]>li, .datepicker-panel>ul[data-view=week]>li:hover
+  background-color transparent
+.datepicker-panel>ul>li[data-view="month current"], .datepicker-panel>ul>li[data-view="year current"], .datepicker-panel>ul>li[data-view="years current"]
+  width 100%
+.gogocar-calendar-next,.gogocar-calendar-prev
+  display flex
+  align-items center
+  justify-content center
+  border-radius: 10px;
+  &:hover
+    background-color: #FDAB3E !important
+    box-shadow: 0px 0px 20px rgba(253, 171, 62, 0.6);
+  .icon
+    size(16px)
+    pointer-events none
+.gogocar-ul-navbar
+  display flex
+  align-items center
+  justify-content space-between
+  padding: 0px 10px 10px 10px !important;
+  width 107% !important
+  margin-left -10px !important
+  border-bottom 1px solid rgba(153, 163, 181, 0.2)
+
+.gogocar-calendar-current
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #fff
+  pointer-events none
+
+.gogocar-calendar-days
+  font-family "Montserrat 500",sans-serif
+  font-size 15px
+  color #fff
+  display flex
+  align-items center
+  justify-content center
+  width 40px !important
+  height 40px !important
+  border-radius: 10px;
+
+  &:hover
+    background-color: #FDAB3E !important
+    box-shadow: 0px 0px 20px rgba(253, 171, 62, 0.6);
+.today-day-gogocar
+  background-color: #fff !important
+  color #000
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+.picked-day-gogocar
+  background-color: #FDAB3E !important
+  box-shadow: 0px 0px 20px rgba(253, 171, 62, 0.6);
+.gogocar-calendar-days.disabled
+  background-color transparent !important
+  box-shadow none
+  color #929292 !important
+.gogocar-calendar-days.muted
+  //display none
+  
+  &:hover
+    background-color transparent
+.gogocar-calendar-prev.disabled
+  background-color transparent !important
+  box-shadow none

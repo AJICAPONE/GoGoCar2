@@ -1,0 +1,12 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.0001 19.9369">
+  <title>smoke</title>
+  <g>
+    <path d="M51.0117,23.028H49.5638v-.6725A2.3242,2.3242,0,0,0,47.24,20.0312H41.9141v2.6307A2.9882,2.9882,0,0,0,44.9023,25.65h.8817v.7082a2.3242,2.3242,0,0,0,2.3242,2.3243H54V26.0163A2.9883,2.9883,0,0,0,51.0117,23.028Z" transform="translate(-20 -20.0312)" style="fill: #cacaed"/>
+    <path d="M54,39.968H20V31.7314H54Z" transform="translate(-20 -20.0312)" style="fill: #ededfc"/>
+    <path d="M20,35.85H54v4.1183H20Z" transform="translate(-20 -20.0312)" style="fill: #cacaed"/>
+    <path d="M30.9882,39.9681H20V31.7314H30.9882Z" transform="translate(-20 -20.0312)" style="fill: #fdab3e"/>
+    <path d="M54,39.9681H46.9609V31.7314H54Z" transform="translate(-20 -20.0312)" style="fill: #ff4b55"/>
+    <path d="M20,35.85H30.9882v4.1183H20Z" transform="translate(-20 -20.0312)" style="fill: #d79235"/>
+    <path d="M46.9609,35.85H54v4.1183H46.9609Z" transform="translate(-20 -20.0312)" style="opacity: 0.10000000149011612;isolation: isolate"/>
+  </g>
+</svg>

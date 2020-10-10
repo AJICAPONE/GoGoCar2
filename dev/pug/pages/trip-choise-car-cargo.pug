@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Предложить поездку (Сколько груза?)'
+    - var pageClass = 'other-page overflow-y-body'
+
+block content
+    include cargo-trip/trip-choise-car/section-1
+    include ../popup-modal/popup-fp

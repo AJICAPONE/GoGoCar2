@@ -1,0 +1,15 @@
+#popup-jaloba2.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap.modal-970(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                h3.main-section--title--red #[span Пожаловаться] на поездку !
+                p.main-section--title.font-size-20.text-center #[span Пожалуйста, предоставьте] больше информации
+                .col-xl-10.col-lg-10.trip-comment--content.back-text-color-wrap
+                    textarea.trip-comment--textarea.back-text-color(cols="10" rows="5" placeholder="Опишиет проблему подробнее")
+
+                .you-trip-cancel--buttons
+                    .gogocar-gray-button(data-dismiss="modal" aria-label="Close") Я передумал
+                    .gogocar-red-button Пожаловаться

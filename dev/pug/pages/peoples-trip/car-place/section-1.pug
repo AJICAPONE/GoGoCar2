@@ -1,0 +1,50 @@
+section.car-place
+    .container
+        .car-place--wrapper
+            h1.main-section--title.text-center.mb-5 На каком месте #[span вы хотите ехать ?]
+            .car-place--content
+                .col-xl-5.car-place--position
+                    .car-place--svg
+                        +icon('car-place')
+                    .car-place--svg--places.car-right-top-place(data-car-place="Переднее правое")
+                        +icon('car-right-top-place')
+                    .car-place--svg--places.car-right-bottom-place(data-car-place="Заднее правое")
+                        +icon('car-right-bottom-place')
+                    .car-place--svg--places.car-left-bottom-place(data-car-place="Заднее левое")
+                        +icon('car-left-bottom-place')
+                .col-xl-7.car-place--info
+                    h3.section-title Выберите место на котором хотите ехать
+                    p.section-desc Sapien neque nunc diam mi tortor. Senectus tincidunt mi nec at lectus egestas non faucibus. Quisque dui malesuada sed nisi odio nibh in imperdiet ultrices. Tortor augue vitae risus tellus mauris.
+                    .trip-select-car
+                        .trip-select--icon--car
+                            .gogocar-gray-icons
+                                +icon('taxi')
+                            .trip-select--car--name
+                                .trip-select--car--name2 Легковой
+                        .trip-select--arrow
+                            +icon('arrow-right')
+                    ul.trip-select-car--list.car-select-car--list
+                        li.trip-select-car--item.suggest-late--result--item
+                            .suggest-late--result--item__left
+                                .gogocar-gray-icons
+                                    +icon('taxi')
+                                .trip-select-car-name--number
+                                    .trip-select-car-name--number2 Легковой
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+                        li.trip-select-car--item.suggest-late--result--item
+                            .suggest-late--result--item__left
+                                .gogocar-gray-icons
+                                    +icon('taxi')
+                                .trip-select-car-name--number
+                                    .trip-select-car-name--number2 Грузовой
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+                    .gogocar-ready-plan--covid
+                        .gogocar-gray-icons
+                            +icon('covid')
+                        .gogocar-ready-plan--covid--info
+                            .gogocar-ready-plan--covid--title Только 1 человек сзади !
+                            .gogocar-ready-plan--covid--desc COVID-19: вы будете единственным попутчиком в этой поездке
+
+                    a.gogocar-yellow-button(href="/") Продолжить

@@ -1,0 +1,77 @@
+section.trip-choise-car
+    .container
+        .trip-choise-car
+            h1.main-section--title--v2.text-center.mb-5 На #[span какой машине] планируете ехать ?
+            .col-xl-8.col-lg-8.trip-select-car--wrapper.m-0-auto
+                .trip-select-car
+                    .trip-select--icon--car
+                       .gogocar-gray-icons
+                           +icon('taxi')
+                       .trip-select--car--name
+                           .trip-select--car--name1 ГАЗель
+                           .trip-select--car--name2 (01 456 MM)
+                    .trip-select--arrow
+                        +icon('arrow-right')
+                ul.trip-select-car--list
+                    li.trip-select-car--item.suggest-late--result--item
+                        .suggest-late--result--item__left
+                            .gogocar-gray-icons
+                                +icon('taxi')
+                            .trip-select-car-name--number
+                                .trip-select-car-name--number1 Audi A8
+                                .trip-select-car-name--number2 (00 125 NN)
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+                    li.trip-select-car--item.suggest-late--result--item
+                        .suggest-late--result--item__left
+                            .gogocar-gray-icons
+                                +icon('taxi')
+                            .trip-select-car-name--number
+                                .trip-select-car-name--number1 Лада Гранта
+                                .trip-select-car-name--number2 (00 126 NN)
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+                    li.trip-select-car--item.suggest-late--result--item
+                        .suggest-late--result--item__left
+                            .gogocar-gray-icons
+                                +icon('taxi')
+                            .trip-select-car-name--number
+                                .trip-select-car-name--number1 BMW X5
+                                .trip-select-car-name--number2 (00 127 NN)
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+
+section.trip-choise-car
+    .container
+        .trip-choise-car
+            h1.main-section--title--v2.text-center.mb-5 Итак, #[span сколько груза] можете взять в дорогу ?
+            .trip-choise-car-cargo
+                .col-xl-4.col-lg-4
+                    .gogocar-input--wrapper.gogocar-placeholder
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('weight')
+                        input.gogocar-input-v1(type="text")
+                        label Общий вес #[span (кг)]
+                .col-xl-4.col-lg-4
+                    .gogocar-input--wrapper.gogocar-placeholder
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('volume')
+                        input.gogocar-input-v1(type="text")
+                        label Общий объем #[span (м3)]
+                .col-xl-4.col-lg-4
+                    .gogocar-input--wrapper.gogocar-placeholder
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('gabar')
+                        input.gogocar-input-v1(type="text")
+                        label Макс. габарит #[span (м)]
+
+section.trip-choise-car
+    .container
+        .trip-choise-car
+            h1.main-section--title.text-center.mb-5 Какие виды #[span груза можете взять ?]
+            .trip-choise-car-type
+                .gogocar-input--wrapper
+                    .gogocar-input-hidden-cargo-find
+                    input.gogocar-input-v1.gogocar-from.ggc-type-cargo(type="hidden")
+                    .gogocar-add-cargo-type.gogocar-gray-icons(data-toggle="modal" data-target="#popup-cargo-type")
+                        +icon('plus')

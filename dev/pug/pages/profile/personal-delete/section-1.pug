@@ -1,0 +1,37 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Закрыть аккаунт
+                    .personal-content--body
+                        .personal-delete--info
+                            .gogocar-gray-icons
+                                +icon('info')
+                            .gogocar-ready-plan--covid--info
+                                .gogocar-ready-plan--covid--title Закрытие аккаунта необратимое действие
+                                .gogocar-ready-plan--covid--desc Если вы хотите закрыть свой аккаунт из-за возникших проблем, позвольте дать вам некоторые рекомендации
+                        ul.personal-delete--text--wrap
+                            li.personal-delete--text – Изменить номер телефона или электронную почту можно в #[a(href="/") профиле]
+                            li.personal-delete--text – Для решения технических проблем #[a(href="/") свяжитесь с нами]
+                            li.personal-delete--text – Чтобы больше не получать электронных сообщений, просто измените #[a(href="/") настройки уведомлений]
+                            li.personal-delete--text – Если вам кажется, что вы получили незаслуженный отзыв, пожалуйста, #[a(href="/") свяжитесь с нами] – Если причина именно в этом, пожалуйста, не закрывайте свой аккаунт, т.к. вы уже не сможете #[a(href="/") создать новый]
+
+                        .personal-add--car--title.personal-delete--title.mb-4 Если вы все равно хотите закрыть свой аккаунт, пожалуйста, сообщите нам причину, чтобы мы могли улучшить сервис.
+
+                        .personal-delete-zone.row
+                            .col-xl-6.col-lg-6.pl-0.all-trip--popup__col.personal-content--select.personal-mb
+                                label Причина:
+                                select.gogocar-select
+                                    option(value="Причина 1") Причина 1
+
+                            .col-xl-6.col-lg-6.pr-0.all-trip--popup__col.personal-mb
+                                label Вы бы рекомендовали GoGoCar?
+                                input.gogocar-input--filter.personal-content--input(type="text")
+                            .col-xl-12.col-lg-12.p-0.all-trip--popup__col
+                                label Что нам нужно улучшить?
+                                textarea.personal-textarea(cols="10" rows="5")
+                        .gogocar-red-button.gogocar-mobile-m-0-auto Закрыть аккаунт

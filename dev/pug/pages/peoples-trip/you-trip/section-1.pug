@@ -1,0 +1,68 @@
+section.you-trip
+    .container
+        .you-trip--wrap
+            h1.main-section--title.text-center Ваши #[span поездки]
+            p.section-desc Тут вы можете посмотреть все ваши поездки, как в роли водителя, так и в роли попутчика!
+            .col-xl-6.col-lg-6.gogocar-you-trip--wrap.m-0-auto
+                .gogocar-gray-button.active(data-gogocar="driver") Я водитель
+                .gogocar-gray-button(data-gogocar="companion") Я попутчик
+            .col-xl-8.col-lg-8.you-trip--content.m-0-auto
+                .gogocar-trip--item.driver.active
+                    .gogocar-trip--item__top
+                        .car-to-book--item--top
+                            span.car-to-book--item--date Вторник, 9 июня, 16:00
+                            .you-trip--companions
+                                .car-to-book--item--profile
+                                    .cat-to-book--item__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                    .you-trip--companion
+                                        span Матвей
+                                        .you-trip--com--desc Попутчик №1
+                                .car-to-book--item--profile
+                                    .cat-to-book--item__img(style="background-image:url('/static/img/content/drivers-avatar/driver2.png')")
+                                    .you-trip--companion
+                                        span Анна
+                                        .you-trip--com--desc Попутчик №2
+                        .car-to-book--item--bottom
+                            .car-to-book--bottom-info
+                                .car-to-book--place--price 2 место: #[span 180 000 UZS]
+                                .car-to-book--during Оплата: #[span Во время поездки]
+                            .cat-to-book--bottom-how-to-pay Наличными
+                    .gogocar-trip--item__bottom
+                        .car-to-book--services
+                            .car-to-book--services--left
+                                .gogocar-gray-icons
+                                    +icon('question')
+                                .car-to-book--services--left--content
+                                    span.car-to-book--place--price Сбор за услуги
+                                    span.car-to-book--during За эту поездку сбор не взимается
+
+                            .car-to-book--services--right
+                                .car-to-book--services--left--content
+                                    span.car-to-book--during--right 18 000 UZS
+
+                .gogocar-trip--item.companion
+                    .gogocar-trip--item__top
+                        .car-to-book--item--top
+                            span.car-to-book--item--date Вторник, 9 июня, 16:00
+                            .car-to-book--item--profile
+                                .cat-to-book--item__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                span Матвей
+                        .car-to-book--item--bottom
+                            .car-to-book--bottom-info
+                                .car-to-book--place--price 1 место: #[span 90 000 UZS]
+                                .car-to-book--during Оплата: #[span Во время поездки]
+                            .cat-to-book--bottom-how-to-pay Наличными
+                    .gogocar-trip--item__bottom
+                        .car-to-book--services
+                            .car-to-book--services--left
+                                .gogocar-gray-icons
+                                    +icon('question')
+                                .car-to-book--services--left--content
+                                    span.car-to-book--place--price Сбор за услуги
+                                    span.car-to-book--during За эту поездку сбор не взимается
+
+                            .car-to-book--services--right
+                                .car-to-book--services--left--content
+                                    span.car-to-book--place--price--right 16 000,00 UZS
+                                    span.car-to-book--during--right 00,00 UZS
+            .gogocar-gray-button Прошлые поездки

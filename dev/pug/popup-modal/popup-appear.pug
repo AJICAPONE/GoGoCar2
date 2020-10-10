@@ -1,0 +1,31 @@
+#popup-appear-step1.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap.modal-770(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-support--appear.popup-icon-size
+                h3.main-section--title--v2.font-size-25.mb-5 Создание обращения (Шаг 1)
+                .plan-trip--location__wrap.popup-output--money--wrap
+                    .plan-trip--location__icon.gogocar-gray-icons
+                        +icon('support')
+                    input.gogocar-input-v1(type="text" placeholder="Укажите заголовок обращения")
+                    .gogocar-yellow-icons.personal-appeal--step2(data-toggle="modal" data-target="#popup-appear-step2")
+                        +icon('arrow-right')
+                .personal-appear--radio--list
+                    .personal-appear--radio--item
+                        .personal-appear--radio--input
+                        input(type="radio")
+                        .personal-appear--radio--text Не могу забронировать место
+                    .personal-appear--radio--item
+                        .personal-appear--radio--input
+                        input(type="radio")
+                        .personal-appear--radio--text Не работает форма обратной связи
+                    .personal-appear--radio--item
+                        .personal-appear--radio--input
+                        input(type="radio")
+                        .personal-appear--radio--text Не приходит код для подтверждения
+                    .personal-appear--radio--item
+                        .personal-appear--radio--input
+                        input(type="radio")
+                        .personal-appear--radio--text Другое

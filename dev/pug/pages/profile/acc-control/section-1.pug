@@ -1,0 +1,149 @@
+section.account-control.pt-0
+    .container
+        .account-control--wrap
+            .account-control--top__panel.gogocar-box
+                .col-xl-4.col-lg-5.pl-0.account-control--top__left
+                    .account-control--panel__img--wrap.dropzone-drag
+                        .account-control--panel__img
+                        input.acc-img#acc-img(type="file")
+                        .account-control--panel__add--img
+                            +icon('add')
+                            span Добавить фото
+                    .account-control--top-panel__edit
+                        span.account-control--panel--name Татьяна Гусева
+                        a.account-control--panel--edit(href="/") Редактировать профиль
+
+
+                .col-xl-8.col-lg-7.col-md-11.pr-0.account-control--top__right
+                    .account-control--top__right--title
+                        span Ваш текущий уровень
+                        +icon('info')
+                    ul.account-control--top__right--level--list
+                        li.account-control--top__right--level--item.active Новичок
+                            .account-control--top--right--line
+                        li.account-control--top__right--level--item Уверенный
+                            .account-control--top--right--line
+                        li.account-control--top__right--level--item Опытный
+                            .account-control--top--right--line
+                        li.account-control--top__right--level--item Эксперт
+                            .account-control--top--right--line
+                        li.account-control--top__right--level--item Амбассадор
+                            .account-control--top--right--line
+                    .account-control--top__right--level--list__mobile
+                        .account-control--top--right--line__mobile Новичок
+                        .account-control--top--right--line__mobile--list
+                            .account-control--top--right--line__mobile_i.active
+                                .actrl_m
+                            .account-control--top--right--line__mobile_i
+                                .actrl_m
+                            .account-control--top--right--line__mobile_i
+                                .actrl_m
+                            .account-control--top--right--line__mobile_i
+                                .actrl_m
+                            .account-control--top--right--line__mobile_i
+                                .actrl_m
+
+
+            .account-control--bottom__panel.row
+                .col-xl-4.col-lg-4.col-md-6.account-control--bottom__panel--wrap
+                    .account-control--bottom__panel--content.gogocar-box.acc-h-100
+                        .account-control--bottom__panel--header
+                            .account-control--title--wrap
+                                h3.account-control--title Предпочтения
+                        .account-control--bottom__panel--body
+                            ul.account-control--prefer--list.row
+                                .account-control--prefer--item.active
+                                    +icon('ac-chat')
+                                .account-control--prefer--item.active
+                                    +icon('ac-head')
+                                .account-control--prefer--item
+                                .account-control--prefer--item
+                            .account-control--prefer--choise Укажите свои предпочтения
+
+
+                .col-xl-4.col-lg-4.col-md-6.account-control--bottom__panel--wrap
+                    .account-control--bottom__panel--content.gogocar-box.acc-h-100
+                        .account-control--bottom__panel--body
+                            span.account-control--bottom__panel--body--title Подтвердите своё удостоверение личности
+                            p.account-control--bottom__panel--body--desc Наши пользователи могут подтвердить удостоверение личности, и это увеличивает доверие среди участников сообщества.
+                            .gogocar-yellow-button.gogocar-button--account-control Подтвердите
+                .col-xl-4.col-lg-4.col-md-6.account-control--bottom__panel--wrap
+                    .account-control--bottom__panel--content.gogocar-box.acc-h-100
+                        .account-control--bottom__panel--body
+                            +icon('logo2')
+                            span.account-control--bottom__panel--body--title Расскажите, как вы узнали о GoGoCar?
+                            .gogocar-yellow-button.gogocar-button--account-control Ответить
+
+                .col-xl-4.col-lg-4.col-md-6.account-control--bottom__panel--wrap
+                    .account-control--bottom__panel--content.gogocar-box
+                        .account-control--bottom__panel--header
+                            .account-control--title--wrap
+                                h3.account-control--title Подтверждения данных
+                        .account-control--bottom__panel--body
+                            ul.account-control--submited--list
+                                .account-control--submited--item.acc-submit
+                                    span.account-control--submited--item--name Номер телефона подтверждён
+                                    .account-control--submited--icon
+                                        +icon('ok')
+                                .account-control--submited--item.acc-submit
+                                    span.account-control--submited--item--name Эл. почта подтверждена
+                                    .account-control--submited--icon
+                                        +icon('ok')
+                                .account-control--submited--item.acc-not-submit
+                                    span.account-control--submited--item--name Подтвердите удостоверение личности
+                                    .account-control--submited--icon
+                                        +icon('x')
+                            .account-control--prefer--choise Завершить подтверждение
+
+                    .account-control--bottom__panel--content.gogocar-box
+                        .account-control--bottom__panel--header
+                            .account-control--title--wrap
+                                h3.account-control--title Активность пользователя
+                        .account-control--bottom__panel--body
+                            .account-control--date-register
+                                .account-control--date-register--icon
+                                    +icon('user2')
+                                span.account-control--date-register--text Дата регистрации: июнь 2020
+
+                .col-xl-4.col-lg-4.col-md-6.account-control--bottom__panel--wrap
+                    .account-control--bottom__panel--content.gogocar-box.acc-h-100
+                        .account-control--bottom__panel--header
+                            .account-control--title--wrap
+                                h3.account-control--title Оповещения (2)
+                        .account-control--bottom__panel--body.acb-overfrow
+                            ul.account-control--notific--list
+                                .account-control--notific--item
+                                    .account-control--notific--name__message
+                                        span.account-control--notific--item--name Подтвердите своё удостоверение личности
+                                        p.account-control--notific--item--text Наши пользователи могут подтвердить удостоверение личности, и это увеличивает доверие среди участников сообщества.
+                                    .account-control--notific--item--delete
+                                        +icon('x')
+                                .account-control--notific--item
+                                    .account-control--notific--name__message
+                                        span.account-control--notific--item--name Расскажите, как вы узнали о GoGoCar?
+                                        p.account-control--notific--item--text Vitae cursus mattis fermentum odio at facilisis. Viverra praesent sit nisl tempor amet in vel id.
+                                    .account-control--notific--item--delete
+                                        +icon('x')
+                .col-xl-4.col-lg-4.col-md-6.account-control--bottom__panel--wrap
+                    .account-control--bottom__panel--content.gogocar-box.acc-h-100
+                        .account-control--bottom__panel--header
+                            .account-control--title--wrap
+                                h3.account-control--title Новые сообщения (1)
+                        .account-control--bottom__panel--body.acb-overfrow
+                            ul.account-control--notific--list
+                                .account-control--notific--item
+                                    .account-control--notific--name__message
+                                        .account-control--message--profile
+                                            .account-control--message--profile__img(style="background-image:url('static/img/content/drivers-avatar/driver1.png')")
+                                            .account-control--message--profile--info
+                                                span.account-control--message--profile--info__name Матвей Федотов
+                                                span.account-control--message--profile--info__date 01.06.2020 12:43
+                                        p.account-control--notific--item--text Lorem amet faucibus dolor elementum. Proin in nisi cursus pulvinar turpis duis justo in dapibus.
+                                    .account-control--notific--item--delete
+                                        +icon('x')
+
+
+
+
+
+

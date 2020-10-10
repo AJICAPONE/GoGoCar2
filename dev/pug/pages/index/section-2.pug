@@ -1,0 +1,18 @@
+section.plan-trip
+    .container
+        .plan-trip--wrap
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12.plan-trip--baner
+                include svg2
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12.plan-trip--info
+                h3.plan-trip--title Планируете #[span поездку] ?
+                p.plan-trip--desc Возьмите попутчиков, сделайте поездку веселее и дешевле!
+                .plan-trip--send__location
+                    h3.plan-trip--title--small Откуда выезжаем?
+                    .plan-trip--location__wrap
+                        .plan-trip--location__icon.gogocar-gray-icons
+                            +icon('map2')
+                        input.plan-trip--location__input.gogocar-input-v1(type="text" placeholder="Например: Ташкент")
+                        .plan-trip--location--submit.gogocar-yellow-icons
+                            +icon('arrow-right')
+
+

@@ -1,0 +1,252 @@
+section.chat
+    .container
+        .chat-wrap
+            h3.section-title.mb-5.chat-container-992--title Чат с Мотвеем
+            .chat-section
+                .col-xl-9.col-lg-8.chat-container.chat-container-992
+                    .chat-container-block
+                        .chat-container-header
+                            .gogocar-gray-icons.chat-gogocar-back--992
+                                +icon('arrow-right')
+                            .chat-container-header--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                            .chat-container-header--info__option
+                                .chat-container-header--info
+                                    .chat-container-header--name Матвей Федотов
+                                    .chat-container-header--desc Отвечает в течении 30 минут
+                                .chat-container-header--option--left--wrap
+                                    .chat-container-header--option-delete__panel
+                                        .chat-container-header--option-delete--delete.gogocar-gray-icons
+                                            +icon('delete')
+                                        .chat-delete-out-msg
+                                            .chat-text-delete__message Удалить сообщения?
+                                            .chat-container-option--message--wrap
+                                                .chat-container-option--message--item.chat-choise-delet-msg
+                                                    +icon('delete')
+                                                    span Удалить
+                                                .chat-container-option--message--item--cancel Отмена
+                                        .chat-container-header--option-delete--back.gogocar-gray-icons
+                                            +icon('close')
+                                    .chat-container-header--option.chat-container-option-dot.gogocar-gray-icons
+                                        +icon('option')
+                                    .chat-container-header--delete__message
+                                        +icon('checked')
+                                        span Выбрать сообщение
+                                    .chat-container-header--delete__message
+                                        +icon('folder')
+                                        span Архивировать
+                        .chat-container-main
+                            .chat-container-main--info
+                                .chat-container-main-last--date 6 Июня
+                                .chat-container-people-messages.chat-container-message-out
+                                    .chat-container-message--wrapper
+                                        .chat-container--message--status
+                                            +icon('looked')
+                                        .chat-container-message--wrap
+                                            .chat-container-message--file-type
+                                                .chat-container-message--format
+                                                    +icon('chat-png')
+                                                .chat-container-message--format-text
+                                                    span.chat-container-message--format-name Фото.png
+                                                    span.chat-container-message--format-time 14:02
+                                            a.chat-container-message--format-download.gogocar-gray-icons(href="/" download)
+                                                +icon('download')
+                                        .chat-container-message--wrap--delete__check--wrap
+                                            .chat-container-message--wrap--delete__check
+
+                                .chat-container-people-messages.chat-container-message-out
+                                    .chat-container-message--wrapper
+                                        .chat-container--message--status
+                                            +icon('looked')
+                                        .chat-container-message--wrap
+                                            .chat-container-message--info__message
+                                                .chat-container-message--date__name
+                                                    span 14:02
+                                                    .chat-container-message--name--wrap
+                                                        .chat-container-message--name--button
+                                                            +icon('arrow-right')
+                                                        .chat-container-option--message.chat-show-message-out.chat-show-message-out--mobile
+                                                            .chat-container-option--message--wrap
+                                                                .chat-container-option--message--wrap--buttons
+                                                                    .chat-container-option--message--item.chat-change-message
+                                                                        +icon('pen')
+                                                                        span Изменить
+                                                                    .chat-container-option--message--item.chat-delete-message
+                                                                        +icon('delete')
+                                                                        span Удалить
+                                                                .chat-container-option--message--item--cancel Отмена
+                                                        .chat-container-message--name Татьяна Гусева
+                                                p.chat-container--message In orci pulvinar metus erat.
+                                            .chat-container-message--img(style="background-image:url('/static/img/content/drivers-avatar/driver2.png')")
+                                        .chat-container-message--wrap--delete__check--wrap
+                                            .chat-container-message--wrap--delete__check
+                                .chat-container-people-messages.chat-container-message-in
+                                    .chat-container-message--wrapper
+                                        .chat-container-message--wrap
+                                            .chat-container-message--info__message
+                                                .chat-container-message--date__name
+                                                    span 14:02
+                                                    .chat-container-message--name--wrap
+                                                        .chat-container-message--name--button
+                                                            +icon('arrow-right')
+                                                        .chat-container-option--message.chat-show-message-in.chat-show-message-in--mobile
+                                                            .chat-container-option--message--wrap
+                                                                .chat-container-option--message--item.chat-answer-message
+                                                                    +icon('share')
+                                                                    span Ответить
+                                                                .chat-container-option--message--item--cancel Отмена
+                                                        .chat-container-message--name Матвей Федотов
+                                                p.chat-container--message In orci pulvinar metus erat.In orci pulvinar metus erat.
+                                            .chat-container-message--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                .chat-container-people-messages.chat-container-message-out
+                                    .chat-container-message--wrapper
+                                        .chat-container--message--status
+                                            +icon('not-looked')
+                                        .chat-container-message--wrap
+                                            .chat-container-message--info__message
+                                                .chat-container-message--date__name
+                                                    span 14:02
+                                                    .chat-container-message--name--wrap
+                                                        .chat-container-message--name--button
+                                                            +icon('arrow-right')
+                                                        .chat-container-option--message.chat-show-message-out.chat-show-message-out--mobile
+                                                            .chat-container-option--message--wrap
+                                                                .chat-container-option--message--wrap--buttons
+                                                                    .chat-container-option--message--item.chat-change-message
+                                                                        +icon('pen')
+                                                                        span Изменить
+                                                                    .chat-container-option--message--item.chat-delete-message
+                                                                        +icon('delete')
+                                                                        span Удалить
+                                                                .chat-container-option--message--item--cancel Отмена
+                                                        .chat-container-message--name Татьяна Гусева
+                                                p.chat-container--message In orci pulvinar metus erat.
+                                            .chat-container-message--img(style="background-image:url('/static/img/content/drivers-avatar/driver2.png')")
+                                        .chat-container-message--wrap--delete__check--wrap
+                                            .chat-container-message--wrap--delete__check
+                                .chat-container-people-messages.chat-container-message-in
+                                    .chat-container-message--wrapper
+                                        .chat-container-message--wrap
+                                            .chat-container-message--file-type
+                                                .chat-container-message--format
+                                                    +icon('chat-png')
+                                                .chat-container-message--format-text
+                                                    span.chat-container-message--format-name Фото.png
+                                                    span.chat-container-message--format-time 14:02
+                                            a.chat-container-message--format-download.gogocar-gray-icons(href="/" download)
+                                                +icon('download')
+                                .chat-container-people-messages.chat-container-message-in
+                                    .chat-container-message--wrapper
+                                        .chat-container-message--wrap
+                                            .chat-container-message--info__message
+                                                .chat-container-message--date__name
+                                                    span 14:02
+                                                    .chat-container-message--name--wrap
+                                                        .chat-container-message--name--button
+                                                            +icon('arrow-right')
+                                                        .chat-container-option--message.chat-show-message-in.chat-show-message-in--mobile
+                                                            .chat-container-option--message--wrap
+                                                                .chat-container-option--message--item.chat-answer-message
+                                                                    +icon('share')
+                                                                    span Ответить
+                                                                .chat-container-option--message--item--cancel Отмена
+                                                        .chat-container-message--name Матвей Федотов
+                                                p.chat-container--message In orci pulvinar metus erat.In orci pulvinar metus erat.
+                                            .chat-container-message--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+
+                        .chat-container-footer
+                            .chat-container-footer-wrap--inputs
+                                .chat-container--edit--message#chat-edit-msg
+                                    .chat-container--edit--wrap
+                                        .chat-container--edit--title Редактировать
+                                        .chat-container--edit--text#chat-edit-text Тут будет проверочный текст
+                                    .chat-container--edit--close#chat-edit-close
+                                        +icon('x')
+                                .chat-container--edit--message--file--add
+                                    .personal-appear--file--wrap.row#chat-file-add
+                                    .personal-loaded--file__icon
+                                        +icon('close')
+
+                                .chat-container-footer--file__input
+                                    +icon('skrepka')
+                                    input.chat-container-footer--input__file(type="file")
+                                .chat-container-footer--text__input
+                                    .chat-container-footer--input__text#chat-get-text(contenteditable="true" role="textbox" aria-multiline="true")
+                                    .chat-container-footer--placeholder Cообщение...
+                                .chat-container-footer--smiles
+                                    +icon('smile')
+                                .chat-container-footer--emoji--list.row
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji1.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji2.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji3.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji4.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji5.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji6.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji7.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji8.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji9.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji10.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji11.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji12.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji13.png" alt="emoji")
+                                    img.cab-chat-emoji(src="static/img/content/emoji/emoji14.png" alt="emoji")
+                                button.chat-container-footer--submit
+                                    +icon('send')
+
+
+
+
+                .col-xl-3.col-lg-4.chat-content--info
+                    .chat-content--info__driver--profile.gogocar-box
+                        .chat-content--info__driver--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                        span.chat-content--info__driver--name Матвей Федотов
+                        .chat-content--info__driver--rating--rev
+                            .gogocar-trips-category--rating.green-rating
+                                +icon('green-star')
+                                span 4,3
+                            .chat-content--info__driver--rev (5 отзывов)
+                        a.gogocar-yellow-button.chat-gogocar-yellow-button-desctop(href="/") Подробнее
+                        .chat-content-buttons__driver--992
+                            a.gogocar-gray-button(href="/") Подробнее
+                            .gogocar-yellow-button.chat-content-show--992 Сообщение
+
+                    .chat-content--info__driver--review.gogocar-box.chat-content--info__driver--mobile
+                        .chat-content--info__driver--review--header
+                            span.chat-content--info__driver--title Отзывы
+                            .gogocar-trips-category--rating.green-rating
+                                +icon('green-star')
+                                span 4,3
+                        .chat-content--info__driver--review--wrap
+                            .chat-content--info__driver--review--js
+                                .chat-content--info__driver--review--content
+                                    .chat-content--review__trip--profile
+                                        .chat-content--review__trip--info
+                                            .chat-content--review__trip--info__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                            .chat-content--review__trip--name__trip
+                                                span.chat-content--review__trip--name Андрей
+                                                span.chat-content--review__trip--trip Москва → Тверь
+                                        .chat-content--review__trip--rating 5
+                                    p.chat-content--review__trip--text Neque tortor scelerisque ac aliquam eu tellus. Fermentum aliquet sit mauris nunc vitae. Adipiscing urna vitae dui aliquet consequat sapien porta.
+                                    span.chat-content--review__trip--date 01.05.2020
+                                .chat-content--info__driver--review--content
+                                    .chat-content--review__trip--profile
+                                        .chat-content--review__trip--info
+                                            .chat-content--review__trip--info__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                            .chat-content--review__trip--name__trip
+                                                span.chat-content--review__trip--name Андрей
+                                                span.chat-content--review__trip--trip Москва → Тверь
+                                        .chat-content--review__trip--rating 5
+                                    p.chat-content--review__trip--text Neque tortor scelerisque ac aliquam eu tellus. Fermentum aliquet sit mauris nunc vitae. Adipiscing urna vitae dui aliquet consequat sapien porta.
+                                    span.chat-content--review__trip--date 01.05.2020
+                            .chat-dots--wrap
+                    a.chat-content--warning.gogocar-box(data-toggle="modal" data-target="#popup-jaloba")
+                        .gogocar-gray-icons
+                            +icon('warning')
+                        span Пожаловаться
+            .col-xl-9.col-lg-9.pl-0
+                a.gogocar-yellow-button(href="/") Продолжить
+
+
+
+
+
+

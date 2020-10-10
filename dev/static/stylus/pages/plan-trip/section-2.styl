@@ -1,0 +1,619 @@
+.chat-section
+  display flex
+.chat-container-block
+  background: #363D4A;
+  border-radius: 10px;
+.chat-container-header
+  display flex
+  align-items center
+  padding 15px 20px
+  background-color #424B5B
+  border-radius 10px
+.chat-container-header--info__option
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+.chat-container-header--img
+  background-size contain
+  background-repeat no-repeat
+  background-position center
+  z-index 2
+  size(60px)
+  border-radius 12px
+  margin-right 20px
+.chat-container-header--name
+  font-family 'Oswald 500',sans-serif
+  font-size 18px
+  color #ff
+  margin-bottom 6px
+.chat-container-header--desc
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.6)
+.chat-container-header--option
+  size(42px)
+  position relative
+  left auto
+  background-color rgba(255, 255, 255, 0.05)
+  cursor pointer
+
+  .icon
+    size(22px)
+
+
+// Сообщения (Чат)
+.chat-container-message-out,.chat-container-message-in
+  position relative
+  display flex
+  flex-direction column
+  padding 0 20px
+  margin-bottom 20px
+  transition .5s ease
+
+.chat-container-message-out
+  align-items flex-end
+  .chat-container-message--info__message
+    margin-right 15px
+  .chat-container-message--name--button
+    margin-right 7px
+
+  //&:last-child
+  //  .chat-show-message-out
+  //    top auto
+  //    bottom 20px
+
+.chat-container-message-in
+  align-items flex-start
+
+  .chat-container-message--wrap,.chat-container-message--date__name,.chat-container-message--name--wrap,.chat-container-message--file-type
+    flex-flow row-reverse
+  .chat-container-message--info__message
+    margin-left 15px
+  .chat-container-message--name--button
+    margin-left 7px
+  .chat-container-message--format .icon
+    margin-right 0
+  .chat-container-message--format-text
+    margin-right 17px
+    margin-left 25px
+.chat-container-main--info
+  padding-bottom 130px
+  overflow-y scroll
+  max-height 485px
+  margin-right 5px
+
+  &::-webkit-scrollbar
+    width 5px
+    border-radius 5px
+  &::-webkit-scrollbar-thumb
+    background-color: #FDAB3E;
+    outline: 1px solid #708090;
+    border-radius: 10px;
+  &::-webkit-scrollbar-track
+    margin-right 5px
+  &::-webkit-scrollbar-track-piece
+    background: rgba(255, 255, 255, 0.05);
+    border-radius 10px
+  &::-webkit-scrollbar-button
+    background-color transparent
+    height 15px
+
+.chat-container-message--wrap
+  position relative
+  display flex
+  background-color rgba(255, 255, 255, 0.05)
+  border-radius 15px
+  padding 10px 15px
+
+
+  &:hover
+    .chat-container-message--name--button
+      opacity 1
+
+.chat-container-message--date__name
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 10px
+.chat-container-message--name
+  font-family 'Oswald 400',sans-serif
+  font-size 14px
+  color #fff
+.chat-container-message--name--wrap
+  display flex
+  align-items center
+  position relative
+
+.chat-container-message--name--button
+  position relative
+  opacity 0
+  transition all linear .2s
+  cursor pointer
+  .icon-arrow-right
+    size(12px)
+    transform rotate(90deg)
+    margin-bottom 3px
+.chat-container-message--name--button.active
+  opacity 1
+.chat-container-message--date__name
+
+  span
+    font-family 'Montserrat 500',sans-serif
+    font-size 13px
+    color rgba(255, 255, 255, 0.2)
+.chat-container-message--img
+  background-size contain
+  background-repeat no-repeat
+  background-position center
+  size(48px)
+  min-width 48px
+  border-radius 10px
+.chat-container--message
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+
+.chat-container-main-last--date
+  display block
+  text-align center
+  color #fff
+  font-family 'Oswald 500',sans-serif
+  font-size 15px
+  padding 40px 0
+
+.chat-container--message--status
+  display flex
+  align-items flex-end
+  margin-right 8px
+
+  .icon
+    size(17px)
+    margin-bottom 8px
+.chat-container-message--wrapper
+  display flex
+  max-width 65%
+
+.chat-container-footer-wrap--inputs
+  position relative
+  display flex
+  align-items flex-end
+  background-color rgba(255, 255, 255, 0.05)
+  border-radius 5px
+  margin 0 20px
+.chat-container-footer--file__input
+  position relative
+  height 50px
+  display flex
+  align-items center
+  padding 0 12px
+  cursor pointer
+
+  .icon
+    size(21px)
+
+  &:after
+    content ''
+    background-color rgba(255, 255, 255, 0.6)
+    width 1.5px
+    height calc(100% - 24px)
+    position absolute
+    right: 0;
+
+
+.chat-container-footer--input__file
+  position absolute
+  opacity 0
+  width 100%
+  left 0
+  right 0
+  bottom 0
+  top 0
+  line-height 0
+  cursor pointer
+.chat-container-footer--text__input
+  position relative
+  width 100%
+  min-height 50px
+  display flex
+  align-items center
+
+.chat-container-footer--input__text
+  display flex
+  flex-wrap wrap
+  align-items center
+  background-color transparent
+  border none
+  padding 10px
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  color #fff
+  width 100%
+  height 100%
+  min-height 40px
+  max-height 40px
+  outline none
+  overflow-y scroll
+  word-break break-all
+
+
+  &::-webkit-scrollbar
+    width: 0px;
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.6)
+
+.chat-container-footer--smiles
+  position relative
+  height 50px
+  display flex
+  align-items center
+
+  .icon
+    size(21px)
+
+.chat-container-footer--submit
+  background-color transparent
+  border none
+  padding 12px
+
+  .icon
+    size(25px)
+.chat-container-footer--smiles
+  position: relative;
+  padding 12px
+  cursor pointer
+
+  &:after
+    content ''
+    background-color rgba(255, 255, 255, 0.6)
+    width 1.6px
+    height calc(100% - 24px)
+    position absolute
+    right: 0;
+
+.chat-container-footer
+  position relative
+  padding-bottom 20px
+  width 100%
+
+.chat-container--edit--message
+  display none
+  align-items center
+  justify-content space-between
+  position absolute
+  background-color: #404753
+  border-radius: 5px 5px 0px 0px;
+  width 100%
+  bottom 48px
+  height max-content
+  border-bottom 1px solid rgba(255, 255, 255, 0.4)
+  padding 15px
+  padding-left 20px
+
+  &:before
+    content ''
+    position absolute
+    left 10px
+    width 2px
+    height calc(100% - 30px)
+    background-color #FDAB3E
+.chat-container--edit--title
+  font-family 'Oswald 500',sans-serif
+  font-size 13px
+  color #FDAB3E
+
+.chat-container--edit--text
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color #fff
+
+.chat-container--edit--close
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
+  size(35px)
+  .icon
+    size(18px)
+
+.chat-container-people-messages
+
+  &:last-child
+    margin-bottom 0
+.chat-container
+  padding-left 0
+
+.chat-container-option--message
+  display none
+  background: #424B5B;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding 17px
+  position absolute
+  z-index 2
+
+  .icon
+    size(19px)
+    margin-right 15px
+  span
+    font-size 13px
+    color #fff
+.chat-show-message-out
+  right 85%
+  top 25px
+.chat-show-message-in
+  left 85%
+  top 25px
+
+.chat-container-option--message--item
+  display flex
+  align-items center
+  margin-bottom 25px
+  cursor pointer
+
+  &:last-child
+    margin-bottom 0
+
+  &:hover
+    span
+      color #FDAB3E
+
+
+.chat-container-footer--emoji
+  position absolute
+  display none
+  background: #424B5B;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  width: 340px;
+  height: 230px;
+  right 50px
+  bottom 60px
+  z-index 5
+
+  &:before
+    content: '';
+    clip-path: polygon(50% 88%, 0 0, 100% 0);
+    width: 15px;
+    height: 15px;
+    background-color: #424B5B;
+    position: absolute;
+    right: 15px;
+    bottom: -10px;
+    z-index -1
+
+
+.chat-container-footer--emoji-overflow
+  position absolute
+  height 100%
+  width 100%
+  //padding 8px
+
+
+.chat-container-footer--emoji-content
+  position relative
+  overflow-y: scroll;
+  height: 80.5%;
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+
+  &::-webkit-scrollbar
+    width: 0px;
+
+.gogocar-emoji
+  size(32px)
+  padding 3px
+  cursor pointer
+  transition all linear .1s
+
+
+  &:hover
+    transform scale(1.1)
+.chat-container-footer--emoji-search
+  width 100%
+  height 45px
+  background-color #404753
+  border-radius 10px
+  box-shadow inset 0px 0px 8px 2px #0000003d
+
+.chat-container-footer--emoji-input
+  background-color transparent
+  border none
+  font-family 'Oswald 400',sans-serif
+  font-size 14px
+  color #fff
+  height 100%
+  width 100%
+  padding 0 15px
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.5)
+
+.gogocar-emoji--category__title
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #fff
+  margin 7px 0
+  display block
+
+.gogocar-emoji--in-input
+  size(20px)
+  pointer-events none
+.chat-container-footer--placeholder
+  absolute-center()
+  right auto
+  left 54px
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+  pointer-events none
+.chat-container-message--format
+  .icon
+    size(34px)
+    margin-right 17px
+.chat-container-message--file-type
+  display flex
+  align-items center
+.chat-container-message--format-text
+  display flex
+  flex-direction column
+  margin-right 25px
+.chat-container-message--format-download
+  position relative
+  left auto
+  size(42px)
+  cursor pointer
+
+  .icon
+    size(18px)
+
+.chat-container-message--format-name
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #fff
+  margin-bottom 6px
+
+.chat-container-message--format-time
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.2)
+
+.gogocar-box
+  background-color #363D4A
+  border-radius 10px
+
+.chat-content--info__driver--profile
+  display flex
+  align-items center
+  flex-direction column
+  justify-content center
+  padding 25px 35px
+  margin-bottom 30px
+
+  .gogocar-yellow-button
+    font-family 'Montserrat 500',sans-serif
+    font-size 16px
+    height 48px
+
+    &:hover
+      color #fff
+
+.chat-content--info__driver--img
+  background-repeat no-repeat
+  background-size contain
+  background-position center
+  size(100px)
+  margin-bottom 8px
+
+.chat-content--info__driver--name
+  font-family 'Oswald 500',sans-serif
+  font-size 20px
+  color #fff
+  margin-bottom 10px
+
+.chat-content--info__driver--rating--rev
+  display flex
+  align-items center
+  margin-bottom 20px
+
+  .gogocar-trips-category--rating
+    margin-right 10px
+
+.chat-content--info__driver--rev
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.6)
+.chat-content--info
+  padding-right 0
+
+.chat-content--info__driver--review--header
+  display flex
+  align-items center
+  justify-content space-between
+
+.chat-content--info__driver--title
+  font-family 'Oswald 500',sans-serif
+  font-size 22px
+  color #fff
+
+.chat-content--info__driver--review--header
+  padding 20px 15px
+  border-bottom 1px solid rgba(153, 163, 181, 0.3)
+
+  .gogocar-trips-category--rating
+
+    span
+      font-size 18px
+    .icon
+      size(24px)
+
+.chat-content--review__trip--profile
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 15px
+
+.chat-content--review__trip--info__img
+  background-size contain
+  background-position center
+  background-repeat no-repeat
+  size(50px)
+  margin-right 15px
+.chat-content--review__trip--info
+  display flex
+
+.chat-content--review__trip--name__trip
+  display flex
+  flex-direction column
+.chat-content--info__driver--review--content
+  padding 20px
+  outline none
+
+.chat-content--review__trip--name
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #fff
+  margin-bottom 5px
+
+.chat-content--review__trip--trip
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.6)
+
+.chat-content--review__trip--rating
+  font-family 'Montserrat Bold',sans-serif
+  font-size 22px
+  color #09B983
+
+.chat-content--review__trip--text
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.6)
+  margin-bottom 15px
+
+.chat-content--review__trip--date
+  font-family 'Montserrat SB',sans-serif
+  font-size 13px
+  color #fff
+.chat-content--warning
+  display flex
+  align-items center
+  padding 7px
+  .gogocar-gray-icons
+    position relative
+    left auto
+    margin-right 40px
+    size(42px)
+
+    .icon
+      size(22px)
+
+  span
+    font-family 'Montserrat SB',sans-serif
+    font-size 13px
+    color #fff
+
+
+
+

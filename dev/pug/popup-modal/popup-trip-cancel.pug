@@ -1,0 +1,12 @@
+#popup-trip-cancel.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                h3.main-section--title--red Вы в одном шаге от #[span отмены] поездки!
+                p.main-section--title.font-size-20.text-center Вы уверены ? #[span Поездка будет удалена, а пассажиры не смогут с Вами поехать.]
+                .you-trip-cancel--buttons
+                    .gogocar-gray-button(data-dismiss="modal" aria-label="Close") Я передумал
+                    .gogocar-red-button Отменить поездку

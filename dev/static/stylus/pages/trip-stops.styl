@@ -1,0 +1,108 @@
+.trip-stops--wrap
+  .main-section--title--v2
+    margin 0 auto
+.trip-stops--list
+  margin 0 auto
+.trip-stops--item--name__icon
+  display flex
+  align-items center
+.trip-stops--item
+  display flex
+  align-items center
+  justify-content space-between
+  padding 10px
+  background: #363D4A;
+  border-radius: 15px;
+  margin-bottom 20px
+  cursor pointer
+  .gogocar-gray-icons
+    size(42px)
+    position relative
+    left auto
+    margin-right 15px
+    .icon
+      size(22px)
+  span
+    font-family 'Montserrat SB',sans-serif
+    font-size 14px
+    color #fff
+.trip-stops--item.active
+  .popup-gogocar-cargo--checkbox
+    background-color #FDAB3E
+
+.trips-stops--added
+  width max-content
+  font-family 'Oswald 500',sans-serif
+  font-size 15px
+  color #FDAB3E
+  margin 0 auto
+  margin-bottom 60px
+  text-align center
+  cursor pointer
+.trip-stops--places--list
+  position relative
+  height 100%
+  margin-bottom 60px
+.trip-stops--places--list:after
+  content ''
+  position absolute
+  border-left 3px dashed #FDAB3E
+  height calc(100% - 42px)
+  top 22px
+  bottom 0
+  left 4.5px
+.trip-stops--places--start,.trip-stops--places--end
+  display flex
+  align-items center
+
+  span
+    font-family 'Oswald 400',sans-serif
+    font-size 18px
+    color #fff
+
+
+.trip-stops--places--end:before
+  content ''
+  size(13px)
+  border-radius 50%
+  background-color #FDAB3E
+  position relative
+  box-shadow 0px 0px 0px 3px rgba(253, 171, 62, 0.6)
+  margin-right 25px
+
+.trip-stops--places--start:before
+  content ''
+  size(11px)
+  border-radius 50%
+  background-color #FDAB3E
+  position relative
+  margin-right 25px
+
+.trip-stops--places--item
+  display flex
+  align-items center
+  margin-left -4px
+  cursor pointer
+
+
+  .popup-gogocar-cargo--checkbox
+    margin-right 25px
+    z-index 1
+    background-color #424B5B
+
+  span
+    font-family 'Oswald 400',sans-serif
+    font-size 18px
+    color #fff
+.trip-stops--places--item.active
+  .popup-gogocar-cargo--checkbox
+    background-color #FDAB3E
+.mb-100px
+  margin-bottom 100px
+
+.trip-stops--places--buttons
+  display flex
+  align-items center
+  justify-content center
+.m-0-auto-none
+  margin 0

@@ -1,0 +1,152 @@
+@import 'utils/fonts.styl'
+@import 'utils/vars.styl'
+@import 'utils/mixins.styl'
+@import 'libs.styl'
+
+
+
+
+*
+	font-size 15px
+	outline none !important
+html
+	font-size baseFontSize
+	height 100%
+	line-height 1.3
+
+body
+	font-family mainFont
+	height 100%
+	background-color #292F39
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color #fff
+	text-decoration none
+
+	&:hover
+		text-decoration none
+		color #FDAB3E
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+	padding 60px 0
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+
+.content
+	flex 1 0 auto
+
+.section-title
+	font-family 'Oswald 500',sans-serif
+	font-size 32px
+	color #fff
+	text-align center
+	margin-bottom 20px
+.section-desc
+	font-family 'Montserrat 500',sans-serif
+	font-size 16px
+	color rgba(255, 255, 255, 0.5)
+	margin-bottom 60px
+	text-align center
+
+.overflow-y-body
+	overflow-y scroll
+
+.m-0-auto
+	margin 0 auto
+.list-paeg
+	ul
+		width 48%
+		display flex
+		flex-direction column
+
+	li
+		display list-item
+		list-style decimal
+		color #ff8300
+// Компоненты
+@import "components/calendar.styl"
+@import "components/components.styl"
+
+//Модули
+@import "modules/modules.styl"
+
+// СТРАНИЦЫ
+// Главная страница
+@import 'pages/index.styl'
+
+@import "pages/find-trip.styl"
+
+@import "pages/trip.styl"
+
+@import "pages/plan-trip.styl"
+
+@import "pages/car-place.styl"
+
+@import "pages/car-to-book.styl"
+
+@import "pages/type-trip.styl"
+
+@import "pages/suggest-late.styl"
+
+@import "pages/trip-map-deploy.styl"
+
+@import "pages/trip-stops.styl"
+
+@import "pages/when-trip.styl"
+
+@import "pages/trip-choise-car.styl"
+
+@import "pages/remove-price.styl"
+
+@import "pages/add-photo.styl"
+
+@import "pages/trip-comment.styl"
+
+@import "pages/notific-trip.styl"
+
+@import "pages/you-trip.styl"
+
+@import "pages/acc-control.styl"
+
+@import "pages/personal-settings.styl"
+
+@import "utils/dop-style.styl"
+
+@import "media.styl"
+
+
+

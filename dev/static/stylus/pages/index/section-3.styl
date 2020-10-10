@@ -1,0 +1,99 @@
+.gogocar-trip--item__town
+  display flex
+  justify-content space-between
+  align-items center
+
+.gogocar-trip--item__top
+  background: #424B5B;
+  border-radius: 15px;
+  z-index 2
+  position relative
+
+.gogocar-trip--item-town__route
+  padding 15px
+
+.gogocar-trip--item__town
+  margin-bottom 15px
+
+  span
+    font-family 'Oswald 400',sans-serif
+    font-size 18px
+    color #fff
+    display block
+.gogocar-trip--item__route
+  display flex
+  align-items center
+  justify-content space-between
+  position relative
+  margin-bottom 5px
+
+  &:before
+    content ''
+    position absolute
+    right 0
+    left -5px
+    display block
+    width calc(100% - 30px)
+    border-bottom 3px dashed #FDAB3E
+    margin 0 auto
+
+
+.gogocar-trip--item__route--start
+  background-color #FDAB3E
+  border-radius 50%
+  size 9px
+  display block
+
+.gogocar-trip--item__route--end
+  background-color #FDAB3E
+  border-radius 50%
+  size 11px
+  display block
+  box-shadow 0 0px 0px 3px rgba(253, 171, 62, 0.6)
+
+.gogocar-trip--item__km
+  display flex
+  align-items center
+  text-align center
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #fff
+  justify-content center
+
+  span
+    color #FDAB3E
+    font-size 14px
+.gogocar-trip--item__bottom
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px 20px
+  padding-top 27px
+  background: #363D4A;
+  border-radius: 0px 0px 15px 15px;
+  position relative
+  top -12px
+.gogocar-gray-icons2
+  size(42px)
+  transition all linear .2s
+  .icon
+    size(16px)
+    stroke: #777D87;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  &:hover
+    background: #FDAB3E;
+    box-shadow: 0px 0px 20px rgba(253, 191, 90, 0.2);
+    .icon
+      stroke: #fff;
+
+
+.gogocar-trip--item__price
+  font-family 'Oswald 500',sans-serif
+  font-size 18px
+  color #fff
+.gogocar-trip--item
+  margin-bottom 60px
+

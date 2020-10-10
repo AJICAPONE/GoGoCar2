@@ -1,0 +1,40 @@
+section.trip-map-deploy.p-0
+    .container
+        .trip-map--wrap
+            .col-xl-5.col-lg-5.col-md-7.col-sm-12.trip-map--absolute.gogocar-box
+                .main-section--title.text-center Где #[span бы вы хотели]
+                .main-section--title.text-center.mb-4 выгрузить #[span машину ?]
+                .col-xl-12.col-lg-12.suggest-late--inputs
+                    .gogocar-input--wrapper
+                        .gogocar-gray-icons
+                            +icon('map2')
+                        input.gogocar-input-v1.suggest-late--input--to(type="text" placeholder="Введите место...")
+                    ul.suggest-late--result--list
+                        li.suggest-late--result--item
+                            .suggest-late--to--location
+                                .suggest-lat--to--town Массив Куш арик
+                                .suggest-lat--to--country Андижан, Узбекистан
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+                        li.suggest-late--result--item
+                            .suggest-late--to--location
+                                .suggest-lat--to--town Массив Куш арик
+                                .suggest-lat--to--country Андижан, Узбекистан
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+                        li.suggest-late--result--item
+                            .suggest-late--to--location
+                                .suggest-lat--to--town Массив Куш арик
+                                .suggest-lat--to--country Андижан, Узбекистан
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+                        .trip-map--buttons.mt-3
+                            .gogocar-yellow-button Далее
+                            .gogocar-gray-button Отмена
+    .trip-map-deploy--map
+        script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa33765aebc6379d90ab27f1107925d437548f3bd54a36efa2650eafc8ff4b33f&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=false")
+    .trip-map--buttons__mobile
+        .container
+            .trip-map--buttons.mt-3
+                .gogocar-yellow-button Далее
+                .gogocar-gray-button Отмена

@@ -1,0 +1,484 @@
+.footer-country-list--block,.footer-country-choise--list
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom 55px;
+  display: none;
+  border-top: 0;
+  border-radius: 10px;
+  background-color: #363d4a;
+  box-shadow: 0px 0px 40px rgba(27,33,43,0.85);
+  padding: 10px 15px;
+.fci-choise,.footer-country-choise--item
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+
+// Мобильные блоки
+
+.header-sandwich-menu
+  display none
+  align-items: center;
+  justify-content: center;
+  background: #363d4a;
+  border-radius: 10px;
+  padding: 11px;
+  size(40px)
+  transition: all linear 0.2s;
+
+.how-dots--wrap,.why-dots--wrap,.blog-main-dots--wrap
+  display none
+  margin-bottom 30px
+
+  li
+    display inline-block
+    background-color rgba(255, 255, 255, 0.23)
+    size(8px)
+    border-radius 50%
+    margin-right 10px
+    transition all linear .2s
+    &:last-child
+      margin-right 0
+.how-dots--wrap li.slick-active,.why-dots--wrap li.slick-active,.blog-main-dots--wrap li.slick-active
+  background-color #FDAB3E
+  size(10px)
+
+.header-user-profile
+  display none
+.all-trip--sort span
+  margin-left 5px
+.go-read-all-articles
+  display none
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  height 48px
+.all-trip--right
+  position relative
+.footer-logo-social
+  display none
+.popular-trip-slider-js .gogocar-yellow-button
+  display none
+
+.all-trip--sort--select
+  position absolute
+  display none
+  top: 75px;
+  left 0
+  background: #363d4a;
+  box-shadow: 0px 0px 40px rgba(27,33,43,0.85);
+  border-radius: 10px;
+  width: 80%
+  z-index 4
+  padding 10px 0
+.all-trip--sort--select__item
+  margin-bottom 8px
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  color #fff
+  cursor pointer
+  padding 5px 15px
+
+.all-trip--sort.active
+  .icon
+    transform rotate(-90deg)
+
+.all-trip--left-span-mobile
+  display none
+
+.media-576
+  display none
+.gogocar-ready-plan__mobile
+  display none
+
+.type-trip--list .col-xl-6
+  display flex
+  align-items stretch
+
+.when-trip-date
+  display flex
+  justify-content center
+  align-items center
+  position relative
+.when-trip-calendar
+  .datepicker-container
+    width 300px
+    margin 0 auto
+
+.when-trip--date--arrows
+  display flex
+  justify-content space-between
+  align-items center
+  position absolute
+  width 70%
+  pointer-events none
+  .wtda-arrow--prev,.wtda-arrow--next
+    pointer-events auto
+    cursor pointer
+
+
+  .wtda-arrow--prev
+    left -25px
+    .icon
+      transform rotate(-180deg)
+  .wtda-arrow--next
+    right -25px
+
+.trip-select-car.active
+  .trip-select--arrow
+    .icon
+      transform rotate(-90deg)
+.remove-price--content__icon__route
+  display flex
+  width 80%
+.remove-price--route
+  width 100%
+.remove-price--content .gogocar-gray-icons
+  min-width 42px
+
+.remove-price--content
+  .gogocar-trip--item
+    display none
+
+.gogocar-you-trip-detail--red
+  display none
+  justify-content center
+  align-items center
+  color: #FF4B55;
+  text-shadow: 0px 0px 10px rgba(255, 75, 85, 0.3);
+  font-family 'Montserrat SB',sans-serif
+  font-size 15px
+
+.gogocar-you-trip-detail--yellow
+  display none
+  justify-content center
+  align-items center
+  color: #FDAB3E
+  text-shadow: 0px 0px 10px rgba(253, 171, 62, 0.3);
+  font-family 'Montserrat SB',sans-serif
+  font-size 15px
+
+.account-control--top__right--level--list__mobile
+  display none
+  justify-content space-between
+  align-items center
+  width 100%
+  position relative
+  flex-direction column
+
+.account-control--top--right--line__mobile
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  background-color: #FDAB3E
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  font-family: 'Montserrat 500', sans-serif;
+  font-size: 10px;
+  color: #fff
+  box-shadow 0px 0px 4px 0px #fdab3e
+
+.account-control--top--right--line__mobile_i
+  position relative
+  z-index 2
+  display flex
+  justify-content center
+  align-items center
+  width 100%
+
+.actrl_m
+  position: absolute
+  display flex
+  justify-content center
+  align-items center
+  size(12px)
+  margin-right: 85px;
+  transition: all 1s ease;
+  color: rgba(40,48,55,.31);
+  border-radius: 50%;
+  background-color: #424B5B
+  box-shadow: 0px 0px 0px 4px #3E4555
+
+  &:after
+    position: absolute;
+    z-index -1
+    content: '';
+    left: 6px;
+    display: block;
+    width: 98px;
+    height: 8px;
+    transition: all 1s ease;
+    background: #eee;
+    background: linear-gradient(to left,#424B5B 50%,#FDAB3E 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+.account-control--top--right--line__mobile_i.active .actrl_m:after
+  background-position: left bottom;
+.account-control--top--right--line__mobile_i.active .actrl_m
+  background-color: #FDAB3E
+  box-shadow: 0px 0px 0px 4px #B08143
+.account-control--top--right--line__mobile_i:last-child .actrl_m
+    margin-right 0
+
+.account-control--top--right--line__mobile_i:first-child .actrl_m:after
+  left: -35px;
+  width: 131px;
+  border-radius 5px
+
+.account-control--top--right--line__mobile_i:last-child .actrl_m:after
+  right: -35px;
+  width: 45px;
+  border-radius 5px
+.account-control--top--right--line__mobile--list
+  display flex
+  justify-content space-between
+  align-items center
+  width 100%
+
+.acb-overfrow
+  overflow-y scroll
+  max-height 431px
+
+.acb-overfrow::-webkit-scrollbar
+  width 0
+
+.header-profile--menu__mobile
+  display none
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
+  background: #363d4a;
+  border-radius: 10px;
+  padding: 11px;
+  transition: all linear 0.2s;
+  .icon
+    size(18px)
+
+.header-mobile-menu
+  position fixed
+  overflow-y scroll
+  display block
+  background-color #292F39
+  bottom 0
+  right 0
+  left 0
+  top 80px
+  height calc(100vh - 80px)
+  width 100%
+  transform translateX(-100vw)
+  transition all .8s ease
+  will-change transform
+  z-index 999
+  padding-top 20px
+
+.header-mobile-menu.active
+  transform translateX(0)
+
+.personal-content--prefes--title
+  display none
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #fff
+  margin-bottom 15px
+
+.gogocar-added-car-li
+  margin-bottom 30px
+  height 100px
+
+.personal-review--circule--desc
+  display none
+  font-size 13px
+  color #9A9EA4
+  font-family 'Montserrat 500',sans-serif
+
+.personal-pay--data--mobile
+  display none
+.pp-date
+  color rgba(255, 255, 255, 0.6)
+.personal-pay--header__mobile
+   display none
+.personal-pay--filter--bottom--wrap
+  .select-input
+    border-radius 5px
+
+.personal-pay--filter--top--mobile
+  display none
+  .gogocar-yellow-icons
+    size(35px)
+    .icon
+      size(17px)
+  .personal-filter--title
+    font-size 14px
+    color rgba(255, 255, 255, 0.5)
+.gogocar-go-back-chat--mobile
+  display: none;
+.gogocar-go-back--mobile
+  display none
+
+.chat-container-footer-wrap--inputs
+  box-shadow 0 0 17px 8px #0000001a
+.chat-container-header
+  box-shadow 0 0 12px 9px rgba(0,0,0,0.102)
+
+.chat-container-main--info::-webkit-scrollbar-button,.you-trip-chat-content::-webkit-scrollbar-button
+  size(8px)
+  display block
+  background-color transparent
+
+.chat-container-option--message--item--cancel
+  display none
+
+.chat-answer-message
+  margin-bottom 0
+.personal-pay--data--mobile
+  margin-bottom 30px
+.personal-add--appeal--mobile
+  display none
+
+.personal-delete--title
+  font-family 'Oswald 400',sans-serif !important
+
+.main-section-search--submit--found
+  display none
+
+.header-panel--fixed
+  position fixed
+  display none
+  justify-content space-between
+  align-items center
+  padding 10px 15px
+  bottom 0
+  left 0
+  right 0
+  width 100%
+  height 65px
+  background: #363D4A;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0px 0px;
+  z-index 1550
+  transition .6s ease
+.header-panel--fixed.anim-bottom
+  bottom -65px
+.header-panel--fixed--item
+  display flex
+  flex-direction column
+  align-items center
+  width 15.5%
+  .icon
+    size(22px)
+    margin-bottom 8px
+  span
+    font-size 11px
+    font-family 'Oswald 400',sans-serif
+    color #fff
+
+.hpfi-main
+  position relative
+  justify-content center
+  align-items center
+  size(55px)
+  background-color #FDAB3E
+  border-radius 50%
+  margin-bottom 15px
+  box-shadow 0px 4px 11px 2px rgba(253,171,62,0.3)
+  .icon
+    position relative
+    top 5px
+    size(26px)
+  &:before
+    content ''
+    position absolute
+    size 75px
+    border-radius 50%
+    top -12px
+    z-index -1
+    background-color #363D4A
+
+.modal
+  z-index 1551
+
+.chat-delete-out-msg
+  display none
+
+.popular-trip-slider .gogocar-yellow-button
+  display none
+
+.popup-output--item--value--icon
+  display none
+  align-items center
+  justify-content center
+  border-radius 50%
+  size(20px)
+  .icon
+    size(10px)
+    margin-bottom 0 !important
+.popup-icon-red
+  background-color #FF4B55
+.popup-icon-green
+  background-color #09B983
+
+.when-trip
+  .when-trip-calendar .gogocar-calendar-next,.gogocar-calendar-prev
+    pointer-events none
+    opacity 0
+  .trip-show-calendar .gogocar-calendar-next,.gogocar-calendar-prev
+    pointer-events none
+    opacity 0
+
+.chat-content-buttons__driver--992
+  display none
+.chat-gogocar-back--992
+  display none
+  size(42px)
+  min-width 42px
+  position relative
+  left 0
+  margin-right 25px
+  background-color rgba(255, 255, 255, 0.05)
+
+
+  .icon
+    size(14px)
+    transform rotate(-180deg)
+
+.car-place-select--car,.car-select-car--list
+  margin-bottom 20px
+
+.personal-loaded--file__icon
+  display flex
+  justify-content center
+  align-items center
+  margin-left 10px
+  cursor pointer
+  size(30px)
+  .icon
+    size(18px)
+.personal-appear--file--wrap
+  margin-bottom 0
+
+.popup-go-jaloba
+  .popup-gogocar-type-cargo--item
+    justify-content space-between
+    .popup-gogocar-cargo--checkbox
+      margin-right 0
+.popup-go-jaloba.active
+  .popup-gogocar-cargo--checkbox
+    display flex
+    justify-content center
+    align-items center
+    background-color #FDAB3E
+
+    &:before
+      content '✔'
+      font-size 13px
+.back-text-color
+  background-color #424B5B
+.back-text-color-wrap:before
+ background-color #424B5B
+.chat-content--warning
+  cursor pointer
+
+
+

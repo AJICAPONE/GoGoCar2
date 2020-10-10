@@ -1,0 +1,71 @@
+.suggest-late
+  overflow-x hidden
+.suggest-late--inputs
+  margin 0 auto
+  .gogocar-gray-icons
+    size(42px)
+    .icon
+      size(22px)
+  .gogocar-input--wrapper
+    margin-bottom 15px
+.suggest-late--result--item__left
+  display flex
+  align-items center
+  .gogocar-gray-icons
+    position relative
+    left auto
+    margin-right 15px
+
+  span
+    font-family 'Montserrat 500',sans-serif
+    font-size 14px
+    color #fff
+
+.suggest-late--result--list
+  display none
+.suggest-late--result--item
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px 15px
+  padding-right 0
+  position relative
+  cursor pointer
+
+
+  &:hover
+    background-color #363D4A
+    &:before
+      content ''
+      position absolute
+      background-color  #363D4A
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      left: -100vw;
+      z-index -1
+
+    &:after
+      content ''
+      position absolute
+      background-color  #363D4A
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      right: -100vw;
+      z-index -1
+
+.suggest-late--to--location
+  display flex
+  flex-direction column
+
+.suggest-lat--to--town
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color #fff
+  margin-bottom 10px
+
+.suggest-lat--to--country
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color rgba(255, 255, 255, 0.4)

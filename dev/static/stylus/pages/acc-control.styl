@@ -1,0 +1,393 @@
+.account-control--top__panel
+  display flex
+  padding 30px
+  margin-bottom 30px
+.account-control--panel__img--wrap
+  display flex
+  justify-content center
+  align-items center
+  size(90px)
+  border-radius 10px
+  cursor pointer
+  position relative
+  margin-right 20px
+.account-control--panel__add--img
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  position absolute
+  right 0
+  left 0
+  bottom 0
+  top 0
+  pointer-events none
+
+  .icon
+    size(22px)
+    fill rgba(255, 255, 255, 0.6)
+    margin-bottom 5px
+  span
+    color rgba(255, 255, 255, 0.6)
+    font-family 'Montserrat 500',sans-serif
+    font-size 12px
+    text-align center
+.acc-img
+  position absolute
+  line-height 0
+  right 0
+  bottom 0
+  top 0
+  left 0
+  width 100%
+  height 100%
+  opacity 0
+  cursor pointer
+  z-index 3
+
+.account-control--panel__img
+  position absolute
+  left 0
+  right 0
+  top 0
+  bottom 0
+  z-index 2
+  border-radius 10px
+  background: rgba(78, 89, 108, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  background-size cover
+  background-repeat no-repeat
+  background-position center
+
+.account-control--panel--name
+  font-family 'Oswald 500',sans-serif
+  font-size 22px
+  color #fff
+  margin-bottom 10px
+.account-control--top-panel__edit
+  display flex
+  flex-direction column
+.account-control--panel--edit
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color #FDAB3E
+
+.account-control--top__left
+  display flex
+  align-items center
+.account-control--top__right
+  margin-top -10px
+.account-control--top__right--title
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 15px
+
+  .icon
+    size(16px)
+    filter drop-shadow(0px 0px 4px #FDAB3E)
+
+  span
+    font-family 'Oswald 500',sans-serif
+    font-size 16px
+    color #fff
+    margin-right 15px
+
+.account-control--top__right--level--list
+  display flex
+  align-items center
+  justify-content space-between
+  position relative
+  width: calc(100% - 30px);
+
+  &:before
+    content ''
+    absolute-center()
+    top 56px
+    width: calc(100% + 45px);
+    height 8px
+    background-color #424B5B
+    border-radius 5px
+
+
+
+
+.account-control--top__right--level--item
+  display flex
+  align-items center
+  justify-content center
+  position relative
+  border-radius 8px
+  background-color #424B5B
+  text-align center
+  width 100px
+  height 30px
+  font-family 'Montserrat 500',sans-serif
+  font-size 10px
+  color rgba(255, 255, 255, 0.4)
+  &:before
+    content ''
+    absolute-center()
+    top 33px
+    clip-path: polygon(50% 83%, 0 0, 100% 0);
+    size(22px)
+    background-color #424B5B
+    border-radius 2px
+
+  &:after
+    content ''
+    absolute-center()
+    top 55px
+    box-shadow 0px 0px 0px 4px #3E4555
+    size(12px)
+    background-color #424B5B
+    border-radius 50%
+
+
+.account-control--top__right--level--item.active
+  background-color #FDAB3E
+  color #fff
+  box-shadow 0px 0px 4px 0px #FDAB3E
+
+  &:before
+    background-color #FDAB3E
+
+  &:after
+    content ''
+    absolute-center()
+    top 55px
+    box-shadow 0px 0px 0px 4px #B08143
+    size(12px)
+    background-color #FDAB3E
+    border-radius 50%
+
+  .account-control--top--right--line
+    position absolute
+    width 145px
+    height 8px
+    background-color #FDAB3E
+    border-radius 5px
+    top 52px
+    box-shadow 0px 0px 4px 0px #FDAB3E
+
+.account-control--bottom__panel
+  margin 0
+.account-control--title--wrap
+  border-bottom 1px solid rgba(153, 163, 181, 0.3);
+.account-control--title
+  font-family 'Oswald 500',sans-serif
+  font-size 20px
+  color #fff
+  padding 20px
+.account-control--prefer--list
+  justify-content space-between
+  margin 0
+  margin-bottom 25px
+
+.account-control--prefer--item
+  display flex
+  justify-content center
+  align-items center
+  position relative
+  background: rgba(78, 89, 108, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius 15px
+  size(65px)
+
+.account-control--prefer--item.active
+  background #424B5B
+  border: 1px solid #424B5B
+
+  &:before
+    content ''
+    background: #FDAB3E;
+    border-radius: 6px 6px 0px 0px;
+    width 30px
+    height 6px
+    position absolute
+    bottom 0
+
+
+  .icon
+    size(34px)
+
+.account-control--prefer--choise
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  color #FDAB3E
+  text-align center
+  cursor pointer
+
+
+.account-control--bottom__panel--content
+  display flex
+  flex-direction column
+  position relative
+  margin-bottom 30px
+
+  &:last-child
+    margin-bottom 0
+.acc-h-100
+  height 100%
+.account-control--bottom__panel--body--title
+  font-family 'Oswald 500',sans-serif
+  font-size 17px
+  color #fff
+  text-align center
+  margin-bottom 15px
+
+.account-control--bottom__panel--body--desc
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+  margin-bottom 30px
+  text-align center
+
+.gogocar-button--account-control
+  width 190px
+  height 48px
+  font-family 'Montserrat 500',sans-serif
+
+.account-control--bottom__panel--body
+  display inline-flex
+  flex-direction column
+  height 100%
+  justify-content space-between
+  padding 25px 20px
+
+
+  .icon
+    width 100%
+    height 40px
+.account-control--bottom__panel--wrap
+  margin-bottom 30px
+  &:first-child
+    padding-left 0
+  &:nth-child(4n+4)
+    padding-left 0
+
+  &:nth-child(3n+3)
+    padding-right 0
+
+.account-control--submited--item
+  display flex
+  justify-content space-between
+  align-items center
+  font-family 'Montserrat SB',sans-serif
+  font-size 14px
+  margin-bottom 30px
+
+  .account-control--submited--item--name
+    font-size 13px
+
+.account-control--submited--icon
+  display flex
+  align-items center
+  justify-content center
+  size(21px)
+  border-radius 50%
+  background-color #F37535
+
+
+  .icon
+    size(10px)
+  .icon-ok
+    size(14px)
+
+.acc-not-submit
+  color #F37535
+  .account-control--submited--icon
+    background-color #F37535
+
+.acc-submit
+  color #09B983
+  .account-control--submited--icon
+    background-color #09B983
+
+.account-control--notific--item
+  display flex
+  justify-content space-between
+  align-items center
+  border-bottom 1px solid rgba(153, 163, 181, 0.3)
+  margin-bottom 15px
+
+.account-control--notific--item--delete
+  cursor pointer
+
+  .icon
+    size(12px)
+
+.account-control--notific--item--name
+  display block
+  font-family 'Oswald 400',sans-serif
+  font-size 15px
+  color #fff
+  margin-bottom 10px
+
+.account-control--notific--item--text
+  font-family 'Montserrat 400',sans-serif
+  font-size 12px
+  color rgba(255, 255, 255, 0.5)
+  margin-right 25px
+  margin-bottom 15px
+
+.account-control--message--profile__img
+  size(50px)
+  background-size cover
+  background-repeat no-repeat
+  background-position center
+  margin-right 15px
+
+.account-control--message--profile
+  display flex
+  align-items center
+  margin-bottom 15px
+
+.account-control--message--profile--info
+  display flex
+  flex-direction column
+
+.account-control--message--profile--info__name
+  margin-bottom 10px
+  font-family 'Oswald 400',sans-serif
+  font-size 14px
+  color #fff
+
+.account-control--message--profile--info__date
+  font-family 'Montserrat 400',sans-serif
+  font-size 12px
+  color rgba(255, 255, 255, 0.5)
+
+.account-control--date-register
+  display flex
+  align-items center
+  background: rgba(78, 89, 108, 0.1);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius 15px
+  padding 10px
+
+.account-control--date-register--icon
+  position relative
+  display flex
+  flex-direction column
+  justify-content flex-end
+  align-items center
+  size(40px)
+  background-color #4E596C
+  border-radius 10px
+  margin-right 15px
+
+  .icon
+    position relative
+    top -1px
+    size(29px)
+
+.account-control--date-register--text
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #fff
+
+
+
+
+

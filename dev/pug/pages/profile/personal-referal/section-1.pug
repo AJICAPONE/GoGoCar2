@@ -1,0 +1,35 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Реферальная программа
+                    .personal-content--body.personal-referal--body
+                        .personal-referal--content
+                            .col-xl-5.col-lg-5.personal-count--balance--wrap.gogocar-box
+                                .personal-count--left
+                                    .personal-count--title Ваши баллы
+                                    .personal-count--balance 6 000 UZS
+                                .personal-count--right
+                                    .gogocar-gray-icons
+                                        +icon('info')
+                            .col-xl-5.col-lg-5.personal-count--balance--wrap.gogocar-box
+                                .personal-count--left
+                                    .personal-count--title Вы пригласили
+                                    .personal-count--balance 11 друзей
+                                .personal-count--right
+                                    .gogocar-gray-icons
+                                        +icon('info')
+                        .personal-add--car--title.mb-3 Ваша пригласительная ссылка:
+                        .personal-referal--input
+                            .plan-trip--location__wrap.popup-output--money--wrap
+                                .plan-trip--location__icon.gogocar-gray-icons
+                                    +icon('link')
+                                input.gogocar-input-v1#copy-rf-input(type="text" placeholder="http://tany136ggc/gogocar.com/referral")
+                                .plan-trip--location__icon.gogocar-gray-icons#copy-referal-link(onclick="copyReferal()")
+                                    +icon('copy')
+                            .gogocar-yellow-button.m-0.w-190 Поделиться
+                        .personal-add--car--desc Отправьте ссылкусвоему другу, чтобы получать бонусы на поездки!

@@ -1,0 +1,194 @@
+.main-section
+  padding-top 0
+.main-section--wrap
+  display flex
+  align-items center
+  padding-top 110px
+  margin-bottom 120px
+.main-section--car
+  padding 0
+.main-section--info
+  padding-left 0
+.main-section--illustration
+  position relative
+  height 42vh
+.main-section-svg
+  position absolute
+  width 100%
+  height 100%
+  .icon
+    width 100%
+    height 100%
+
+.main-section--title
+  font-family 'Oswald 500',sans-serif
+  font-size 35px
+  color #FDAB3E
+  margin-bottom 30px
+  span
+    font-size 35px
+    color #fff
+.main-section--desc
+  font-family 'Montserrat SB',sans-serif
+  font-size 17px
+  color #fff
+  margin-bottom 60px
+.main-section--mobile-platform
+  display flex
+  align-items center
+.main-section--platforms
+  display flex
+  align-items center
+  background: #363D4A;
+  border: 1px solid #424B5B;
+  border-radius: 25px;
+  padding 4px
+  width 100%
+  max-width 170px
+  height 50px
+  margin-right 30px
+  &:hover
+    text-decoration none
+  &:last-child
+    margin-right 0
+.main-section--info-platform
+  display flex
+  flex-direction column
+
+.main-section--icons
+  display flex
+  align-items center
+  justify-content center
+  background-color #424B5B
+  border-radius 50%
+  margin-right 10px
+  size(40px)
+  .icon
+    size(22px)
+
+.main-section--available
+  font-family 'Montserrat 500',sans-serif
+  font-size 8px
+  color rgba(255, 255, 255, 0.6)
+.main-section--name-platform
+  font-family 'Montserrat SB',sans-serif
+  font-size 12px
+  color rgba(255, 255, 255, 0.6)
+.main-section-search
+  display flex
+  align-items center
+  justify-content space-between
+  background: #363D4A;
+  border-radius: 15px;
+  padding 0 20px
+  padding-right 0
+.main-section-search--icon
+  background: #424B5B;
+  border-radius: 12px;
+  display flex
+  align-items center
+  justify-content center
+  padding 10px
+.main-section-search--wrap__input
+  display flex
+  align-items center
+  padding 0
+  height 90px
+  position relative
+  max-width calc(25% - 10px)
+
+  &:first-child:before
+    display none
+
+  &:before
+    content ''
+    position relative
+    top 0
+    bottom 0
+    width 0.9px
+    height 90px
+    background-color rgba(153, 163, 181, 0.3)
+    margin-right 15px
+
+
+
+  &:last-child
+    margin-right 0
+    border-right none
+  .icon
+    size(30px)
+  input
+    absolute($left:0,$right:0,$top:0,$bottom:0)
+    background-color transparent
+    border none
+    color #fff
+    font-family 'Oswald 500',sans-serif
+    font-size 18px
+    padding-left 80px
+    width 100%
+    height 100%
+
+
+    &::placeholder
+      color #c4c4c4
+
+.main-section-search--wrap__input:first-child input
+  padding-left 65px
+.main-section-search--submit
+  position absolute
+  right 15px
+  display flex
+  align-items center
+  justify-content center
+  size(50px)
+  border none
+  background-color: #FDAB3E;
+  box-shadow: 0px 0px 20px rgba(253, 191, 90, 0.2);
+  border-radius: 15px;
+  .icon
+    size(23px)
+.main-section-search--peoples__count--wrap
+  display none
+  position absolute
+  bottom -70px
+  width 100%
+  user-select none
+.main-section-search--peoples__count
+  display flex
+  align-items center
+  justify-content space-between
+  background: #363D4A;
+  box-shadow: 0px 0px 20px rgba(41, 47, 57, 0.6);
+  border-radius: 10px;
+  height 60px
+  padding 0 20px
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #fff
+
+.main-section-search--controls
+  cursor pointer
+
+  .icon
+    size(35px)
+    fill #fdab3e
+    transition all linear .2s
+    &:active
+      filter drop-shadow(0px 0px 10px rgba(253,191,90,0.7))
+
+.main-section-search-count-div
+  font-size 28px
+
+.people-count-start
+  cursor default
+  .icon
+    fill #919191
+
+    &:active
+      filter none
+.people-count-end
+  cursor default
+  .icon
+    fill #919191
+    &:active
+      filter none

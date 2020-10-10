@@ -1,0 +1,12 @@
+#popup-covid.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                +icon('group-covid')
+                h3.main-section--title.font-size-25.mb-5 COVID-19: #[span Согласны взять только одного попутчика и посадить его сзади?]
+                .popup-covid--buttons
+                    .gogocar-yellow-button.mb-4 Да, возьму только одного попутчика
+                    .gogocar-gray-button Нет, возьму с собой больше людей

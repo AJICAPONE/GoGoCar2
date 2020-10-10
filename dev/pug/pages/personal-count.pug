@@ -1,0 +1,11 @@
+extends ../layout/personal
+
+block variables
+    - var title = 'Счет аккаунта'
+    - var pageClass = 'other-page'
+
+block content
+    include ../modules/breadcrumbs
+    include profile/personal-count/section-1
+    include ../popup-modal/popup-output-money
+    include ../popup-modal/popup-input-money

@@ -1,0 +1,37 @@
+section.suggest-late
+    .container
+        .suggest-late--wrap
+            h1.main-section--title.text-center.mb-5 Куда #[span едем ?]
+            .col-xl-8.col-lg-8.suggest-late--inputs
+                .gogocar-input--wrapper
+                    .gogocar-gray-icons
+                        +icon('map2')
+                    input.gogocar-input-v1.suggest-late--input--to(type="text" placeholder="Санкт Петербург, Санкт-Петербург")
+                ul.suggest-late--result--list
+                    li.suggest-late--result--item
+                        .suggest-late--to--location
+                            .suggest-lat--to--town Ташкент
+                            .suggest-lat--to--country Узбекистан
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+                    li.suggest-late--result--item
+                        .suggest-late--to--location
+                            .suggest-lat--to--town Ташкент
+                            .suggest-lat--to--country Ташкент, Узбекистан
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+                    li.suggest-late--result--item
+                        .suggest-late--to--location
+                            .suggest-lat--to--town Ташкент
+                            .suggest-lat--to--country Эшонгузар жоме масжиди, Ташкент, Узбекистан
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+                    li.suggest-late--result--item
+                        .suggest-late--to--location
+                            .suggest-lat--to--town Ташкент
+                            .suggest-lat--to--country Ташкент, Узбекистан
+                        .gogocar-gray-icons2
+                            +icon('arrow-right3')
+
+
+                    .gogocar-yellow-button.mt-5 Продолжить

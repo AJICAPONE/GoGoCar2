@@ -1,0 +1,15 @@
+<svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 26.52">
+  <title>calendar</title>
+  <g>
+    <path d="M48.8,23.68H21.2a1.2035,1.2035,0,0,0-1.2,1.2v4.08H50V24.88A1.2035,1.2035,0,0,0,48.8,23.68Z" transform="translate(-20 -20.74)" style="fill: #fdab3e"/>
+    <path d="M46.1,20.74H40.94v2.94H46.1Z" transform="translate(-20 -20.74)" style="fill: #77849c"/>
+    <path d="M29.06,20.74H23.9v2.94h5.16Z" transform="translate(-20 -20.74)" style="fill: #77849c"/>
+    <path d="M48.8,47.26H21.2a1.2035,1.2035,0,0,1-1.2-1.2V28.96H50v17.1A1.2035,1.2035,0,0,1,48.8,47.26Z" transform="translate(-20 -20.74)" style="fill: #f3f3f3"/>
+    <path d="M37.34,32.56H32.66v3.42h4.68Z" transform="translate(-20 -20.74)" style="fill: #acb2ba"/>
+    <path d="M46.7,32.56H42.02v3.42H46.7Z" transform="translate(-20 -20.74)" style="fill: #acb2ba"/>
+    <path d="M27.98,40.24H23.3v3.42h4.68Z" transform="translate(-20 -20.74)" style="fill: #acb2ba"/>
+    <path d="M37.34,40.24H32.66v3.42h4.68Z" transform="translate(-20 -20.74)" style="fill: #acb2ba"/>
+    <path d="M46.7,40.24H42.02v3.42H46.7Z" transform="translate(-20 -20.74)" style="fill: #acb2ba"/>
+    <path d="M27.5,33.7H26.3V32.5a.6333.6333,0,1,0-1.26.06v1.2h-1.2a.66.66,0,1,0,0,1.32h1.2v1.2a.66.66,0,0,0,1.32,0v-1.2h1.2a.6659.6659,0,0,0,.66-.66A.8275.8275,0,0,0,27.5,33.7Z" transform="translate(-20 -20.74)" style="fill: #425a6b"/>
+  </g>
+</svg>

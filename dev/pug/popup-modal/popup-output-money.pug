@@ -1,0 +1,32 @@
+#popup-output-money.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap.modal-770(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-modal--money.popup-icon-size
+                h3.main-section--title--v2.font-size-25.mb-5 Вывод средст
+                .plan-trip--location__wrap.popup-output--money--wrap
+                    .plan-trip--location__icon.gogocar-gray-icons
+                        +icon('money')
+                    input.gogocar-input-v1(type="text" placeholder="Укажите сумму вывода...")
+                    .gogocar-yellow-icons
+                        +icon('arrow-right')
+                .popup-output--money--title Доступно для списания #[span 60 000 UZS] из #[span 160 000 UZS]
+                ul.popup-output--list
+                    li.popup-output--item
+                        .popup-output--item--name Оплата за проезд – #[span 90 000 UZS]
+                        .popup-output--item--value #[span.puiv--red Недоступно] (поездка еще не завершена)
+                        .popup-output--item--value--icon.popup-icon-red
+                            +icon('x')
+                    li.popup-output--item
+                        .popup-output--item--name Оплата за проезд – #[span 10 000 UZS]
+                        .popup-output--item--value.poiv--green Доступно
+                        .popup-output--item--value--icon.popup-icon-green
+                            +icon('ok')
+                    li.popup-output--item
+                        .popup-output--item--name Пополнение – #[span 60 000 UZS]
+                        .popup-output--item--value.poiv--green Доступно
+                        .popup-output--item--value--icon.popup-icon-green
+                            +icon('ok')
+

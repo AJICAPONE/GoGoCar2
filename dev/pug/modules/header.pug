@@ -1,0 +1,136 @@
+header
+    .header-container
+        .container
+            .header-wrap
+                .header-sandwich-menu
+                    +icon('menu')
+                .header-logo
+                    a(href="/")
+                        +icon('logo2')
+                .header-trip
+                    .header-trip--wrap
+                        a.header-trip--wrap__link(href="/") Найти #[span поездку]
+                        a.header-trip--wrap__link(href="/") Предложить #[span поездку]
+                .header-profile
+                    .header-profile--menu
+                        +icon('menu')
+                        ul.header-profile--menu--list
+                            a.header-profile--menu--item(href="/")
+                                +icon('home')
+                                span Управление
+                            a.header-profile--menu--item(href="/")
+                                +icon('profile')
+                                span Профиль
+                            a.header-profile--menu--item(href="/")
+                                +icon('message')
+                                span Сообщение
+                            a.header-profile--menu--item(href="/")
+                                +icon('notific')
+                                span Уведомления
+                            a.header-profile--menu--item(href="/")
+                                +icon('wheel')
+                                span Ваши поездки
+                            a.header-profile--menu--logout
+                                +icon('logout')
+                                span Выйти
+                    .header-profile--menu__mobile
+                        +icon('menu')
+                    .header-user-profile
+                        a.header-user-profile--link(href="/acc-control.html")
+                            .header-user-profile--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                                .header-user-profile--notific 3
+                            span Татьяна Гусева
+                    .header-profile--reg(data-toggle="modal" data-target="#popup-register") Регистрация
+                    .header-profile--login(data-toggle="modal" data-target="#popup-login") Войти
+        .header-mobile-menu.header-mobile-menu-main
+            .personal-sidebar--content--wrap
+                .personal-sidebar--content.gogocar-box
+                    ul.header-profile--menu--list
+                        a.header-profile--menu--item(href="/")
+                            +icon('home')
+                            span Управление
+                        a.header-profile--menu--item(href="/")
+                            +icon('profile')
+                            span Профиль
+                        a.header-profile--menu--item(href="/")
+                            +icon('message')
+                            span Сообщение
+                        a.header-profile--menu--item(href="/")
+                            +icon('notific')
+                            span Уведомления
+                        a.header-profile--menu--item(href="/")
+                            +icon('wheel')
+                            span Ваши поездки
+                        a.header-profile--menu--logout
+                            +icon('logout')
+                            span Выйти
+                    .footer-border
+                        .container
+                            .footer-wrap
+                                .col-xl-3.col-lg-3.col-md-3.footer-items
+                                    a.footer-logo(href="/")
+                                        +icon('logo2')
+                                    ul.footer-copy--social.footer-logo-social
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('facebook')
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('instagram')
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('twitter')
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('whatsapp')
+                                .col-xl-6.col-lg-6.col-md-5.footer-items
+                                    .footer-pages--wrap
+                                        ul.footer-pages-list
+                                            a.footer-pages-item(href="/") О нас
+                                            a.footer-pages-item(href="/") FAQ
+                                        ul.footer-pages-list
+                                            a.footer-pages-item(href="/") Связаться с нами
+                                            a.footer-pages-item(href="/") Ищем сотрудников
+                                        ul.footer-pages-list
+                                            a.footer-pages-item(href="/") Условия использования
+                                            a.footer-pages-item(href="/") Пресса о нас
+                                .col-xl-3.col-lg-3.col-md-4.footer-items
+                                    .footer-select-list
+                                        .footer-country-list
+                                            .footer-country-item.fci-choised
+                                                .footer-country-item__img(style="background-image:url('static/img/general/lang/uz.png')")
+                                                span UZS
+                                                +icon('arrow-right3')
+                                            .footer-country-list--block
+                                                .footer-country-item.fci-choise
+                                                    .footer-country-item__img(style="background-image:url('static/img/general/lang/uz.png')")
+                                                    span UZS
+                                                .footer-country-item.fci-choise
+                                                    .footer-country-item__img(style="background-image:url('static/img/general/lang/ru.png')")
+                                                    span RUS
+
+                                        .footer-country-list2
+                                            .footer-country-item2
+                                                .footer-country-item__img(style="background-image:url('static/img/general/lang/ru.png')")
+                                                +icon('arrow-right3')
+                                            ul.footer-country-choise--list
+                                                li.footer-country-choise--item
+                                                    .footer-country-item__img(style="background-image:url('static/img/general/lang/ru.png')")
+                                                li.footer-country-choise--item
+                                                    .footer-country-item__img(style="background-image:url('static/img/general/lang/uz.png')")
+                        .footer-copyright
+                            .container
+                                .footer-copy--wrap
+                                    .footer-copy--info GoGoCar, 2020 ©
+                                    ul.footer-copy--social
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('facebook')
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('instagram')
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('twitter')
+                                        a.footer-copy--social__item(href="/")
+                                            +icon('whatsapp')
+
+
+
+
+
+
+

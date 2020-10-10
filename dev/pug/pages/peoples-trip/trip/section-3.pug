@@ -1,0 +1,141 @@
+section.all-trip.pt-0
+    .container
+        h3.section-title.font-size-35 Все поездки
+    .all-trip--filter--wrap
+        .container
+            .all-trip--left__right
+                .all-trip--left
+                    span.all-trip--left-span-desk Доступно 50 поездок (в 5 поездках нет свободных мест)
+                    span.all-trip--left-span-mobile 50 поездок
+                .all-trip--right
+                    .all-trip--sort Сортировать: #[span по расстоянию] #[+icon('arrow-right')]
+                    .all-trip--filter--button
+                        +icon('filter')
+                    .all-trip--sort--select
+                        .all-trip--sort--select__item По расстоянию
+                        .all-trip--sort--select__item По цене
+                        .all-trip--sort--select__item По рейтингу водителя
+
+
+    .all-trip--popup--wrap
+        .container
+            .all-trip--popup--content.row
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Время:
+                        .all-trip--popup__time
+                            .all-trip--popup__time--before
+                                span от
+                                select.gogocar-select
+                                    option(value="00:00") 00:00
+                                    option(value="01:00") 01:00
+                                    option(value="02:00") 02:00
+                                    option(value="03:00") 03:00
+                                    option(value="04:00") 04:00
+                                    option(value="05:00") 05:00
+                                    option(value="06:00") 06:00
+                                    option(value="07:00") 07:00
+                                    option(value="08:00") 08:00
+                                    option(value="09:00") 09:00
+                                    option(value="10:00") 10:00
+                                    option(value="11:00") 11:00
+                                    option(value="12:00") 12:00
+                                    option(value="13:00") 13:00
+                                    option(value="14:00") 14:00
+                                    option(value="15:00") 15:00
+                                    option(value="16:00") 16:00
+                                    option(value="17:00") 17:00
+                                    option(value="18:00") 18:00
+                                    option(value="19:00") 19:00
+                                    option(value="20:00") 20:00
+                                    option(value="21:00") 21:00
+                                    option(value="22:00") 22:00
+                                    option(value="23:00") 23:00
+                                    option(value="24:00") 24:00
+                            span.all-trip--space –
+                            .all-trip--popup__time--after
+                                span до
+                                select.gogocar-select
+                                    option(value="00:00") 00:00
+                                    option(value="01:00") 01:00
+                                    option(value="02:00") 02:00
+                                    option(value="03:00") 03:00
+                                    option(value="04:00") 04:00
+                                    option(value="05:00") 05:00
+                                    option(value="06:00") 06:00
+                                    option(value="07:00") 07:00
+                                    option(value="08:00") 08:00
+                                    option(value="09:00") 09:00
+                                    option(value="10:00") 10:00
+                                    option(value="11:00") 11:00
+                                    option(value="12:00") 12:00
+                                    option(value="13:00") 13:00
+                                    option(value="14:00") 14:00
+                                    option(value="15:00") 15:00
+                                    option(value="16:00") 16:00
+                                    option(value="17:00") 17:00
+                                    option(value="18:00") 18:00
+                                    option(value="19:00") 19:00
+                                    option(value="20:00") 20:00
+                                    option(value="21:00") 21:00
+                                    option(value="22:00") 22:00
+                                    option(value="23:00") 23:00
+                                    option(value="24:00") 24:00
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Дата:
+                        input.gogocar-input--filter.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly="readonly")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Особенности бронирования:
+                        .all-trip--popup--to--book
+                            input#all-trip-checkbox.all-trip--popup-checkbox(type="checkbox")
+                            label(for="all-trip-checkbox") Автоматическое подтверждение
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Точка отправления:
+                        input.gogocar-input--filter(type="text" placeholder="Откуда")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Точка назначения:
+                        input.gogocar-input--filter(type="text" placeholder="Куда")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Расстояние до машины от вас (км):
+                        input.gogocar-input--filter(type="text" placeholder="Любое")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Цена (UZS):
+                        .all-trip--popup__time
+                            .all-trip--popup__time--before
+                                span от
+                                input.gogocar-input--filter(type="text")
+                            span.all-trip--space –
+                            .all-trip--popup__time--after
+                                span до
+                                input.gogocar-input--filter(type="text")
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Кол-во свободных мест:
+                        select.gogocar-select
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                            option(value="4") 4
+                            option(value="5") 5
+                            option(value="6") 6
+                            option(value="7") 7
+                            option(value="8") 8
+                .col-xl-4.col-lg-4.col-md-6.col-sm-12.atpc-filter
+                    .all-trip--popup__col
+                        label Рейтинг водителя:
+                        select.gogocar-select
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                            option(value="4") 4
+                            option(value="5") 5
+            .all-trip--result (23 подходящие поездки)
+
+
+

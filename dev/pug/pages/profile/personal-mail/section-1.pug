@@ -1,0 +1,25 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Почтовый адрес
+                    .personal-content--body
+                        .gogocar-ready-plan--covid.personal-info-about-me
+                            .gogocar-gray-icons
+                                +icon('info')
+                            .gogocar-ready-plan--covid--info
+                                .gogocar-ready-plan--covid--title Нам нужен точный адрес, чтобы почтальон смог вас найти.
+                                .gogocar-ready-plan--covid--desc Ваш почтовый адрес никогда не будет отображаться на BlaBlaCar.
+                        .personal-mail--info
+                            .personal-mail--name__family
+                                .personal-mail--name.mb-3 Имя: #[span Татьяна]
+                                .personal-mail--name Фамилия: #[span Гусева]
+                            .col-xl-6.col-lg-6.mb-5.personal-add--car__wrap
+                                .all-trip--popup__col.personal-content--select
+                                    label Укажите адрес:
+                                    input.gogocar-input--filter.personal-content--input(type="text" placeholder="Адрес...")
+                            .gogocar-yellow-button.m-0.gogocar-mobile-m-0-auto Сохранить

@@ -1,0 +1,43 @@
+#popup-register.modal.fade(tabindex='-1' role='dialog' aria-labelledby='popup-login' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.popup-title Регистрация
+            form.popup-inputs--wrapper
+                .popup-input--wrapper
+                    .popup-input-icon.gogocar-gray-icons
+                        +icon('email')
+                    input.popup-input.gogocar-input-v1(type="email" placeholder="Email или логин")
+                .gogocar-select-country--wrap.gogocar-select-country--wrap--reg
+                    .gogocar-select-country-reg.popup-input--wrapper
+                        .gogocar-select-country--flag--wrap
+                            .gogocar-select-country--flag(style="background-image:url('static/img/general/lang/uz.png')")
+                            .gogocar-select-country--name UZ
+                        +icon('arrow-right')
+                        ul.gogocar-select-country__list-reg
+                            li.gogocar-select-country__item(data-mask-phone="(+900 00) 000-00-00" data-placeholder="(+998-90) ___-__-__")
+                                .gogocar-select-country__item--flag(style="background-image:url('static/img/general/lang/uz.png')")
+                                .gogocar-select-country__item--name UZ
+                            li.gogocar-select-country__item(data-mask-phone="+7 (000) 000-00-00" data-placeholder="+7 (000) ___-__-__")
+                                .gogocar-select-country__item--flag(style="background-image:url('static/img/general/lang/ru.png')")
+                                .gogocar-select-country__item--name RU
+                    .popup-input--wrapper
+                        .popup-input-icon.gogocar-gray-icons
+                            +icon('phone')
+                        input.popup-input.gogocar-input-v1.mask-phone-choise(type="tel" placeholder="(+998-90) ___-__-__" required minlength="18")
+                .popup-input--wrapper
+                    .popup-input-icon.gogocar-gray-icons
+                        +icon('key')
+                    input.popup-input.gogocar-input-v1.popup-eye-status(type="password" placeholder="Пароль" psswd-shown="false")
+                    .popup-show-pass
+                        +icon('eye')
+                .popup-input--wrapper
+                    .popup-input-icon.gogocar-gray-icons
+                        +icon('key')
+                    input.popup-input.gogocar-input-v1.popup-eye-status(type="password" placeholder="Повторите пароль" psswd-shown="false")
+                    .popup-show-pass
+                        +icon('eye')
+                .gogocar-yellow-button.gogocar-active-reg(data-toggle="modal" data-target="#popup-reg-active") Далее
+        .popup-register-login Уже есть аккаунт?  #[.popup-register--link.popup-login--link(data-toggle="modal" data-target="#popup-login") Войдите!]

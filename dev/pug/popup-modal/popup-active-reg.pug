@@ -1,0 +1,16 @@
+#popup-reg-active.modal.fade(tabindex='-1' role='dialog' aria-labelledby='popup-login' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.popup-title Код подтвердения
+                p.popup-desc На номер 8 (999) 123 45 67 был выслан код. Введите код ниже:
+            form.popup-inputs--wrapper
+                .popup-active-reg
+                    input.popup-active-reg--input(type="text" placeholder="_")
+                    input.popup-active-reg--input(type="text" placeholder="_")
+                    input.popup-active-reg--input(type="text" placeholder="_")
+                    input.popup-active-reg--input(type="text" placeholder="_")
+                .popup-active-reg--again Отправить повторно
+                button.gogocar-yellow-button(type="submit") Подтвердить

@@ -1,0 +1,29 @@
+#popup-input-money.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            form.popup-covid--wrap.popup-modal--money.popup-icon-size
+                h3.main-section--title--v2.font-size-25.mb-5 Выберите способ пополнения
+                .popup-input--money--wrap
+                    .popup-input--money--item
+                        .popup-input--money--checkbox
+                        input(type="radio")
+                        .popup-input--money--logo(style="background-image:url('static/img/general/cash/cash1.png')")
+                        .popup-input--money--name UZCard
+                    .popup-input--money--item
+                        .popup-input--money--checkbox
+                        input(type="radio")
+                        .popup-input--money--logo(style="background-image:url('static/img/general/cash/cash2.png')")
+                        .popup-input--money--name Click Evolution
+                    .popup-input--money--item
+                        .popup-input--money--checkbox
+                        input(type="radio")
+                        .popup-input--money--logo(style="background-image:url('static/img/general/cash/cash3.png')")
+                        .popup-input--money--name PayPal
+                    .gogocar-input--wrapper.popup-input--money--cash
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('money')
+                        input.gogocar-input-v1.gogocar-from(type="text" placeholder="Укажите сумму..." required pattern="[0-9]")
+                button.gogocar-yellow-button(type="submit") Продолжить

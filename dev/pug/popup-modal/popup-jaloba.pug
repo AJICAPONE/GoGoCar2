@@ -1,0 +1,30 @@
+#popup-jaloba.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap.modal-970(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                h3.main-section--title--red #[span Пожаловаться] на поездку !
+                p.main-section--title.font-size-20.text-center Какой #[span у вас] повод #[span для жалобы ?]
+                .popup-gogocar-type-cargo.mb-4
+                    .col-xl-12.col-sm-12.popup-go-jaloba.active.mb-4
+                        .popup-gogocar-type-cargo--item
+                            span Нарушение правил сервиса
+                            .popup-gogocar-cargo--checkbox
+                    .col-xl-12.col-sm-12.popup-go-jaloba.mb-4
+                        .popup-gogocar-type-cargo--item
+                            span Нарушение правил сервиса
+                            .popup-gogocar-cargo--checkbox
+                    .col-xl-12.col-sm-12.popup-go-jaloba.mb-4
+                        .popup-gogocar-type-cargo--item
+                            span Нарушение правил сервиса
+                            .popup-gogocar-cargo--checkbox
+                    .col-xl-12.col-sm-12.popup-go-jaloba.mb-5
+                        .popup-gogocar-type-cargo--item
+                            span Нарушение правил сервиса
+                            .popup-gogocar-cargo--checkbox
+
+                .you-trip-cancel--buttons
+                    .gogocar-gray-button(data-dismiss="modal" aria-label="Close") Я передумал
+                    .gogocar-red-button(data-toggle="modal" data-dismiss="modal" data-target="#popup-jaloba2") Продолжить

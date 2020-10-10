@@ -1,0 +1,1600 @@
+.personal-sidebar
+  padding-left 0
+
+.personal-content
+  padding-right 0
+
+.personal-sidebar--list
+  display flex
+  flex-direction column
+  padding 0 20px
+
+.personal-sidebar--item
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #fff
+  transition all linear .1s
+  margin-bottom 20px
+
+  &:hover
+    color #FDAB3E
+
+.personal-sidebar--content--wrap
+  .account-control--bottom__panel--header
+    margin-bottom 20px
+
+.personal-sidebar--content
+  margin-bottom 30px
+
+.personal-content--header--title
+  font-family 'Oswald 500',sans-serif
+  font-size 22px
+  color #fff
+
+.personal-settings--wrap
+  display flex
+
+.personal-content--header
+  padding 19px 0
+  margin-bottom 30px
+  border-bottom 1px solid rgba(153, 163, 181, 0.3);
+
+.personal-content--input
+  background-color #363D4A
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+.personal-content--select .select-input
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color #363D4A
+
+.personal-mb
+  margin-bottom 30px
+
+.personal-w
+  width 100%
+
+.personal-info-about-me
+  margin-right 0
+
+.personal-textarea
+  background: #363D4A;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius 12px
+  padding 20px
+  color #fff
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  outline none
+  resize vertical
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.5)
+
+.personal-photo--content
+  display flex
+
+.personal-photo--dropzone-photo
+  position relative
+  display flex
+  align-items center
+  justify-content center
+  flex-direction column
+  border 1px solid rgba(255, 255, 255, 0.1)
+  border-radius 10px
+  padding 30px 0
+  transition all linear .1s
+
+  label
+    z-index 2
+
+
+.personal-photo--dropzone-photo.active
+  background-color rgba(253, 171, 62, 0.6)
+.personal-photo--dropzone--place
+  display flex
+  flex-direction column
+  align-items center
+  justify-content space-between
+  height 100%
+
+
+.personal-photo--dropzone
+  position relative
+  background: rgba(78, 89, 108, 0.2);
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  size(230px)
+  padding 25px 40px
+  border-radius 10px
+  margin-bottom 30px
+
+.personal-photo--dropzone--name
+  color #fff
+  font-family 'Oswald 500',sans-serif
+  font-size 22px
+  text-align center
+
+.personal-photo--dropzone--rule
+  color #9A9EA4
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  text-align center
+
+#personal-photo
+  position absolute
+  left 0
+  right 0
+  top 0
+  bottom 0
+  opacity 0
+  line-height 0
+  size(100%)
+  cursor pointer
+
+.personal-photo--dropzone__img
+  position absolute
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  left 0
+  right 0
+  bottom 0
+  top 0
+  border-radius 10px
+
+.personal-photo--rules__img
+  position relative
+  size(80px)
+  border-radius 10px
+  background-size cover
+  background-repeat no-repeat
+  background-position center
+  margin-bottom 20px
+  box-shadow 0px 4px 11px 2px rgba(253,171,62,0.3)
+  .account-control--submited--icon
+    position absolute
+    right 10px
+    bottom -10px
+
+.personal-photo--rules
+  padding 30px 20px
+  display flex
+  align-items center
+  justify-content center
+  flex-direction column
+
+  span
+    font-family 'Oswald 500',sans-serif
+    font-size 18px
+    color #fff
+    text-align center
+    margin-bottom 30px
+.personal-photo--list
+  width 100%
+.personal-photo--item
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+  margin-bottom 20px
+
+.personal-photo--item--text
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color rgba(255, 255, 255, 0.6)
+
+.personal-content--prefes--icon
+  background-color #424B5B
+  margin-bottom 20px
+
+  .icon
+    size(34px)
+
+.personal-content--prefes--list
+  display flex
+  justify-content space-between
+  align-items center
+  margin 0 100px
+  margin-bottom 70px
+
+.personal-content--prefes--item__rules
+  display flex
+  justify-content center
+  flex-direction column
+  align-items center
+.personal-content--prefes--item__rules__item
+  margin-bottom 20px
+  .account-control--submited--icon
+    background-color transparent
+    border 1.5px solid rgba(255, 255, 255, 0.2)
+    size(30px)
+    cursor pointer
+    fill transparent
+
+    .icon
+      stroke rgba(255, 255, 255, 0.2)
+      stroke-width 2px
+      size(12px)
+    .icon-rules-ok
+      size(15px)
+      stroke-width 2.4px
+.personal-rules--red.active
+  .account-control--submited--icon
+    background-color #FF4B55
+    border 1.5px solid transparent
+    .icon
+      stroke rgba(255, 255, 255, 1)
+.personal-rules--orange.active
+  .account-control--submited--icon
+    background-color #FDAB3E
+    border 1.5px solid transparent
+    .icon
+      stroke rgba(255, 255, 255, 1)
+.personal-rules--green.active
+  .account-control--submited--icon
+    background-color #09B983
+    border 1.5px solid transparent
+    .icon
+      stroke rgba(255, 255, 255, 1)
+
+.personal-save--item
+  display flex
+  justify-content space-between
+  align-items center
+  padding 20px
+  margin-bottom 20px
+
+.personal-save--item__content
+  display flex
+  margin-bottom 20px
+
+.personal-save--item__content--wrap
+  display flex
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color #fff
+
+.personal-save--item__title
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #fff
+  margin-bottom 10px
+.personal-save--item__content--wrap--title
+  margin-right 3px
+  font-size 12px
+.personal-save--item__content--wrap--link,.personal-save--item__content--change
+  color #FDAB3E
+.personal-save--item__content--wrap--link
+  margin-right 20px
+  font-size 12px
+.personal-save--item__content--change
+  text-decoration underline
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+
+.personal-save--item__text
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color #9A9EA4
+
+.submit-green-icon
+  background-color #09B983
+  size(30px)
+  .icon
+    size(16px)
+
+.personal-save--item__rihgt--wrap
+  display flex
+  align-items center
+  font-family 'Oswald 500',sans-serif
+
+
+.personal-save--item__rihgt--submit
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #FDAB3E
+  margin-right 20px
+
+.submit-yellow-icon
+  color #fff
+  size(30px)
+  background-color #FDAB3E
+  font-size 16px
+.personal-save--list
+  margin-bottom 60px
+.personal-save--item__rihgt--account
+  display flex
+  align-items center
+  background-color #424B5B
+  border-radius 10px
+  padding 7px
+  margin-right 30px
+  cursor pointer
+
+
+.personal-save--social--account
+  display flex
+  justify-content center
+  align-items center
+  background: #FDAB3E;
+  box-shadow: 0px 0px 20px rgba(253, 191, 90, 0.2);
+  border-radius 10px
+  size(36px)
+  margin-right 20px
+
+  .icon
+    size(20px)
+
+.personal-save--social--account__text
+  color #fff
+  margin-right 13px
+.personal-car--item
+  display flex
+  justify-content space-between
+  align-items center
+  padding 20px
+.personal-car--item--right
+  display flex
+  align-items center
+
+.personal-car--item--setting,.personal-car--item--delete
+  position relative
+  left auto
+  size(40px)
+
+  .icon
+    size(22px)
+
+.personal-car--item--left__top
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #fff
+  margin-bottom 9px
+
+.personal-car--item--left__bottom
+  font-family 'Oswald 500',sans-serif
+  font-size 20px
+  color #FDAB3E
+
+.personal-car--item--setting
+  margin-right 15px
+  cursor pointer
+
+.personal-car--item--add
+  display flex
+  align-items center
+  justify-content center
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  height 100%
+  cursor pointer
+  .icon
+    size(30px)
+    fill rgba(255, 255, 255, 0.6)
+    margin-right 15px
+
+.personal-car--item--add__text
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  color rgba(255, 255, 255, 0.6)
+  height 100%
+  display flex
+  align-items center
+  justify-content center
+
+.personal-add--car--title
+  font-family 'Oswald 500',sans-serif
+  font-size 20px
+  color #fff
+  margin-bottom 10px
+
+.personal-add--car--desc
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color #9A9EA4
+  margin-bottom 30px
+
+.personal-add--car__wrap
+  padding 0
+
+.personal-add--car--item
+  border-bottom 1px solid rgba(153, 163, 181, 0.3)
+  padding 30px 0
+
+  &:last-child
+    border none
+
+.choise-country--gogocar
+  display flex
+  align-items center
+  justify-content space-between
+  position relative
+  background: #363D4A;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding 15px
+  height 47px
+  cursor pointer
+.choise-country--gogocar.active
+  .choise-country--show--list
+    .icon
+      transform rotate(-90deg)
+.choise-country--flag
+  size(25px)
+  background-size contain
+  background-repeat no-repeat
+  margin-right 15px
+
+
+.choise-country--show--list
+
+  .icon
+    size(16px)
+    transform rotate(90deg)
+.choise-country--flag--code
+  display flex
+  align-items center
+.choise-country--code
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  color #fff
+
+
+.choise-country--gogocar--item
+  display flex
+  align-items center
+  margin-bottom 10px
+  cursor pointer
+
+  &:last-child
+    margin-bottom 0
+
+.choise-country--gogocar--list
+  position: absolute;
+  left: 0;
+  right: 0;
+  top 85px
+  display: none;
+  border-top: 0;
+  border-radius: 10px;
+  background-color: #363d4a;
+  box-shadow: 0px 0px 40px rgba(27,33,43,0.85);
+  padding 10px 15px
+
+.personal-content--select
+  position relative
+
+.personal-add--car__wrap--input--select
+  display flex
+  align-items center
+
+  .personal-add--car__wrap:nth-child(1)
+    width 40%
+  .personal-add--car__wrap:nth-child(2)
+    width 60%
+
+.personal-add--car--mark
+  display none
+  padding 20px 0
+
+.personal-add--car--mark--item
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px 20px
+  cursor pointer
+
+  &:hover
+    background-color rgba(54, 61, 74, 0.8)
+.personal-add--car--mark--item.active
+    background-color rgba(54, 61, 74, 0.8)
+
+.personal-add--car--mark--arrow
+  .icon
+    size(16px)
+    fill transparent
+    stroke rgba(255, 255, 255, 0.6)
+    stroke-width 2px
+
+.personal-car-mark--title
+  color rgba(255, 255, 255, 0.6)
+  font-size 15px
+  margin-bottom 5px
+  padding 0 20px
+  font-family 'Oswald 500',sans-serif
+  font-size 15px
+
+.personal-add--car--mark--name
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  color #fff
+
+.personal-type-car--item
+  display flex
+  align-items center
+  justify-content space-between
+  background-color #363D4A
+  border-radius 15px
+  height 47px
+  padding 15px
+  margin-bottom 20px
+  cursor pointer
+
+  &:last-child
+    margin-bottom 0
+
+.personal-type-car--item.active
+  .personal-type-car--item__checkbox
+    background-color #09B983
+
+.personal-type-car--item__icon
+  display flex
+  align-items center
+
+  .icon
+    size(40px)
+    margin-right 15px
+
+.personal-type-car--item__checkbox
+  display flex
+  justify-content center
+  align-items center
+  size(22px)
+  border-radius 50%
+  border: 1.5px solid rgba(255, 255, 255, 0.2);
+
+  .icon
+    size(12px)
+
+.personal-type-car--item--name
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color #fff
+.personal-color-car--list
+  margin 0 5px
+.personal-color-car--item
+  display flex
+  align-items center
+  justify-content center
+  size(38px)
+  border-radius 12px
+  box-shadow 0px 0px 0px 6px rgba(255, 255, 255, 0.1)
+  margin-right 42px
+  margin-bottom 42px
+  cursor pointer
+
+
+
+.personal-mail--name
+  font-family 'Oswald 500',sans-serif
+  font-size 15px
+  color #9A9EA4
+
+  span
+    font-size 15px
+    color #fff
+
+.personal-mail--name__family
+  margin: 30px 0 25px 0;
+
+
+.personal-rev-circule
+  position relative
+  width max-content
+  height max-content
+
+  strong
+    absolute-center()
+    font-family 'Oswald 500',sans-serif
+    font-size 18px
+    color #fff
+
+
+.personal-review--wrap--content
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px 50px
+
+.personal-review--circule--name
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #fff
+  margin-bottom 15px
+
+.personal-review--rating-score--item
+  display flex
+  align-items center
+  margin-bottom 12px
+
+  &:last-child
+    margin-bottom 0
+
+.w-190
+  max-width 190px
+
+.personal-review--rating-line-start,.personal-review--rating-line-end
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color #fff
+
+.personal-review--rating-line-center
+  position relative
+  width 100%
+  height 10px
+  background-color #424B5B
+  border-radius 10px
+  max-width 199px
+  margin 0 10px
+
+.personal-review--rating-line-center--after
+  position absolute
+  left 0
+  top 0
+  bottom 0
+  background: #FDAB3E;
+  box-shadow: 0px 0px 20px rgba(253, 191, 90, 0.2);
+  border-radius: 10px;
+.personal-review--rating-line-start
+  width 60px
+.personal-review--rating-line-end
+  color rgba(255, 255, 255, 0.6)
+  width 30px
+
+.personal-reviews--list
+  margin-bottom 50px
+  padding 0
+.personal-reviews--item
+  display flex
+  border-bottom 1px solid rgba(153, 163, 181, 0.3)
+  margin-bottom 30px
+
+  &:last-child
+    border none
+.personal-reviews--item--top
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom 15px
+
+  .personal-reviews--trip--rating
+    display flex
+    align-items center
+  .gogocar-trips-category--rating
+    .icon
+      size(26px)
+    span
+      font-size 18px
+.personal-reviews--trip
+  font-family 'Oswald 400',sans-serif
+  font-size 18px
+  color #fff
+  margin-right 20px
+
+.personal-reviews--item--text
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color rgba(255, 255, 255, 0.5)
+  margin-bottom 30px
+
+.personal-review--change--buttons
+  min-width 170px
+  margin-left 30px
+  .gogocar-gray-button
+    height 42px
+    font-size 12px
+.red-c
+  color #F37535
+
+.personal-pay--header
+  display flex
+  align-items center
+.personal-content--header
+  display flex
+  justify-content space-between
+  align-items center
+  .gogocar-yellow-button,.gogocar-gray-button
+    height 36px
+    font-size 12px
+    max-width 126px
+    min-width 126px
+    font-family 'Montserrat 500',sans-serif
+
+.personal-pay--book--wrap
+  display flex
+  align-items center
+  justify-content space-between
+  margin-right 0
+
+.personal-pay--book
+  display flex
+  align-items center
+
+.personal-pay--to__book
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #FDAB3E
+
+.personal-pay--filter--top
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px
+.personal-filter--title
+  font-family 'Oswald 500',sans-serif
+  font-size 18px
+  color #fff
+
+.personal-filter--icon
+  size(27px)
+  background-color rgba(255, 255, 255, 0.05)
+  border-radius 5px
+  display flex
+  justify-content center
+  align-items center
+  cursor pointer
+
+  .icon
+    size(10px)
+    transform rotate(90deg)
+
+.personal-pay-inputs--flex
+  display flex
+  align-items center
+  .all-trip--popup__col
+      width 100%
+
+.personal-pay--filter--bottom--wrap
+  margin 0
+  padding 15px 0
+  border-bottom 1px solid rgba(153, 163, 181, 0.3)
+  border-top 1px solid rgba(153, 163, 181, 0.3)
+
+  .gogocar-input--filter
+    border-radius 5px
+  .personal-pay-inputs
+    margin-bottom 20px
+
+.personal-pay--filter--buttons
+  display flex
+  align-items center
+
+.personal-pay--filter--footer
+  display flex
+  align-items center
+  justify-content space-between
+  padding 15px
+  .gogocar-gray-icons
+    position relative
+    left auto
+    size(40px)
+    cursor pointer
+    .icon
+      size(16px)
+  .gogocar-yellow-button,.gogocar-gray-button
+    font-size 13px
+    height 40px
+.w-100
+  max-width 100px
+  min-width 100px
+
+.personal-pay--filter--bottom--footer
+  display none
+
+.personal-pay--filter--wrap
+  margin-bottom 30px
+.personal-pay--header
+  display flex
+.personal-pay--header--item
+  width 100%
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #fff
+  .personal-pay--header--item__name
+    margin-bottom 5px
+  &:first-child
+    .personal-pay--header--item__name
+      padding-left 5px
+    .personal-pay--header--childen__item
+      padding-left 15px
+.personal-pay--header--childen__item
+  padding 17px 0
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+
+  &:nth-child(odd)
+    background-color #363D4A
+
+.pp-price
+  font-family "Montserrat SB",sans-serif
+  color #FDAB3E
+
+.personal-notific--desc
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #9a9ea4
+
+.personal-notific--checkbox
+  margin-bottom 50px
+
+.personal-notific--checkbox--input
+  display none
+.personal-notific--checkbox--item
+  display flex
+  align-items center
+  margin-bottom 20px
+  label
+    margin-bottom 0
+    font-family 'Montserrat 500',sans-serif
+    font-size 13px
+    color #fff
+.personal-notific--checkbox--item--check
+  position relative
+  width 40px
+  height 24.5px
+  min-width 40px
+  background-color #424B5B;
+  border-radius: 12px;
+  display flex
+  align-items center
+  will-change transform
+  cursor pointer
+  margin-right 15px
+
+
+  &:before
+    content ''
+    position absolute
+    top 2px
+    size(20px)
+    left 2px
+    background-color #fff
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.06), 0px 3px 8px
+    border-radius 50%
+    will-change transform
+    transition-duration 200ms
+    transform translateX(0px)
+.personal-notific--checkbox--item--check.checked
+  background-color #FDAB3E
+  &:before
+    transform translateX(15px)
+
+
+.chat-writing
+  color #FDAB3E
+
+.personal-people--list
+  padding-left 0
+  .you-trip-chat-content
+    max-height 492px
+    min-height 492px
+
+.personal-chat-container
+  padding-right 0
+
+.gogocar-go-back
+  size(42px)
+  position relative
+  left auto
+  cursor pointer
+  background-color: rgba(255,255,255,0.05);
+  .icon
+    size(14px)
+    transform rotate(180deg)
+
+.chat-content--info__driver--search
+  display flex
+  align-items center
+  position relative
+  padding 15px
+
+
+.chat-content-search-dialog
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  border none
+  font-family 'Montserrat 400',sans-serif
+  font-size 12px
+  color #fff
+  height 40px
+  padding 12px
+  width 100%
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.3)
+
+.chat-content--info__search--icon
+  position absolute
+  right 30px
+  height 100%
+  display flex
+  justify-content center
+  align-items center
+
+  .icon
+    size(20px)
+.chat-container-option--archive
+  display: none;
+  background: #424b5b;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  padding: 17px;
+  position: absolute;
+  z-index: 2;
+
+  .icon
+    size(19px)
+    margin-right: 15px;
+
+  span
+    font-family 'Montserrat 500',sans-serif
+    font-size 14px
+    color #fff
+.chat-all-archive,.chat-all-messages
+  right 0
+  top 50px
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color #fff
+.chat-to-archive
+  top: 27px;
+  left: -13px;
+.chat-container-header--option--archive
+  position relative
+.chat-message-to-archive--wrap
+  display flex
+  align-items center
+  position relative
+
+.chat-message-to-archive--arrow
+  margin-left 7px
+  opacity 0
+  transition all linear .2s
+
+  .icon
+    size(12px)
+    transform rotate(90deg)
+    margin-bottom: 3px;
+.chat-content--info__driver--review--content
+  &:hover
+    .chat-message-to-archive--arrow
+      opacity 1
+.chat-item--archive
+  margin-bottom 0
+.chat-item--restore
+  display none
+
+.chat-archived
+  .chat-item--archive
+    display none
+  .chat-item--restore
+    display flex
+
+.personal-count--balance--wrap
+  display flex
+  align-items center
+  justify-content space-between
+  padding 20px
+  margin-bottom 30px
+
+.personal-count--title
+  font-family 'Oswald 500',sans-serif
+  font-size 13px
+  color #fff
+  margin-bottom 10px
+
+.personal-count--balance
+  font-family 'Oswald 500',sans-serif
+  font-size 18px
+  color #FDAB3E
+.personal-count--right
+  display flex
+  align-items center
+  .gogocar-gray-icons
+    position relative
+    left auto
+    size(50px)
+    margin-right 20px
+    cursor pointer
+    &:last-child
+      margin-right 0
+    .icon
+      size(32px)
+  .personal-count--plus,.personal-count--minus
+    position absolute
+    display flex
+    justify-content center
+    align-items center
+    border-radius 50%
+    size(16px)
+    right: 8px;
+    bottom: 5px;
+    .icon
+      size(10px)
+      fill #fff
+.personal-count--plus
+  background-color #09B983
+.personal-count--minus
+  background-color #F37535
+
+.pg-balence
+  color #09B983
+
+.popup-output--money--wrap
+  background-color #424B5B
+  padding-right 15px
+  margin-bottom 40px
+  .gogocar-yellow-icons
+    position relative
+    left auto
+    size(42px)
+    display flex
+    align-items center
+    justify-content center
+    min-width 42px
+    .icon
+      size(16px)
+      margin-bottom 0
+  .plan-trip--location__icon
+    background-color #4C5463
+    .icon
+      size(24px)
+      margin-bottom 0
+
+.modal-770
+  max-width 770px
+
+.popup-modal--money
+  padding 0 50px
+
+.popup-output--money--title
+  font-family 'Oswald 500',sans-serif
+  font-size 15px
+  color #fff
+  text-align left
+  margin-bottom 20px
+
+  span
+    color #FDAB3E
+    font-size 15px
+
+.popup-output--item
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 20px
+
+.popup-output--item--name
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #fff
+
+  span
+    color #FDAB3E
+    font-size 13px
+
+.popup-output--item--value
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+
+  .poiv--red
+    font-size 13px
+    color #FF4B55
+
+.popup-output--item--value
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+
+  .puiv--red
+    font-size 13px
+    color #FF4B55
+
+.poiv--green
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #09B983
+
+
+.popup-input--money--logo
+  background-size contain
+  background-repeat no-repeat
+  size(40px)
+  background-position center
+  margin-right 35px
+.popup-input--money--item
+  display flex
+  align-items center
+  background-color rgba(255, 255, 255, 0.05)
+  border-radius 5px
+  padding 20px 15px
+  height 60px
+  margin-bottom 20px
+  cursor pointer
+
+  input
+    display none
+  .popup-input--money--checkbox
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    size(18px)
+    border-radius 50%
+    min-width 18px
+    margin-right 20px
+    .icon
+      size(13px)
+      margin-bottom 0
+.popup-input--money--item.active
+  .popup-input--money--checkbox
+    background-color #09B983
+
+
+.popup-input--money--name
+  font-family 'Oswald 500',sans-serif
+  font-size 15px
+  color #fff
+
+.personal-add--appeal
+  height 47px
+  font-size 12px
+
+.pphi-fc
+  min-width fit-content
+
+.pphi-w-70
+  width 70%
+
+.pphi-w-40
+  width 40%
+
+.personal-support-filter--wrap
+  .personal-content--input
+    border-radius 10px
+
+.popup-support--appear
+  padding 0 50px
+
+.personal-appear--radio--item
+  display flex
+  align-items center
+  cursor pointer
+  margin-bottom 20px
+
+  &:last-child
+    margin-bottom 0
+
+  input
+    display none
+
+
+.personal-appear--radio--input
+  position relative
+  display flex
+  align-items center
+  justify-content center
+  size(20px)
+  border 1px solid rgba(255, 255, 255, 0.1)
+  border-radius 50%
+  min-width 20px
+  margin-right 15px
+.personal-appear--radio--item.active
+  .personal-appear--radio--input
+    background-color rgba(253, 171, 62, 0.6)
+    &:before
+      content ''
+      absolute-center()
+      size(14px)
+      background-color #FDAB3E
+      border-radius 50%
+
+
+.personal-appear--radio--text
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #fff
+
+
+.input-appear--textarea
+  background-color #424B5B
+  border-radius 15px
+  padding 22px
+  width 100%
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color #fff
+  border none
+  margin-bottom 30px
+  outline none
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.6)
+.popup-appear-form-step2
+  margin-bottom 30px
+.personal-file-button--added
+  position relative
+  height 47px
+  font-size 12px
+  display flex
+  align-items center
+  max-width 180px
+  cursor pointer
+  margin-right 15px !important
+  .icon
+    size(19px)
+    margin-right 15px
+    margin-bottom 0
+
+  span
+    font-family 'Montserrat 500',sans-serif
+    font-size 12px
+    color #fff
+
+  input
+    position absolute
+    line-height 0
+    opacity 0
+    width 100%
+    height 100%
+    top 0
+    right 0
+    bottom 0
+    left 0
+    cursor pointer
+.personal-appear--file--wrap
+  margin 0
+  margin-bottom 60px
+
+.personal-loaded--file
+  display flex
+  align-items center
+  background-color #424B5B
+  border-radius 12px
+  padding 6px
+  height 47px
+  width max-content
+  margin-right 15px
+  margin-top 5px
+  margin-bottom 5px
+  .gogocar-gray-icons
+    position relative
+    left auto
+    size(35px)
+    .icon
+      size(21px)
+      margin-bottom 0
+.personal-loaded--file__name
+  font-family 'Montserrat 500',sans-serif
+  font-size 12px
+  color #fff
+
+.personal-form-buttons--appeal
+  display: flex;
+  align-items center
+  justify-content center
+  .gogocar-yellow-button,.gogocar-gray-button
+    width 170px
+    margin 0
+    height 50px
+  .gogocar-yellow-button
+    margin-right 20px
+.personal-support2
+  padding-right 0
+
+.chat-container-header
+  .gogocar-go-back
+    min-width 40px
+    margin-right 25px
+
+.personal-password-zone
+  margin 0
+  margin-bottom 60px
+  .gogocar-yellow-button
+    height 50px
+    font-size 13px
+
+.personal-delete--info
+  display flex
+  align-items center
+  margin-bottom 30px
+  .gogocar-gray-icons
+    size(42px)
+    position relative
+    left auto
+    margin-right 15px
+    .icon
+      size(20px)
+
+.personal-delete--text
+  color #fff
+  font-size 13px
+  font-family 'Montserrat 500',sans-serif
+  margin-bottom 15px
+
+  a
+    font-size 13px
+    color #FDAB3E
+
+.personal-delete-zone
+  margin 0
+  margin-bottom 60px
+
+.personal-referal--body
+  .gogocar-gray-icons
+    position relative
+    left auto
+    size(42px)
+    .icon
+      size(20px)
+
+.personal-referal--content
+  display flex
+  align-items center
+
+  .personal-count--balance--wrap
+    margin-right 30px
+    &:last-child
+      margin-right 0
+
+.personal-referal--input
+  display flex
+  align-items center
+  margin-bottom 10px
+  .popup-output--money--wrap
+    padding 0 10px
+    margin-bottom 0
+    width 100%
+    margin-right 30px
+  .gogocar-input-v1
+    padding-left 15px
+
+#copy-referal-link
+  cursor pointer
+
+.chat-container-header--delete__message
+  display none
+  position absolute
+  z-index 5
+  right 0
+  bottom -62px
+  align-items center
+  background: #424B5B;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height 55px
+  padding 12px
+  cursor pointer
+  .icon
+    size(19px)
+    margin-right 15px
+  span
+    width max-content
+    color #fff
+    font-family 'Montserrat 500', sans-serif
+    font-size 14px
+.chat-container-header--option--left--wrap
+  position relative
+  display flex
+
+.chat-container-header--option-delete__panel
+  position relative
+  display none
+  align-items center
+  .gogocar-gray-icons
+    position relative
+    left auto
+    size(42px)
+    background-color rgba(255, 255, 255, 0.05)
+    border-radius 10px
+    cursor pointer
+    margin-right 20px
+    &:last-child
+      margin-right 0
+    .icon
+      size(15px)
+    .icon-delete
+      size(19px)
+.chat-container-message--wrap--delete__check--wrap
+  display none
+  justify-content center
+  align-items center
+  margin-left 15px
+.chat-container-message--wrap--delete__check
+  display flex
+  justify-content center
+  align-items center
+  size(20px)
+  min-width 20px
+  background-color rgba(43, 47, 63, 0.15)
+  border-radius 50%
+  border 1px solid rgba(255, 255, 255, 0.15)
+  cursor pointer
+.chat-container-message--wrap--delete__check.checked
+  border 1.5px solid #FDAB3E
+  .icon
+    size(12px)
+
+.delete-chat-msg
+  display flex
+  align-items center
+  justify-content space-between
+  .gogocar-red-button,.gogocar-gray-button
+    height 47px
+  .gogocar-red-button
+    margin-right 25px
+.chat-container-footer--submit
+  outline none
+
+.chat-container--edit--message--file--add
+  display: none
+  align-items: center;
+  position: absolute;
+  justify-content space-between
+  background-color: #404753;
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding: 4px 9px
+  padding-left: 15px;
+  margin-bottom 0
+  height max-content
+  min-height 66px
+.chat-container--edit--message--file--add.active
+  display: flex
+  box-shadow 0 0 17px 8px rgba(0,0,0,0.102)
+.chat-container-footer--emoji--list
+  display: none
+  align-items: center;
+  position: absolute;
+  background-color: #404753;
+  border-radius: 5px 5px 0px 0px;
+  width: 100%;
+  bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
+  padding: 9px;
+  padding-left: 15px;
+  margin 0
+  margin-bottom 0
+  height max-content
+
+
+.cab-chat-emoji
+  size(24px)
+  margin 5px
+  cursor pointer
+
+.perspective-chat
+  position relative
+  flex-shrink: 0;
+  perspective: 1400px;
+
+.chat-content--info--frontside,.chat-content--info--backside
+  position: relative;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction column
+  top: 0;
+  left: 0;
+
+  //height: 280px;
+  transition: 1s;
+
+.chat-content--info--backside
+  position: absolute;
+  transform: rotateY(180deg);
+  right 15px
+
+.perspective-chat.front-side-chat .chat-content--info--frontside
+  transform: rotateY(180deg);
+
+.chat-content--info--frontside.active, .chat-content--info--backside.active
+  transform: rotateY(180deg);
+
+.perspective-chat.back-side-chat .chat-content--info--backside
+  transform: rotateY(360deg)
+
+
+
+.perspective-chat
+
+  .gogocar-go-back
+    min-width 42px
+    margin-right 15px
+
+  .chat-content--info__driver--title
+    width 100%
+    text-align left
+
+.gogocar-select-country--wrap
+  display flex
+  align-items center
+  position relative
+  .personal-content--input
+    width 58%
+
+.gogocar-select-country
+  width 42% !important
+  margin-right 30px
+  display flex
+  align-items center
+  justify-content space-between
+  cursor pointer
+  position relative
+  .icon
+    size(16px)
+    transform rotate(90deg)
+.gogocar-select-country.active
+  .icon
+    transform rotate(-90deg)
+.gogocar-select-country--flag
+  background-size contain
+  background-position center
+  size(30px)
+  margin-right 15px
+.gogocar-select-country--flag--wrap
+  display flex
+  align-items center
+
+.gogocar-select-country__item
+  display flex
+  align-items center
+  margin-bottom 10px
+  &:last-child
+    margin-bottom 0
+.gogocar-select-country__list,.gogocar-select-country__list-reg
+  position: absolute;
+  left: 0;
+  right: 0;
+  top 55px
+  display: none;
+  border-top: 0;
+  border-radius: 10px;
+  background-color: #363d4a;
+  box-shadow: 0px 0px 40px rgba(27,33,43,0.85);
+  padding: 10px 15px;
+  z-index 10
+.gogocar-select-country__list-reg
+  top 70px !important
+.gogocar-select-country__item--flag
+  background-size contain
+  background-position center
+  size(30px)
+  margin-right 15px
+
+.gogocar-select-country-reg
+  position relative
+  height 62px
+  padding 0 15px
+  margin-right 30px
+  width 35%
+  display flex
+  justify-content space-between
+  cursor pointer
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  color #fff
+  .icon
+    size(16px)
+    transform rotate(90deg)
+.gogocar-select-country-reg.active
+  .icon
+    transform rotate(-90deg)
+
+.all-trip-filter-popup--wrap.filter-fixed
+  position fixed
+  left 0
+  right 0
+  top 0
+  bottom 0
+  z-index 1049
+
+.popup-input--money--cash
+  background-color #424B5B
+  .gogocar-gray-icons
+    .icon
+      margin-bottom 0
+.personal-reviews--trip--moble
+  display none

@@ -1,0 +1,182 @@
+.blog-main
+  background-color #363D4A
+  padding 37px 0
+
+.blog-main--top
+  display flex
+  align-items center
+  justify-content space-between
+  margin-bottom 40px
+
+.blog-main--tabs
+  display flex
+  align-items center
+
+.blog-main--title
+  font-family 'Oswald 500',sans-serif
+  font-size 32px
+  color #fff
+
+.blog-main--link
+  font-family 'Oswald 500',sans-serif
+  font-size 16px
+  color #fff
+  background: #424B5B;
+  border-radius: 26.5px;
+  height 45px
+  width 140px
+  display flex
+  align-items center
+  justify-content center
+  margin-right 30px
+  transition all linear .2s
+
+  &:last-child
+    margin-right 0
+
+  &:hover
+    text-decoration none
+    color #fff
+    background-color #FDAB3E
+    box-shadow 0px 4px 11px 2px rgba(253,171,62,0.3)
+.blog-main--bottom
+  margin 0 -15px
+.blog-main--item__wrap
+  margin-bottom 30px
+
+  &:hover
+    text-decoration none
+
+.blog-main--item
+  display flex
+  align-items center
+  background-color #424B5B
+  height 270px
+  padding 0
+  position relative
+
+  &:hover
+    text-decoration none
+
+.blog-main--item__img
+  position: relative;
+  width 270px
+  height 100%
+  background-repeat no-repeat
+  background-size 100% 100%
+  background-position center
+  transition background-size .3s linear
+.blog-main--item__wrap:hover .blog-main--item__img
+  background-size 130% 130%
+.blog-main--item__date
+  position absolute
+  background-color #FDAB3E
+  width 125px
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  display flex
+  align-items center
+  justify-content center
+  height 36px
+  color #fff
+  top 20px
+  left -10px
+  clip-path: polygon(100% 0%, 83% 50%, 100% 100%, 25% 100%, 0% 100%, 0% 0%);
+  padding-right 15px
+
+.blog-main--item__date--after
+  position: absolute;
+  top: 55px;
+  left: -10.5px;
+  size(11px)
+  background-color: #BF740F
+  clip-path: polygon(100% 0, 0 0, 100% 100%);
+
+.blog-main--item__content
+  position relative
+  width 300px
+  height 100%
+  padding 20px 30px
+
+  &:before
+    content ''
+    position absolute
+    bottom 0
+    right 0
+    left 0
+    height 90px
+    width 100%
+    box-shadow: inset 0px -68px 60px -24px #424b5b;
+
+
+.blog-main--item__title
+  font-family 'Oswald 500',sans-serif
+  font-size 18px
+  color #fff
+  border-bottom 1px solid rgba(119, 132, 156, 0.4)
+  padding-bottom 15px
+  margin-bottom 15px
+
+.blog-main--item__desc
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+  line-height 1.6
+
+.blog-main--item__img--v2
+  width 100%
+  height 75%
+  background-size 100% 100%
+  background-position center
+  position relative
+  transition background-size .3s linear
+.blog-main--item__wrap:hover .blog-main--item__img--v2
+  background-size 130% 130%
+
+.blog-main--item--v2
+  background-color #424B5B
+  height 270px
+  padding 0
+  position relative
+
+  &:hover
+    text-decoration none
+
+
+.blog-main--item__title--v2
+  font-family 'Oswald 500',sans-serif
+  font-size 17px
+  color #fff
+  padding 10px 15px
+  height 25%
+
+.gogocar-blog--title
+  font-family 'Oswald 500',sans-serif
+  font-size 20px
+  color #fff
+  margin-bottom 5px
+
+.gogocar-blog--desc
+  font-family 'Montserrat 400',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.5)
+  margin-bottom 26px
+  text-align center
+
+
+.blog-main--item--show
+  display flex
+  flex-direction column
+  align-items center
+  justify-content center
+  padding 30px
+
+  .icon
+    size(60px)
+    margin-bottom 15px
+
+  a
+    &:hover
+      text-decoration none
+      color #fff
+

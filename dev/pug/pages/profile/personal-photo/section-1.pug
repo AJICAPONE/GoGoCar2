@@ -1,0 +1,53 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Фото профиля
+                    .personal-content--body
+                        .gogocar-ready-plan--covid.personal-info-about-me.mb-5
+                            .gogocar-gray-icons
+                                +icon('info')
+                            .gogocar-ready-plan--covid--info
+                                .gogocar-ready-plan--covid--title Добавьте ваше фото!
+                                .gogocar-ready-plan--covid--desc Другие пользователи увидят, с кем они планируют поездку, и вам будет проще найти попутчика.
+
+                        .personal-photo--content
+                            .col-xl-8.col-lg-8.personal-photo--dropzone-photo.dropzone-drag
+                                .personal-photo--dropzone
+                                    .personal-photo--dropzone__img
+                                    .personal-photo--dropzone--place
+                                        span.personal-photo--dropzone--name Добавьте фото профиля
+                                        span.personal-photo--dropzone--rule PNG или JPG. 3Mб максимум
+                                input#personal-photo(type="file")
+                                label.gogocar-yellow-button(for="personal-photo") Выбрать фото
+                            .col-xl-4.col-lg-4.pr-0.personal-photo--photo-rules
+                                .personal-photo--rules.gogocar-box
+                                    .personal-photo--rules__img.acc-submit(style="background-image:url('static/img/general/personal-a1.png')")
+                                        .account-control--submited--icon
+                                            +icon('ok')
+                                    span Советы, для выбора правильного фото
+                                    ul.personal-photo--list
+                                        li.personal-photo--item.acc-submit
+                                            .personal-photo--item--text Без солнечных очков
+                                            .account-control--submited--icon
+                                                +icon('ok')
+                                        li.personal-photo--item.acc-submit
+                                            .personal-photo--item--text Вы смотрите в камеру
+                                            .account-control--submited--icon
+                                                +icon('ok')
+                                        li.personal-photo--item.acc-submit
+                                            .personal-photo--item--text Только вы в кадре
+                                            .account-control--submited--icon
+                                                +icon('ok')
+                                        li.personal-photo--item.acc-submit
+                                            .personal-photo--item--text Яркое и четкое
+                                            .account-control--submited--icon
+                                                +icon('ok')
+
+
+
+

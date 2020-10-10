@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Ваши поездки (Попутчик, детально)'
+    - var pageClass = 'other-page'
+
+block content
+    include peoples-trip/you-trip-dri-detail/section-1
+    include ../popup-modal/popup-trip-cancel

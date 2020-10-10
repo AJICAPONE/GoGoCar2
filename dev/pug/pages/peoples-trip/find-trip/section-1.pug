@@ -1,0 +1,86 @@
+section.find-trip
+    .container
+        .find-trip--wrap
+            h1.main-section--title.text-center.mb-5 Какой вид #[span перевозки Вас интересует?]
+            .col-xl-10.find-trip-choise--wrap.p-0
+                .find-trip-peoples.find-trips-tab.active(data-trip="trip-peoples")
+                    .find-trip-icon__text
+                        +icon('svg2')
+                        span Пассажирская перевозка
+                    .find-trip-checkbox
+                .find-trip-cargo.find-trips-tab(data-trip="trip-cargo")
+                    .find-trip-icon__text
+                        +icon('cargo')
+                        span Грузовая перевозка
+                    .find-trip-checkbox
+            .col-xl-8.find-trip-form--wrapper
+                form.find-trip-form.find-trip-form--peoples.trip-peoples.active
+                    h1.main-section--title.text-center.mb-5 Куда #[span вы хотите поехать?]
+                    .find-trip-change--wrap
+                        .gogocar-input--wrapper
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('map2')
+                            input.gogocar-input-v1.gogocar-from(type="text" placeholder="Откуда...")
+                        .gogocar-input--wrapper
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('map2')
+                            input.gogocar-input-v1.gogocar-to(type="text" placeholder="Куда...")
+                        .find-trip-change.gogocar-yellow-icons
+                            +icon('sort')
+                    .find-trip-data__count
+                        .gogocar-input--wrapper.w-48
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('calendar')
+                            input.gogocar-input-v1.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly)
+                        .gogocar-input--wrapper.w-48
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('man')
+                            input.gogocar-input-v1.main-section-search--input__peoples(type="text" value="1 пассажир" readonly)
+                            include ../../../modules/count-peoples
+                    button.gogocar-yellow-button.find-trip-submit(type="submit") Найти поездку
+
+                form.find-trip-form.find-trip-form--cargo.trip-cargo
+                    h1.main-section--title.text-center.mb-5 Когда и сколько груза #[span вы хотите отправить?]
+                    .find-trip-change--wrap
+                        .gogocar-input--wrapper
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('map2')
+                            input.gogocar-input-v1.gogocar-from--cargo(type="text" placeholder="Откуда...")
+                        .gogocar-input--wrapper
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('map2')
+                            input.gogocar-input-v1.gogocar-to--cargo(type="text" placeholder="Куда...")
+                        .find-trip-change--cargo.gogocar-yellow-icons
+                            +icon('sort')
+                    .find-trip-data__weight
+                        .gogocar-input--wrapper.w-48
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('calendar')
+                            input.gogocar-input-v1.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly)
+                        .gogocar-input--wrapper.gogocar-placeholder.w-48
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('weight')
+                            input.gogocar-input-v1(type="text")
+                            label Общий вес #[span (кг)]
+                    .find-trip-data__weight
+                        .gogocar-input--wrapper.gogocar-placeholder.w-48
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('volume')
+                            input.gogocar-input-v1(type="text")
+                            label Общий объем #[span (м3)]
+                        .gogocar-input--wrapper.gogocar-placeholder.w-48
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('gabar')
+                            input.gogocar-input-v1(type="text")
+                            label Макс. габарит #[span (м)]
+                    .find-trip-change--wrap.mb-5
+                        .gogocar-input--wrapper
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('type-cargo')
+                            .gogocar-input-hidden-cargo-find
+                            input.gogocar-input-v1.gogocar-from.ggc-type-cargo(type="hidden" placeholder="Типы груза...")
+                            .gogocar-add-cargo-type.gogocar-gray-icons(data-toggle="modal" data-target="#popup-cargo-type")
+                                +icon('plus')
+
+                    button.gogocar-yellow-button.find-trip-submit(type="submit") Найти поездку
+

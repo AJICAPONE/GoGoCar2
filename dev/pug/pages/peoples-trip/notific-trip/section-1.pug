@@ -1,0 +1,64 @@
+section.notific-trip
+    .container
+        .notific-trip--wrap
+            h1.main-section--title.text-center Уведомления #[span о поездках]
+            p.section-desc.mb-5 Вы получите электронное письмо, когда появится подходящая поездка.
+            .col-xl-9.col-lg-9.notific-trip--list.m-0-auto
+                .notific-trip--item.gogocar-trip--item
+                    .gogocar-trip--item__top
+                        .gogocar-trip--item-town__route
+                            .gogocar-trip--item__town
+                                span Ташкент
+                                span Андижан
+                            .gogocar-trip--item__route
+                                .gogocar-trip--item__route--start
+                                .gogocar-trip--item__route--end
+                    .gogocar-trip--item__bottom
+                        .notific-trip-date-price
+                            .all-trip--popup__col
+                                label Дата:
+                                .notific-input-icon
+                                    input.gogocar-input--filter.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly="readonly")
+                                    .notific-calendar-icon
+                                        +icon('calendar2')
+                            .all-trip--popup__col.noti-price-label
+                                label Цена (UZS):
+                                .notific-range-price
+                                    .filter-slider
+                                    .notific-range-price--text
+                                        span.min-values.hidden1
+                                        span.max-values.hidden2
+                        .notific-icons
+                            .gogocar-yellow-icons
+                                +icon('search')
+                            .gogocar-red-icons
+                                +icon('delete2')
+                .notific-trip--item.gogocar-trip--item
+                    .gogocar-trip--item__top
+                        .gogocar-trip--item-town__route
+                            .gogocar-trip--item__town
+                                span Ташкент
+                                span Андижан
+                            .gogocar-trip--item__route
+                                .gogocar-trip--item__route--start
+                                .gogocar-trip--item__route--end
+                    .gogocar-trip--item__bottom
+                        .notific-trip-date-price
+                            .all-trip--popup__col
+                                label Дата:
+                                .notific-input-icon
+                                    input.gogocar-input--filter.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly="readonly")
+                                    .notific-calendar-icon
+                                        +icon('calendar2')
+                            .all-trip--popup__col.noti-price-label
+                                label Цена (UZS):
+                                .notific-range-price
+                                    .filter-slider
+                                    .notific-range-price--text
+                                        span.min-values.hidden1
+                                        span.max-values.hidden2
+                        .notific-icons
+                            .gogocar-yellow-icons
+                                +icon('search')
+                            .gogocar-red-icons
+                                +icon('delete2')

@@ -1,0 +1,82 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Надежность пользователя
+                    .personal-content--body
+                        .gogocar-ready-plan--covid.personal-info-about-me.mb-4
+                            .gogocar-gray-icons
+                                +icon('info')
+                            .gogocar-ready-plan--covid--info
+                                .gogocar-ready-plan--covid--title Подтвердите ваш профиль!
+                                .gogocar-ready-plan--covid--desc Чтобы стать надежным пользователем и легко находить попутчиков.
+                        ul.personal-save--list
+                            li.personal-save--item.gogocar-box
+                                .col-xl-7.col-lg-7.personal-save--item__left
+                                    .personal-save--item__wrap
+                                        .personal-save--item__title Эл. почта подтверждена
+                                        .personal-save--item__content
+                                            .personal-save--item__content--wrap
+                                                .personal-save--item__content--wrap--title Ваша эл. почта:
+                                                a.personal-save--item__content--wrap--link(href="mailto:Guseva@gmail.ru") Guseva@gmail.ru
+                                            a.personal-save--item__content--change(href="/") Изменить
+
+                                    p.personal-save--item__text Вы подтвердили свой номер телефона, и теперь организовать поездку с попутчиками будет проще.
+                                .personal-save--item__rihgt
+                                    .account-control--submited--icon.submit-green-icon
+                                        +icon('ok')
+                            li.personal-save--item.gogocar-box
+                                .col-xl-7.col-lg-7.personal-save--item__left
+                                    .personal-save--item__wrap
+                                        .personal-save--item__title Номер телефона подтвержден
+                                        .personal-save--item__content
+                                            .personal-save--item__content--wrap
+                                                .personal-save--item__content--wrap--title Ваша телефон:
+                                                a.personal-save--item__content--wrap--link(href="tel:+79991234567") +7 (999) 123-45-67
+                                            a.personal-save--item__content--change(href="/") Изменить
+
+                                    p.personal-save--item__text Вы подтвердили свой номер телефона, и теперь организовать поездку с попутчиками будет проще.
+                                .personal-save--item__rihgt
+                                    .account-control--submited--icon.submit-green-icon
+                                        +icon('ok')
+                            li.personal-save--item.personal-save--item2.gogocar-box
+                                .col-xl-7.col-lg-7.personal-save--item__left
+                                    .personal-save--item__wrap
+                                        .personal-save--item__title Подтвердите свое удостоверение личности
+                                    p.personal-save--item__text Так другие пользователи охотнее поедут с вами.
+                                .personal-save--item__rihgt
+                                    .personal-save--item__rihgt--wrap
+                                        .personal-save--item__rihgt--submit Подтвердить удостоверение личности
+                                        .account-control--submited--icon.submit-yellow-icon !
+                            li.personal-save--item.personal-save--item2.gogocar-box
+                                .col-xl-7.col-lg-7.personal-save--item__left
+                                    .personal-save--item__wrap
+                                        .personal-save--item__title Привяжите свой аккаунт Facebook
+                                    p.personal-save--item__text Так другие пользователи смогут видеть, сколько у вас друзей в VK.
+                                .personal-save--item__rihgt
+                                    .personal-save--item__rihgt--wrap.personal-account--flex-wrap
+                                        .personal-save--item__rihgt--account
+                                            .personal-save--social--account
+                                                +icon('facebook')
+                                            .personal-save--social--account__text Привязать аккаунт
+
+                                        .account-control--submited--icon.submit-yellow-icon !
+
+                            li.personal-save--item.personal-save--item2.gogocar-box
+                                .col-xl-7.col-lg-7.personal-save--item__left
+                                    .personal-save--item__wrap
+                                        .personal-save--item__title Привяжите свой аккаунт VK
+                                    p.personal-save--item__text Так другие пользователи смогут видеть, сколько у вас друзей в VK.
+                                .personal-save--item__rihgt
+                                    .personal-save--item__rihgt--wrap.personal-account--flex-wrap
+                                        .personal-save--item__rihgt--account
+                                            .personal-save--social--account
+                                                +icon('vk')
+                                            .personal-save--social--account__text Привязать аккаунт
+
+                                        .account-control--submited--icon.submit-yellow-icon !
+                        .gogocar-yellow-button Сохранить

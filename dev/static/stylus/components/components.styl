@@ -1,0 +1,532 @@
+.main-section--title--v2
+  font-family: 'Oswald 500', sans-serif;
+  font-size 35px
+  color #fff
+  margin-bottom 30px
+  span
+    font-family: 'Oswald 500', sans-serif;
+    font-size: 35px;
+    color: #fdab3e;
+
+
+
+// Серые кнопки
+.gogocar-gray-icons
+  display flex
+  align-items center
+  justify-content center
+  background: #424B5B;
+  border-radius: 10px;
+  position absolute
+  left 15px
+
+// Желтые кнопки
+.gogocar-yellow-icons
+  display flex
+  align-items center
+  justify-content center
+  background-color: #FDAB3E;
+  border-radius: 10px;
+  cursor pointer
+  transition all linear .2s
+
+  &:hover
+    box-shadow: 0px 0px 20px rgba(253, 191, 90, 0.2);
+
+.gogocar-gray-icons2
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color rgba(66, 75, 91, 0.6);
+  border-radius: 10px;
+  cursor pointer
+// Инпут версия 1
+.gogocar-input-v1
+  background-color transparent
+  width 100%
+  padding 0 15px
+  padding-left 70px
+  border none
+  color #ffffff
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  height 62px
+  border-radius 15px
+
+  &::placeholder
+    color rgba(255, 255, 255, 0.5)
+
+.gogocar-yellow-button
+  background: #FDAB3E;
+  border-radius: 30px;
+  height 55px
+  width 100%
+  max-width 210px
+  font-family 'Montserrat Bold',sans-serif
+  font-size 14px
+  color #fff
+  display flex
+  align-items center
+  justify-content center
+  margin 0 auto
+  transition all linear .2s
+  cursor pointer
+  border none
+
+  &:hover
+    box-shadow 0px 4px 11px 2px rgba(253,171,62,0.3)
+    color #fff
+
+
+// Select
+
+.selectCF {
+  width: 100%;
+}
+.onCF li ul {
+  display: block;
+  margin-top: 10px;
+  z-index: 6;
+}
+.select {
+  width: 100%;
+  position: relative;
+}
+.select-input {
+  position: relative;
+  background: #424B5B
+  border-radius: 10px;
+  height: 47px;
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  font-family: "Montserrat 400", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  z-index: 3;
+}
+.partner-wrap-input .select-input {
+  height: 47px;
+  font-size: 14px;
+  z-index: 8;
+}
+.select-options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 21;
+  display: none;
+  border-top: 0;
+  border-radius 10px
+  background-color #363d4a
+  box-shadow 0px 0px 40px rgba(27,33,43,0.85)
+}
+.select-options li {
+  padding: 15px 22px;
+  font-family: "Montserrat 400", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  text-align: left;
+}
+.select-options li:last-child{
+  border-radius: 0px 0px 5px 5px;
+}
+
+.append-icon .icon {
+  position: absolute;
+  right: 14px;
+  width: 16px;
+  height: 9px;
+  fill: #fff;
+}
+.append-icon
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0px;
+  z-index: 5;
+
+  .icon
+    transform rotate(90deg)
+    size(11px)
+.arrow-rotate {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+// Модальные окна
+.popup-content
+  background: #363D4A;
+  border-radius: 15px;
+  padding 40px
+  margin-bottom 25px
+
+
+
+.popup-modal-close
+  float none
+  width: max-content;
+  margin 0 0 auto auto
+  cursor pointer
+
+  .icon
+    size(18px)
+
+.popup-title
+  font-family 'Oswald 500',sans-serif
+  font-size 22px
+  color #fff
+  text-align center
+  margin-bottom 50px
+.popup-input--wrapper
+  position relative
+  display: flex;
+  align-items: center;
+  background: #424B5B
+  border-radius: 15px;
+  margin-bottom 30px
+.popup-show-pass
+  position absolute
+  right 0
+  cursor pointer
+  display flex
+  align-items center
+  justify-content center
+  width 48px
+
+  .icon
+    size(26px)
+#popup-login .popup-input--wrapper:nth-child(2)
+    margin-bottom 20px
+.popup-input-icon
+  background-color #4C5463
+  min-width 42px
+  size(42px)
+
+  .icon
+    size(24px)
+
+.popup-checkbox-remember input,.all-trip--popup--to--book input
+  display none
+
+.popup-checkbox-remember label,.all-trip--popup--to--book label
+  font-family 'Montserrat SB',sans-serif
+  font-size 14px
+  color #fff
+  cursor pointer
+  position relative
+  display flex
+  align-items center
+  margin-bottom 45px
+
+  &:before
+    content ''
+    position relative
+    display block
+    background-color #424B5B
+    border-radius 5px
+    size(19px)
+    margin-right 10px
+
+.popup-checkbox-remember input:checked + label:after,.all-trip--popup--to--book input:checked + label:after
+  position: absolute;
+  top: 10.5px;
+  left: 5px;
+  width: 2px;
+  height: 2px;
+  content: '';
+  transform: rotate(45deg);
+  background: #FDAB3E;
+  box-shadow: 2px 0 0 #FDAB3E, -2px 0 0 #FDAB3E, 4px 0 0 #FDAB3E, 4px -2px 0 #FDAB3E, 4px -4px 0 #FDAB3E, 4px -6px 0 #FDAB3E, 4px -8px 0 #FDAB3E, 4px -10px 0 #FDAB3E;
+
+.popup-social--block
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fdab3e;
+  box-shadow: 0px 0px 20px rgba(253,191,90,0.2);
+  border-radius: 12px;
+
+  .icon
+    size(20px)
+
+.popup-login-social
+  display flex
+  align-items center
+  justify-content center
+  .gogocar-gray-icons
+    cursor pointer
+    size(60px)
+    margin-right 30px
+    position relative
+    left auto
+
+    &:last-child
+      margin-right 0
+
+.popup-title-light
+  font-family 'Montserrat 400',sans-serif
+  font-size 16px
+  color #fff
+  text-align center
+  margin-bottom 20px
+
+.popup-inputs--wrapper .gogocar-yellow-button
+  margin-bottom 40px
+
+.popup-modal--wrap
+  display block
+
+.popup-register-login
+  display flex
+  align-items center
+  justify-content center
+  font-family 'Montserrat 500',sans-serif
+  font-size 16px
+  color #fff
+
+.popup-register--link
+  font-family 'Montserrat 500',sans-serif
+  font-size 16px
+  color #FDAB3E
+  cursor pointer
+  pointer-events auto
+
+.modal-open .modal
+  background-color rgba(41, 47, 57, 0.8)
+
+.popup-desc
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color rgba(255, 255, 255, 0.6)
+  text-align center
+  margin 0 auto
+  margin-bottom 30px
+  width 350px
+
+.popup-active-reg
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 30px
+
+  input
+    background: #424B5B;
+    border-radius: 15px;
+    size(55px)
+    text-align center
+    font-family 'Montserrat 500',sans-serif
+    font-size 20px
+    color #fff
+    margin-right 20px
+    border none
+
+    &:last-child
+      margin-right 0
+
+    &::placeholder
+      color rgba(255, 255, 255, 0.6)
+
+.popup-active-reg--again
+  font-family 'Montserrat SB',sans-serif
+  font-size 16px
+  color #FDAB3E
+  margin-bottom 50px
+  text-align center
+  cursor pointer
+
+.modal-970
+  max-width 970px
+
+.popup-gogocar-type-cargo--item
+  display flex
+  align-items center
+  background-color #424B5B
+  border-radius 10px
+  height 56px
+  font-family 'Montserrat 500',sans-serif
+  font-size 14px
+  color #fff
+  width 100%
+  padding 0 15px
+  cursor pointer
+
+
+.popup-gogocar-cargo--checkbox
+  size(20px)
+  border-radius 50%
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-right 18px
+  position relative
+
+  .icon
+    absolute-center()
+    size(13px)
+
+.popup-gogocar-type-cargo
+  width 85%
+  margin 0 auto
+
+  li
+    margin-bottom 30px
+.popup-buttons-ok-close
+  display flex
+  align-items center
+  justify-content center
+  width max-content
+  margin 0 auto
+  .gogocar-gray-button,.gogocar-yellow-button
+    min-width 230px
+.gogocar-gray-button
+  background: #424B5B;
+  border-radius: 30px;
+  height 55px
+  width 100%
+  max-width 210px
+  font-family 'Montserrat Bold',sans-serif
+  font-size 14px
+  color #fff
+  display flex
+  align-items center
+  justify-content center
+  margin 0 auto
+  transition all linear .2s
+  cursor pointer
+  border none
+
+  &:hover
+    box-shadow: 0px 0px 20px rgba(41, 47, 57, 0.6);
+
+.popup-gogocar-type-cargo--item__wrap.active
+  .popup-gogocar-cargo--checkbox
+    background-color #FDAB3E
+.popup-covid--wrap
+  text-align center
+  .icon
+    margin-bottom 40px
+
+.font-size-25
+  font-size 25px !important
+
+  span
+    font-size 25px !important
+
+.popup-covid--buttons
+  .gogocar-gray-button,.gogocar-yellow-button
+    max-width 100%
+
+.poopup-friendly-price
+  font-family 'Oswald 500',sans-serif
+  font-size 32px
+  color #FDAB3E
+  text-align center
+
+.popup-trip-finish
+  font-family 'Oswald 500',sans-serif
+  font-size 20px
+  color #fff
+  margin-bottom 60px
+
+.main-section--title--red
+  font-family 'Oswald 500',sans-serif
+  font-size 25px
+  color #fff
+  text-align center
+  margin-bottom 20px
+
+  span
+    color #FF4B55
+    font-size 25px
+#popup-trip-cancel
+  .modal-dialog
+    max-width 590px
+
+.modal-dialog
+  display: flex;
+  flex-direction column
+  justify-content: center;
+
+.font-size-20
+  font-size 20px !important
+  font-family 'Oswald 400',sans-serif !important
+
+  span
+    font-size 20px !important
+
+.you-trip-cancel--buttons
+  display flex
+  align-items center
+  justify-content center
+  .gogocar-gray-button
+    height 50px
+    margin-right 30px
+    max-width 200px
+    margin-bottom 0
+    margin-left 0
+
+.gogocar-red-button
+  display flex
+  align-items center
+  justify-content center
+  background-color #FF4B55
+  font-family 'Montserrat SB',sans-serif
+  font-size 15px
+  color #fff
+  height 50px
+  border-radius 30px
+  max-width 200px
+  width 100%
+  cursor pointer
+  transition all linear .2s
+
+  &:hover
+    box-shadow 0px 0px 20px rgba(255,75,85,0.4)
+.breadcrumb--title
+  font-family 'Oswald 500',sans-serif
+  font-size 24px
+  color #fff
+  margin-bottom 10px
+.breadcrumbs--list
+  display flex
+  align-items center
+
+.breadcrumbs
+  padding 20px 0
+  padding-bottom 30px
+
+.breadcrumbs--item
+  display flex
+  align-items center
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color rgba(255, 255, 255, 0.6)
+  .icon
+    size(9px)
+    margin 0 10px
+    fill rgba(255, 255, 255, 0)
+    stroke-width 3px
+    stroke rgba(255, 255, 255, 0.6)
+
+.popup-show-pass.active
+    &:before
+      content ''
+      absolute-center()
+      background-color #8E939D
+      width 1.5px
+      height 28px
+      box-shadow 0 0 0px 2px #424B5B
+
+      transform translate(-50%, -50%) rotate(-45deg)
+.modal-open .modal
+  padding-right 0 !important

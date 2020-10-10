@@ -1,0 +1,109 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Поддержка
+                    .personal-content--body
+                        .personal-pay--filter--wrap.gogocar-box
+                            .personal-pay--filter--top
+                                .personal-filter--title Фильтр
+                                .personal-filter--icon
+                                    +icon('arrow-right')
+                            .personal-pay--filter--top.personal-pay--filter--top--mobile
+                                .personal-filter--title 3 транзакции
+                                .gogocar-yellow-icons
+                                    +icon('filter')
+                            .personal-pay--filter--bottom--footer
+                                .personal-pay--filter--bottom
+                                    .personal-pay--filter--bottom--wrap.personal-support-filter--wrap.row
+                                        .col-xl-6.col-lg-6.personal-mb
+                                            .all-trip--popup__col
+                                                label Номер:
+                                                input.gogocar-input--filter.personal-content--input(type="text" placeholder="Номер...")
+                                        .col-xl-6.col-lg-6.personal-mb
+                                            .all-trip--popup__col
+                                                label Статус:
+                                                input.gogocar-input--filter.personal-content--input(type="text" placeholder="Статус...")
+                                        .col-xl-4.col-lg-4.personal-mb
+                                            .all-trip--popup__col.personal-content--select
+                                                label Интервал:
+                                                select.gogocar-select
+                                                    option(value="Номер") Номер
+                                                    option(value="Номер2") Номер2
+
+                                        .col-xl-8.personal-pay-inputs--flex.personal-mb
+                                            .all-trip--popup__col
+                                                label Дата:
+                                                .all-trip--popup__time
+                                                    .notific-input-icon.personal-w
+                                                        input.gogocar-input--filter.personal-calendar.personal-content--input(type="text" readonly="readonly")
+                                                        .notific-calendar-icon
+                                                            +icon('calendar2')
+                                                    span.all-trip--space –
+                                                    .notific-input-icon.personal-w
+                                                        input.gogocar-input--filter.personal-calendar.personal-content--input(type="text" readonly="readonly")
+                                                        .notific-calendar-icon
+                                                            +icon('calendar2')
+
+                                .personal-pay--filter--footer
+                                    .personal-pay--filter--buttons
+                                        .gogocar-yellow-button.w-100.m-0.mr-4 Сохранить
+                                        .gogocar-gray-button.w-100 Отмена
+                                    .gogocar-gray-icons
+                                        +icon('setting-car')
+                        .gogocar-yellow-button.personal-add--appeal.personal-add--appeal--desktop.m-0(data-toggle="modal" data-target="#popup-appear-step1") Добавить обращение
+                    .personal-content--header.personal-content--header--support
+                        h3.personal-content--header--title Запрос в техподдержку
+                        .personal-pay--header
+                            .gogocar-yellow-button.m-0.mr-4 Активные
+                            .gogocar-gray-button.m-0 Архив
+                    .personal-pay--data
+                        ul.personal-pay--header.mb-5
+                            li.personal-pay--header--item.pphi-fc
+                                .personal-pay--header--item__name Запрос
+                                ul.personal-pay--header--childen
+                                    li.personal-pay--header--childen__item Запрос №3 “Не получается создать поездку”
+                                    li.personal-pay--header--childen__item Запрос №2 “Не работает форма связи”
+                                    li.personal-pay--header--childen__item Запрос №1 “Не приходят увломления”
+
+                            li.personal-pay--header--item.pphi-fc.pphi-w-40
+                                .personal-pay--header--item__name Дата
+                                ul.personal-pay--header--childen
+                                    li.personal-pay--header--childen__item 08.06.2020 12:46
+                                    li.personal-pay--header--childen__item 08.06.2020 12:46
+                                    li.personal-pay--header--childen__item 08.06.2020 12:46
+
+                            li.personal-pay--header--item.pphi-fc.pphi-w-70
+                                .personal-pay--header--item__name Статус
+                                ul.personal-pay--header--childen
+                                    li.personal-pay--header--childen__item.pp-price.pg-balence Ожидается ответ от поддержки
+                                    li.personal-pay--header--childen__item.pp-price.pg-balence Ожидается ответ от поддержки
+                                    li.personal-pay--header--childen__item.pp-price Ожидается ответ от пользователя
+                    .personal-pay--header.personal-pay--header__mobile
+                        .gogocar-yellow-button.m-0.mr-4 Активные
+                        .gogocar-gray-button.m-0 Архив
+                    .personal-pay--data--mobile
+                        ul.personal-pay--header
+                            li.personal-pay--header--item
+                                .personal-pay--header--item--wrap
+                                    .personal-pay--header--item__name Название/Дата
+                                    .personal-pay--header--item__name Статус
+                                ul.personal-pay--header--childen
+                                    li.personal-pay--header--childen__item Запрос №3 “Не получается создать пое...”
+                                        .personal-pay--header--child
+                                            span.pp-date 21.05.2020 22:15
+                                            .font-family-m-500.pg-balence Ответ от поддержки
+                                    li.personal-pay--header--childen__item Запрос №2 “Не работает форма связи”
+                                        .personal-pay--header--child
+                                            span.pp-date 21.05.2020 22:15
+                                            .font-family-m-500.pg-balence Ответ от поддержки
+                                    li.personal-pay--header--childen__item Запрос №1 “Не приходят увломления”
+                                        .personal-pay--header--child
+                                            span.pp-date 21.05.2020 22:15
+                                            .font-family-m-500.pp-price Ответ от пользователя
+
+                    .gogocar-yellow-button.personal-add--appeal.personal-add--appeal--mobile.m-0(data-toggle="modal" data-target="#popup-appear-step1") Добавить обращение

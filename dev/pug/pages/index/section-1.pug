@@ -1,0 +1,48 @@
+section.main-section
+    .container
+        .main-section--wrap
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12.main-section--info
+                h1.main-section--title Безопасные поездки. #[span Лучшие цены.]
+                p.main-section--desc Доезжайте до нужного места в приятной компании!
+                .main-section--mobile-platform
+                    a.main-section--ios.main-section--platforms(href="/")
+                        .main-section--icon--ios.main-section--icons
+                            +icon('iostore')
+                        .main-section--info-platform
+                            span.main-section--available Available on the
+                            span.main-section--name-platform Apple Store
+                    a.main-section--android.main-section--platforms(href="/")
+                        .main-section--icon--android.main-section--icons
+                            +icon('androidi')
+                        .main-section--info-platform
+                            span.main-section--available Android App on
+                            span.main-section--name-platform GOOGLE PLAY
+            .col-xl-6.col-lg-6.col-md-6.col-sm-12.main-section--car
+                .main-section--illustration
+                    .main-section--illustration__bg.main-section-svg
+                        include svg1
+        form.main-section-search.calendar-zone-height
+            .main-section-search--from.main-section-search--wrap__input.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                .main-section-search--icon
+                    +icon('map2')
+                input.main-section-search--input__from(type="text" placeholder="Откуда" required)
+            .main-section-search--to.main-section-search--wrap__input.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                .main-section-search--icon
+                    +icon('map2')
+                input.main-section-search--input__to(type="text" placeholder="Куда" required)
+            .main-section-search--calendar.main-section-search--wrap__input.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                .main-section-search--icon
+                    +icon('calendar')
+                input.main-section-search--input__calendar.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly required)
+            .main-section-search--peoples.main-section-search--wrap__input.col-xl-3.col-lg-6.col-md-6.col-sm-6
+                .main-section-search--icon
+                    +icon('man')
+                input.main-section-search--input__peoples(type="text" value="1 пассажир" readonly required )
+                include ../../modules/count-peoples
+                button.main-section-search--submit(type="submit")
+                    +icon('search')
+                    span.main-section-search--submit--found Найти
+
+
+
+

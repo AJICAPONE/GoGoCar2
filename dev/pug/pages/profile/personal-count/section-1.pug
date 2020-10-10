@@ -1,0 +1,140 @@
+section.personal-settings.personal-price--add.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Счет аккаунта
+                    .personal-content--body
+                        .col-xl-5.col-lg-5.personal-count--balance--wrap.gogocar-box
+                            .personal-count--left
+                                .personal-count--title Мой балланс
+                                .personal-count--balance 160 000 UZS
+                            .personal-count--right
+                                .gogocar-gray-icons(data-toggle="modal" data-target="#popup-input-money")
+                                    +icon('money')
+                                    .personal-count--plus
+                                        +icon('plus2')
+                                .gogocar-gray-icons(data-toggle="modal" data-target="#popup-output-money")
+                                    +icon('money')
+                                    .personal-count--minus
+                                        +icon('minus2')
+                        .personal-pay--filter--wrap.gogocar-box
+                            .personal-pay--filter--top
+                                .personal-filter--title Фильтр
+                                .personal-filter--icon
+                                    +icon('arrow-right')
+                            .personal-pay--filter--top.personal-pay--filter--top--mobile
+                                .personal-filter--title 3 транзакции
+                                .gogocar-yellow-icons
+                                    +icon('filter')
+                            .personal-pay--filter--bottom--footer
+                                .personal-pay--filter--bottom
+                                    .personal-pay--filter--bottom--wrap.row
+                                        .col-xl-4.personal-pay-inputs
+                                            .all-trip--popup__col
+                                                label Тип операции:
+                                                input.gogocar-input--filter(type="text" placeholder="")
+                                        .col-xl-8.personal-pay-inputs.personal-pay-inputs--flex
+                                            .all-trip--popup__col
+                                                label Сумма:
+                                                .all-trip--popup__time
+                                                    input.gogocar-input--filter(type="text" placeholder="от")
+                                                    span.all-trip--space –
+                                                    input.gogocar-input--filter(type="text" placeholder="до")
+                                        .col-xl-4.personal-pay-inputs
+                                            .all-trip--popup__col
+                                                label Интервал:
+                                                select.gogocar-select
+                                                    option(value="Сегодня") Сегодня
+                                                    option(value="День") День
+                                                    option(value="Месяц") Месяц
+                                                    option(value="Год") Год
+                                        .col-xl-8.personal-pay-inputs.personal-pay-inputs--flex
+                                            .all-trip--popup__col
+                                                label Дата:
+                                                .all-trip--popup__time
+                                                    .notific-input-icon.personal-w
+                                                        input.gogocar-input--filter.personal-calendar(type="text" readonly="readonly")
+                                                        .notific-calendar-icon
+                                                            +icon('calendar2')
+                                                    span.all-trip--space –
+                                                    .notific-input-icon.personal-w
+                                                        input.gogocar-input--filter.personal-calendar(type="text" readonly="readonly")
+                                                        .notific-calendar-icon
+                                                            +icon('calendar2')
+
+                                .personal-pay--filter--footer
+                                    .personal-pay--filter--buttons
+                                        .gogocar-yellow-button.w-100.m-0.mr-4 Найти
+                                        .gogocar-gray-button.w-100 Отмена
+                                    .gogocar-gray-icons
+                                        +icon('setting-car')
+
+                        .personal-pay--data
+                            ul.personal-pay--header.mb-5
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Дата
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                        li.personal-pay--header--childen__item 05.06.2020 12:42
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Операция
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item Оплата проезда
+                                        li.personal-pay--header--childen__item Оплата проезда
+                                        li.personal-pay--header--childen__item Оплата за проезд
+                                        li.personal-pay--header--childen__item Оплата проезда
+                                        li.personal-pay--header--childen__item Оплата проезда
+                                        li.personal-pay--header--childen__item Оплата за проезд
+                                        li.personal-pay--header--childen__item Оплата проезда
+                                        li.personal-pay--header--childen__item Оплата проезда
+                                        li.personal-pay--header--childen__item Оплата за проезд
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Баланс
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item 160 000 UZS
+                                        li.personal-pay--header--childen__item 190 000 UZS
+                                        li.personal-pay--header--childen__item 255 000 UZS
+                                        li.personal-pay--header--childen__item 160 000 UZS
+                                        li.personal-pay--header--childen__item 190 000 UZS
+                                        li.personal-pay--header--childen__item 255 000 UZS
+                                        li.personal-pay--header--childen__item 160 000 UZS
+                                        li.personal-pay--header--childen__item 190 000 UZS
+                                        li.personal-pay--header--childen__item 255 000 UZS
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Сумма
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item.pp-price - 30 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price - 65 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price.pg-balence + 90 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price - 30 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price - 65 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price.pg-balence + 90 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price - 30 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price - 65 000 UZS
+                                        li.personal-pay--header--childen__item.pp-price.pg-balence + 90 000 UZS
+                        .personal-pay--data--mobile
+                            ul.personal-pay--header
+                                li.personal-pay--header--item
+                                    .personal-pay--header--item__name Операция/Дата
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item Оплата проезда #[span.pp-date 21.05.2020 22:15]
+                                        li.personal-pay--header--childen__item Оплата проезда #[span.pp-date 21.05.2020 22:15]
+                                        li.personal-pay--header--childen__item Оплата за проезд #[span.pp-date 21.05.2020 22:15]
+                                li.personal-pay--header--item.text-right
+                                    .personal-pay--header--item__name Баланс/Сумма
+                                    ul.personal-pay--header--childen
+                                        li.personal-pay--header--childen__item 160 000 UZS #[span.pp-price - 90 000 UZS]
+                                        li.personal-pay--header--childen__item 190 000 UZS #[span.pp-price - 90 000 UZS]
+                                        li.personal-pay--header--childen__item 160 000 UZS #[span.pp-price.pg-balence + 90 000 UZS]
+                        .gogocar-yellow-button Показать еще

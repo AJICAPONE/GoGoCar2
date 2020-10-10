@@ -1,0 +1,13 @@
+#popup-fp.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                +icon('friendly-price')
+                h3.main-section--title--v2.font-size-25.mb-4 Мы идем попутчикам навстречу и рекомендуем #[span дружескую цену:]
+                .poopup-friendly-price.mb-4 95 000 UZS
+                .popup-covid--buttons
+                    .gogocar-yellow-button.mb-4 Да, предложить дружескую цену
+                    .gogocar-gray-button Нет, я хочу изменить сумму

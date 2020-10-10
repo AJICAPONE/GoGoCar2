@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Предложить поездку (Комментарий)'
+    - var pageClass = 'other-page'
+
+block content
+    include peoples-trip/trip-comment/section-1
+    include ../popup-modal/popup-finish

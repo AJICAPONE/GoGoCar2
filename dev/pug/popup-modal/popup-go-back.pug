@@ -1,0 +1,12 @@
+#popup-go-back.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                +icon('want-go-back')
+                h3.main-section--title.font-size-25.mb-5 Собираетесь назад? #[span Опубликуйте обратную поездку сейчас!]
+                .popup-covid--buttons
+                    .gogocar-yellow-button.mb-4 Я опубликую обратную поездку сейчас
+                    .gogocar-gray-button Я опубликую обратную поездку позже

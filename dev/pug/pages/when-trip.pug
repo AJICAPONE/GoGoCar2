@@ -1,0 +1,9 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Предложить поездку (Когда состоится поездка ?)'
+    - var pageClass = 'other-page'
+
+block content
+    include peoples-trip/when-trip/section-1
+    include ../popup-modal/popup-covid

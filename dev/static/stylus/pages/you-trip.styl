@@ -1,0 +1,136 @@
+.gogocar-you-trip--wrap
+  display flex
+  margin-bottom 60px
+
+  .gogocar-gray-button.active
+    background-color #FDAB3E
+    box-shadow 0px 0px 20px rgba(253,191,90,0.2)
+
+.you-trip--content
+  .gogocar-trip--item
+    display none
+
+  .gogocar-trip--item.active
+    display block
+  .car-to-book--services--right
+    align-items center
+    display flex
+.you-trip--companions
+  display flex
+  .car-to-book--item--profile
+    margin-right 15px
+    &:last-child
+      margin-right 0
+.you-trip--companion
+  display flex
+  flex-direction column
+
+.you-trip--com--desc
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #9A9EA4
+
+.you-trip-detail--wrap
+  display flex
+  align-items center
+  justify-content space-between
+  position relative
+  padding 20px
+  .gogocar-yellow-icons
+    size(42px)
+    position relative
+    left auto
+    .icon
+      size(22px)
+
+.you-trip-detail--buttons
+  display flex
+  align-items center
+
+
+.you-trip-detail--cancel,.you-trip-detail--copy
+  display flex
+  align-items center
+  justify-content center
+  border-radius 12px
+  font-family 'Montserrat 500',sans-serif
+  font-size 13px
+  color #fff
+  height 50px
+  width 220px
+  cursor pointer
+  transition all linear .2s
+
+.you-trip-detail--copy
+  background-color #FDAB3E
+  margin-right 20px
+  &:hover
+    box-shadow 0px 0px 20px rgba(253,191,90,0.2)
+
+.you-trip-detail--cancel
+  background-color #424B5B
+  &:hover
+    box-shadow 0px 0px 20px rgba(41, 47, 57, 0.4)
+
+.you-trip-driver-chat
+  .chat-content--info__driver--review--header
+    padding 15px 0
+    margin 0 15px
+    margin-bottom 15px
+    border-bottom 1.5px solid #404452
+  .chat-content--info__driver--review
+    margin-bottom 30px
+
+
+.you-trip-chat-content--text
+  display flex
+  align-items center
+  justify-content space-between
+  .chat-content--review__trip--text
+    margin-bottom 0
+
+.you-trip-chat-message--count
+  display flex
+  align-items center
+  justify-content center
+  font-size 13px
+  color #fff
+  font-family 'Oswald 500',sans-serif
+  background-color #FDAB3E
+  border-radius 5px
+  size(22px)
+
+.you-trip-chat-content
+  overflow-y scroll
+  max-height 472px
+  min-height 472px
+  border-radius 0px 0px 10px 10px
+  margin-right 5px
+  &::-webkit-scrollbar
+    width 5px
+    border-radius 5px
+  &::-webkit-scrollbar-thumb
+    background-color: #FDAB3E;
+    outline: 1px solid #708090;
+    border-radius: 10px;
+  &::-webkit-scrollbar-track
+    margin-right 5px
+  &::-webkit-scrollbar-track-piece
+    background: rgba(255, 255, 255, 0.05);
+    border-radius 10px
+  &::-webkit-scrollbar-button
+    background-color transparent
+    height 15px
+  &::-webkit-scrollbar-corner
+    background-color #000
+    size(10px)
+  .chat-content--info__driver--review--content
+    cursor pointer
+    transition all linear .2s
+
+    &:hover
+      background-color #404753
+
+  .chat-content--info__driver--review--content.active
+    background-color #404753
+

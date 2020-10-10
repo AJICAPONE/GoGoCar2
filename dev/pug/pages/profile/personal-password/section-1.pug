@@ -1,0 +1,25 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-3.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-9.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Пароль
+                    .personal-content--body
+                        .personal-password--list
+                            .personal-add--car--title Изменить пароль
+                            .personal-add--car--desc Если вы забыли ваш пароль, он будет отправлен на электронную почту
+                            .personal-password-zone.row
+                                .col-xl-4.col-lg-4.pl-0.all-trip--popup__col.gogocar-personal-pass
+                                    label Текущий пароль:
+                                    input.gogocar-input--filter.personal-content--input(type="password")
+                                .col-xl-4.col-lg-4.all-trip--popup__col.gogocar-personal-pass
+                                    label Новый пароль:
+                                    input.gogocar-input--filter.personal-content--input(type="password")
+                                .col-xl-4.col-lg-4.pr-0.all-trip--popup__col.gogocar-personal-pass
+                                    label Подтвердите пароль:
+                                    input.gogocar-input--filter.personal-content--input(type="password")
+                            .gogocar-yellow-button.m-0 Сохранить
+
