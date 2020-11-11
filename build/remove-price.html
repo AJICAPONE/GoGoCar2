@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Предложить поездку (Изменить цену)</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/main.css"><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body class="other-page">
+    <div class="wrapper">
+      <header>
+        <div class="header-container">
+          <div class="container">
+            <div class="header-wrap">
+              <div class="header-sandwich-menu">
+                <svg class="icon icon-menu ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                </svg>
+              </div>
+              <div class="header-logo"><a href="/">
+                  <svg class="icon icon-logo2 ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#logo2"></use>
+                  </svg></a></div>
+              <div class="header-trip">
+                <div class="header-trip--wrap"><a class="header-trip--wrap__link" href="/">Найти <span>поездку</span></a><a class="header-trip--wrap__link" href="/">Предложить <span>поездку</span></a></div>
+              </div>
+              <div class="header-profile">
+                <div class="header-profile--menu">
+                  <svg class="icon icon-menu ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                  </svg>
+                  <ul class="header-profile--menu--list"><a class="header-profile--menu--item" href="/">
+                      <svg class="icon icon-home ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#home"></use>
+                      </svg><span>Управление</span></a><a class="header-profile--menu--item" href="/">
+                      <svg class="icon icon-profile ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#profile"></use>
+                      </svg><span>Профиль</span></a><a class="header-profile--menu--item" href="/">
+                      <svg class="icon icon-message ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#message"></use>
+                      </svg><span>Сообщение</span></a><a class="header-profile--menu--item" href="/">
+                      <svg class="icon icon-notific ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#notific"></use>
+                      </svg><span>Уведомления</span></a><a class="header-profile--menu--item" href="/">
+                      <svg class="icon icon-wheel ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#wheel"></use>
+                      </svg><span>Ваши поездки</span></a><a class="header-profile--menu--logout">
+                      <svg class="icon icon-logout ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#logout"></use>
+                      </svg><span>Выйти</span></a></ul>
+                </div>
+                <div class="header-profile--menu__mobile">
+                  <svg class="icon icon-menu ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#menu"></use>
+                  </svg>
+                </div>
+                <div class="header-user-profile"><a class="header-user-profile--link" href="/acc-control.html">
+                    <div class="header-user-profile--img" style="background-image:url('/static/img/content/drivers-avatar/driver1.png');">
+                      <div class="header-user-profile--notific">3</div>
+                    </div><span>Татьяна Гусева</span></a></div>
+                <div class="header-profile--reg" data-toggle="modal" data-target="#popup-register">Регистрация</div>
+                <div class="header-profile--login" data-toggle="modal" data-target="#popup-login">Войти</div>
+              </div>
+            </div>
+          </div>
+          <div class="header-mobile-menu header-mobile-menu-main">
+            <div class="personal-sidebar--content--wrap">
+              <div class="personal-sidebar--content gogocar-box">
+                <ul class="header-profile--menu--list"><a class="header-profile--menu--item" href="/">
+                    <svg class="icon icon-home ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#home"></use>
+                    </svg><span>Управление</span></a><a class="header-profile--menu--item" href="/">
+                    <svg class="icon icon-profile ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#profile"></use>
+                    </svg><span>Профиль</span></a><a class="header-profile--menu--item" href="/">
+                    <svg class="icon icon-message ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#message"></use>
+                    </svg><span>Сообщение</span></a><a class="header-profile--menu--item" href="/">
+                    <svg class="icon icon-notific ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#notific"></use>
+                    </svg><span>Уведомления</span></a><a class="header-profile--menu--item" href="/">
+                    <svg class="icon icon-wheel ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#wheel"></use>
+                    </svg><span>Ваши поездки</span></a><a class="header-profile--menu--logout">
+                    <svg class="icon icon-logout ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#logout"></use>
+                    </svg><span>Выйти</span></a></ul>
+                <div class="footer-border">
+                  <div class="container">
+                    <div class="footer-wrap">
+                      <div class="col-xl-3 col-lg-3 col-md-3 footer-items"><a class="footer-logo" href="/">
+                          <svg class="icon icon-logo2 ">
+                            <use xlink:href="static/img/svg/symbol/sprite.svg#logo2"></use>
+                          </svg></a>
+                        <ul class="footer-copy--social footer-logo-social"><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-facebook ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                            </svg></a><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-instagram ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#instagram"></use>
+                            </svg></a><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-twitter ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#twitter"></use>
+                            </svg></a><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-whatsapp ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#whatsapp"></use>
+                            </svg></a></ul>
+                      </div>
+                      <div class="col-xl-6 col-lg-6 col-md-5 footer-items">
+                        <div class="footer-pages--wrap">
+                          <ul class="footer-pages-list"><a class="footer-pages-item" href="/">О нас</a><a class="footer-pages-item" href="/">FAQ</a></ul>
+                          <ul class="footer-pages-list"><a class="footer-pages-item" href="/">Связаться с нами</a><a class="footer-pages-item" href="/">Ищем сотрудников</a></ul>
+                          <ul class="footer-pages-list"><a class="footer-pages-item" href="/">Условия использования</a><a class="footer-pages-item" href="/">Пресса о нас</a></ul>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-3 col-md-4 footer-items">
+                        <div class="footer-select-list">
+                          <div class="footer-country-list">
+                            <div class="footer-country-item fci-choised">
+                              <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/uz.png');"></div><span>UZS</span>
+                              <svg class="icon icon-arrow-right3 ">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right3"></use>
+                              </svg>
+                            </div>
+                            <div class="footer-country-list--block">
+                              <div class="footer-country-item fci-choise">
+                                <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/uz.png');"></div><span>UZS</span>
+                              </div>
+                              <div class="footer-country-item fci-choise">
+                                <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/ru.png');"></div><span>RUS</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="footer-country-list2">
+                            <div class="footer-country-item2">
+                              <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/ru.png');"></div>
+                              <svg class="icon icon-arrow-right3 ">
+                                <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right3"></use>
+                              </svg>
+                            </div>
+                            <ul class="footer-country-choise--list">
+                              <li class="footer-country-choise--item">
+                                <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/ru.png');"></div>
+                              </li>
+                              <li class="footer-country-choise--item">
+                                <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/uz.png');"></div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-copyright">
+                    <div class="container">
+                      <div class="footer-copy--wrap">
+                        <div class="footer-copy--info">GoGoCar, 2020 ©</div>
+                        <ul class="footer-copy--social"><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-facebook ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                            </svg></a><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-instagram ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#instagram"></use>
+                            </svg></a><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-twitter ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#twitter"></use>
+                            </svg></a><a class="footer-copy--social__item" href="/">
+                            <svg class="icon icon-whatsapp ">
+                              <use xlink:href="static/img/svg/symbol/sprite.svg#whatsapp"></use>
+                            </svg></a></ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <section class="remove-price">
+          <div class="container">
+            <div class="remove-price--wrap">
+              <h1 class="main-section--title--v2 text-center mb-5">Изменить <span>рекомендуемую цену</span> за место</h1>
+              <div class="col-xl-8 col-lg-8 remove-price--content">
+                <div class="gogocar-input--wrapper">
+                  <div class="remove-price--content__icon__route">
+                    <div class="gogocar-gray-icons">
+                      <svg class="icon icon-map2 ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#map2"></use>
+                      </svg>
+                    </div>
+                    <div class="remove-price--route"><span class="remove-route--start">Ташкент</span>
+                      <div class="gogocar-trip--item__route">
+                        <div class="gogocar-trip--item__route--start"></div>
+                        <div class="gogocar-trip--item__route--end"></div>
+                      </div><span class="remove-route--end">Андижан</span>
+                    </div>
+                  </div>
+                  <div class="remove-change--price">
+                    <div class="remove-change--price--minus">
+                      <svg class="icon icon-minus ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#minus"></use>
+                      </svg>
+                    </div>
+                    <div class="remove-change--price-text" data-change-price="5000" data-change-currency="UZS">0 UZS</div>
+                    <div class="remove-change--price--plus">
+                      <svg class="icon icon-add ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#add"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="gogocar-trip--item">
+                  <div class="gogocar-trip--item__top">
+                    <div class="gogocar-trip--item-town__route">
+                      <div class="gogocar-trip--item__town"><span>Ташкент</span><span>Андижан</span></div>
+                      <div class="gogocar-trip--item__route">
+                        <div class="gogocar-trip--item__route--start"></div>
+                        <div class="gogocar-trip--item__route--end"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gogocar-trip--item__bottom">
+                    <div class="remove-change--price">
+                      <div class="remove-change--price--minus">
+                        <svg class="icon icon-minus ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#minus"></use>
+                        </svg>
+                      </div>
+                      <div class="remove-change--price-text" data-change-price="5000" data-change-currency="UZS">0 UZS</div>
+                      <div class="remove-change--price--plus">
+                        <svg class="icon icon-add ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#add"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-8 remove-price--content">
+                <div class="gogocar-input--wrapper">
+                  <div class="remove-price--content__icon__route">
+                    <div class="gogocar-gray-icons">
+                      <svg class="icon icon-map2 ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#map2"></use>
+                      </svg>
+                    </div>
+                    <div class="remove-price--route"><span class="remove-route--start">Ташкент</span>
+                      <div class="gogocar-trip--item__route">
+                        <div class="gogocar-trip--item__route--start"></div>
+                        <div class="gogocar-trip--item__route--end"></div>
+                      </div><span class="remove-route--end">Узумчилик</span>
+                    </div>
+                  </div>
+                  <div class="remove-change--price">
+                    <div class="remove-change--price--minus">
+                      <svg class="icon icon-minus ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#minus"></use>
+                      </svg>
+                    </div>
+                    <div class="remove-change--price-text" data-change-price="5000" data-change-currency="UZS">0 UZS</div>
+                    <div class="remove-change--price--plus">
+                      <svg class="icon icon-add ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#add"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="gogocar-trip--item">
+                  <div class="gogocar-trip--item__top">
+                    <div class="gogocar-trip--item-town__route">
+                      <div class="gogocar-trip--item__town"><span>Ташкент</span><span>Андижан</span></div>
+                      <div class="gogocar-trip--item__route">
+                        <div class="gogocar-trip--item__route--start"></div>
+                        <div class="gogocar-trip--item__route--end"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gogocar-trip--item__bottom">
+                    <div class="remove-change--price">
+                      <div class="remove-change--price--minus">
+                        <svg class="icon icon-minus ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#minus"></use>
+                        </svg>
+                      </div>
+                      <div class="remove-change--price-text" data-change-price="5000" data-change-currency="UZS">0 UZS</div>
+                      <div class="remove-change--price--plus">
+                        <svg class="icon icon-add ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#add"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-8 col-lg-8 remove-price--content">
+                <div class="gogocar-input--wrapper">
+                  <div class="remove-price--content__icon__route">
+                    <div class="gogocar-gray-icons">
+                      <svg class="icon icon-map2 ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#map2"></use>
+                      </svg>
+                    </div>
+                    <div class="remove-price--route"><span class="remove-route--start">Ташкент</span>
+                      <div class="gogocar-trip--item__route">
+                        <div class="gogocar-trip--item__route--start"></div>
+                        <div class="gogocar-trip--item__route--end"></div>
+                      </div><span class="remove-route--end">Пунган</span>
+                    </div>
+                  </div>
+                  <div class="remove-change--price">
+                    <div class="remove-change--price--minus">
+                      <svg class="icon icon-minus ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#minus"></use>
+                      </svg>
+                    </div>
+                    <div class="remove-change--price-text" data-change-price="5000" data-change-currency="UZS">0 UZS</div>
+                    <div class="remove-change--price--plus">
+                      <svg class="icon icon-add ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#add"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="gogocar-trip--item">
+                  <div class="gogocar-trip--item__top">
+                    <div class="gogocar-trip--item-town__route">
+                      <div class="gogocar-trip--item__town"><span>Ташкент</span><span>Андижан</span></div>
+                      <div class="gogocar-trip--item__route">
+                        <div class="gogocar-trip--item__route--start"></div>
+                        <div class="gogocar-trip--item__route--end"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="gogocar-trip--item__bottom">
+                    <div class="remove-change--price">
+                      <div class="remove-change--price--minus">
+                        <svg class="icon icon-minus ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#minus"></use>
+                        </svg>
+                      </div>
+                      <div class="remove-change--price-text" data-change-price="5000" data-change-currency="UZS">0 UZS</div>
+                      <div class="remove-change--price--plus">
+                        <svg class="icon icon-add ">
+                          <use xlink:href="static/img/svg/symbol/sprite.svg#add"></use>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="trip-stops--places--buttons mt-5">
+              <div class="gogocar-gray-button m-0-auto-none mr-4">Назад</div>
+              <div class="gogocar-yellow-button m-0-auto-none">Продолжить</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="header-panel--fixed"><a class="header-panel--fixed--item" href="/trip.html">
+          <svg class="icon icon-car-f ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#car-f"></use>
+          </svg><span>Поездки</span></a><a class="header-panel--fixed--item" href="/find-trip.html">
+          <svg class="icon icon-search-f ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#search-f"></use>
+          </svg><span>Поиск</span></a><a class="header-panel--fixed--item hpfi-main" href="/type-trip.html">
+          <svg class="icon icon-gogocar-f ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#gogocar-f"></use>
+          </svg></a><a class="header-panel--fixed--item" href="/personal-message.html">
+          <svg class="icon icon-chat-f ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#chat-f"></use>
+          </svg><span>Диалоги</span></a>
+        <div class="header-panel--fixed--item gogocar-show-menu">
+          <svg class="icon icon-menu-f ">
+            <use xlink:href="static/img/svg/symbol/sprite.svg#menu-f"></use>
+          </svg><span>Меню</span>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-border">
+          <div class="container">
+            <div class="footer-wrap">
+              <div class="col-xl-3 col-lg-3 col-md-3 footer-items"><a class="footer-logo" href="/">
+                  <svg class="icon icon-logo2 ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#logo2"></use>
+                  </svg></a>
+                <ul class="footer-copy--social footer-logo-social"><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-facebook ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                    </svg></a><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-instagram ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#instagram"></use>
+                    </svg></a><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-twitter ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#twitter"></use>
+                    </svg></a><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-whatsapp ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#whatsapp"></use>
+                    </svg></a></ul>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-5 footer-items">
+                <div class="footer-pages--wrap">
+                  <ul class="footer-pages-list"><a class="footer-pages-item" href="/">О нас</a><a class="footer-pages-item" href="/">FAQ</a></ul>
+                  <ul class="footer-pages-list"><a class="footer-pages-item" href="/">Связаться с нами</a><a class="footer-pages-item" href="/">Ищем сотрудников</a></ul>
+                  <ul class="footer-pages-list"><a class="footer-pages-item" href="/">Условия использования</a><a class="footer-pages-item" href="/">Пресса о нас</a></ul>
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-4 footer-items">
+                <div class="footer-select-list">
+                  <div class="footer-country-list">
+                    <div class="footer-country-item fci-choised">
+                      <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/uz.png');"></div><span>UZS</span>
+                      <svg class="icon icon-arrow-right3 ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right3"></use>
+                      </svg>
+                    </div>
+                    <div class="footer-country-list--block">
+                      <div class="footer-country-item fci-choise">
+                        <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/uz.png');"></div><span>UZS</span>
+                      </div>
+                      <div class="footer-country-item fci-choise">
+                        <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/ru.png');"></div><span>RUS</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="footer-country-list2">
+                    <div class="footer-country-item2">
+                      <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/ru.png');"></div>
+                      <svg class="icon icon-arrow-right3 ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right3"></use>
+                      </svg>
+                    </div>
+                    <ul class="footer-country-choise--list">
+                      <li class="footer-country-choise--item">
+                        <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/ru.png');"></div>
+                      </li>
+                      <li class="footer-country-choise--item">
+                        <div class="footer-country-item__img" style="background-image:url('static/img/general/lang/uz.png');"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-town-trip--wrap row">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-town-trip--item pl-0">
+                <ul class="footer-town-trip--list"><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a></ul>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-town-trip--item">
+                <ul class="footer-town-trip--list"><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a></ul>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-town-trip--item">
+                <ul class="footer-town-trip--list"><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a></ul>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 footer-town-trip--item pr-0">
+                <ul class="footer-town-trip--list"><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a><a class="footer-town-trip-li--item" href="/">
+                    <div class="footer-town-trip--item__trip">Ташкент → Андижан</div>
+                    <div class="footer-town-trip-li--item--icon">
+                      <svg class="icon icon-arrow-right ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </div></a></ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+              <div class="footer-copy--wrap">
+                <div class="footer-copy--info">GoGoCar, 2020 ©</div>
+                <ul class="footer-copy--social"><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-facebook ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                    </svg></a><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-instagram ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#instagram"></use>
+                    </svg></a><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-twitter ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#twitter"></use>
+                    </svg></a><a class="footer-copy--social__item" href="/">
+                    <svg class="icon icon-whatsapp ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#whatsapp"></use>
+                    </svg></a></ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade" id="popup-login" tabindex="-1" role="dialog" aria-labelledby="popup-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-header">
+              <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg class="icon icon-close ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <h3 class="popup-title">Войти</h3>
+            </div>
+            <form class="popup-inputs--wrapper">
+              <div class="popup-input--wrapper">
+                <div class="popup-input-icon gogocar-gray-icons">
+                  <svg class="icon icon-email ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#email"></use>
+                  </svg>
+                </div>
+                <input class="popup-input gogocar-input-v1" type="email" placeholder="Email или логин">
+              </div>
+              <div class="popup-input--wrapper">
+                <div class="popup-input-icon gogocar-gray-icons">
+                  <svg class="icon icon-key ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#key"></use>
+                  </svg>
+                </div>
+                <input class="popup-input gogocar-input-v1" type="password" placeholder="Пароль">
+              </div>
+              <div class="popup-checkbox-remember">
+                <input id="popup-checkbox-remember" type="checkbox">
+                <label for="popup-checkbox-remember">Запомнить меня</label>
+              </div>
+              <button class="gogocar-yellow-button" type="submit">Войти</button>
+            </form>
+            <div class="popup-login-social--wrap">
+              <h3 class="popup-title-light">Или войдите через другой аккаунт:</h3>
+              <div class="popup-login-social">
+                <div class="gogocar-gray-icons">
+                  <div class="popup-social--block">
+                    <svg class="icon icon-facebook ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#facebook"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="gogocar-gray-icons">
+                  <div class="popup-social--block">
+                    <svg class="icon icon-vk ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#vk"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="gogocar-gray-icons">
+                  <div class="popup-social--block">
+                    <svg class="icon icon-google ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#google"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup-register-login">Ещё не с нами?  
+            <div class="popup-register--link popup-reg--link" data-toggle="modal" data-target="#popup-register">Зарегистрируйтесь!</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup-register" tabindex="-1" role="dialog" aria-labelledby="popup-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-header">
+              <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg class="icon icon-close ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <h3 class="popup-title">Регистрация</h3>
+            </div>
+            <form class="popup-inputs--wrapper">
+              <div class="popup-input--wrapper">
+                <div class="popup-input-icon gogocar-gray-icons">
+                  <svg class="icon icon-email ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#email"></use>
+                  </svg>
+                </div>
+                <input class="popup-input gogocar-input-v1" type="email" placeholder="Email или логин">
+              </div>
+              <div class="gogocar-select-country--wrap gogocar-select-country--wrap--reg">
+                <div class="gogocar-select-country-reg popup-input--wrapper">
+                  <div class="gogocar-select-country--flag--wrap">
+                    <div class="gogocar-select-country--flag" style="background-image:url('static/img/general/lang/uz.png');"></div>
+                    <div class="gogocar-select-country--name">UZ</div>
+                  </div>
+                  <svg class="icon icon-arrow-right ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#arrow-right"></use>
+                  </svg>
+                  <ul class="gogocar-select-country__list-reg">
+                    <li class="gogocar-select-country__item" data-mask-phone="(+900 00) 000-00-00" data-placeholder="(+998-90) ___-__-__">
+                      <div class="gogocar-select-country__item--flag" style="background-image:url('static/img/general/lang/uz.png');"></div>
+                      <div class="gogocar-select-country__item--name">UZ</div>
+                    </li>
+                    <li class="gogocar-select-country__item" data-mask-phone="+7 (000) 000-00-00" data-placeholder="+7 (000) ___-__-__">
+                      <div class="gogocar-select-country__item--flag" style="background-image:url('static/img/general/lang/ru.png');"></div>
+                      <div class="gogocar-select-country__item--name">RU</div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="popup-input--wrapper">
+                  <div class="popup-input-icon gogocar-gray-icons">
+                    <svg class="icon icon-phone ">
+                      <use xlink:href="static/img/svg/symbol/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <input class="popup-input gogocar-input-v1 mask-phone-choise" type="tel" placeholder="(+998-90) ___-__-__" required minlength="18">
+                </div>
+              </div>
+              <div class="popup-input--wrapper">
+                <div class="popup-input-icon gogocar-gray-icons">
+                  <svg class="icon icon-key ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#key"></use>
+                  </svg>
+                </div>
+                <input class="popup-input gogocar-input-v1 popup-eye-status" type="password" placeholder="Пароль" psswd-shown="false">
+                <div class="popup-show-pass">
+                  <svg class="icon icon-eye ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#eye"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup-input--wrapper">
+                <div class="popup-input-icon gogocar-gray-icons">
+                  <svg class="icon icon-key ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#key"></use>
+                  </svg>
+                </div>
+                <input class="popup-input gogocar-input-v1 popup-eye-status" type="password" placeholder="Повторите пароль" psswd-shown="false">
+                <div class="popup-show-pass">
+                  <svg class="icon icon-eye ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#eye"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="gogocar-yellow-button gogocar-active-reg" data-toggle="modal" data-target="#popup-reg-active">Далее</div>
+            </form>
+          </div>
+          <div class="popup-register-login">Уже есть аккаунт?  
+            <div class="popup-register--link popup-login--link" data-toggle="modal" data-target="#popup-login">Войдите!</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup-reg-active" tabindex="-1" role="dialog" aria-labelledby="popup-login" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-header">
+              <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg class="icon icon-close ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <h3 class="popup-title">Код подтвердения</h3>
+              <p class="popup-desc">На номер 8 (999) 123 45 67 был выслан код. Введите код ниже:</p>
+            </div>
+            <form class="popup-inputs--wrapper">
+              <div class="popup-active-reg">
+                <input class="popup-active-reg--input" type="text" placeholder="_">
+                <input class="popup-active-reg--input" type="text" placeholder="_">
+                <input class="popup-active-reg--input" type="text" placeholder="_">
+                <input class="popup-active-reg--input" type="text" placeholder="_">
+              </div>
+              <div class="popup-active-reg--again">Отправить повторно</div>
+              <button class="gogocar-yellow-button" type="submit">Подтвердить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup-cargo-type" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap modal-970" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-header">
+              <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg class="icon icon-close ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <h3 class="main-section--title text-center mb-5">Типы <span>грузов</span></h3>
+            </div>
+            <ul class="popup-gogocar-type-cargo row mb-4">
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Обычный</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Хрупкий</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Ценный</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Скоропортящиеся</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Габаритный</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Опасный</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Негабаритный</span>
+                </div>
+              </li>
+              <li class="col-xl-6 col-sm-12 popup-gogocar-type-cargo--item__wrap">
+                <div class="popup-gogocar-type-cargo--item">
+                  <div class="popup-gogocar-cargo--checkbox"></div><span>Сборный</span>
+                </div>
+              </li>
+            </ul>
+            <div class="popup-buttons-ok-close">
+              <div class="gogocar-yellow-button type-cargo-choise mr-5" data-dismiss="modal" aria-label="Close">Подтвердить</div>
+              <div class="gogocar-gray-button" data-dismiss="modal" aria-label="Close">Отмена</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup-del-msg" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-covid--wrap popup-del-msg">
+              <h3 class="main-section--title--v2 font-size-25 mb-5">Удалить сообщения?</h3>
+              <div class="delete-chat-msg">
+                <div class="delete-choise-chat-msg gogocar-red-button" data-dismiss="modal" aria-label="Close">Удалить</div>
+                <div class="gogocar-gray-button" data-dismiss="modal" aria-label="Close">Отмена</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup-jaloba" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap modal-970" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-header">
+              <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg class="icon icon-close ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="popup-covid--wrap popup-icon-size">
+              <h3 class="main-section--title--red"><span>Пожаловаться</span> на поездку !</h3>
+              <p class="main-section--title font-size-20 text-center">Какой <span>у вас</span> повод <span>для жалобы ?</span></p>
+              <div class="popup-gogocar-type-cargo mb-4">
+                <div class="col-xl-12 col-sm-12 popup-go-jaloba active mb-4">
+                  <div class="popup-gogocar-type-cargo--item"><span>Нарушение правил сервиса</span>
+                    <div class="popup-gogocar-cargo--checkbox"></div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 popup-go-jaloba mb-4">
+                  <div class="popup-gogocar-type-cargo--item"><span>Нарушение правил сервиса</span>
+                    <div class="popup-gogocar-cargo--checkbox"></div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 popup-go-jaloba mb-4">
+                  <div class="popup-gogocar-type-cargo--item"><span>Нарушение правил сервиса</span>
+                    <div class="popup-gogocar-cargo--checkbox"></div>
+                  </div>
+                </div>
+                <div class="col-xl-12 col-sm-12 popup-go-jaloba mb-5">
+                  <div class="popup-gogocar-type-cargo--item"><span>Нарушение правил сервиса</span>
+                    <div class="popup-gogocar-cargo--checkbox"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="you-trip-cancel--buttons">
+                <div class="gogocar-gray-button" data-dismiss="modal" aria-label="Close">Я передумал</div>
+                <div class="gogocar-red-button" data-toggle="modal" data-dismiss="modal" data-target="#popup-jaloba2">Продолжить</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="popup-jaloba2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered popup-modal--wrap modal-970" role="document">
+          <div class="modal-content popup-content">
+            <div class="popup-header">
+              <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                <svg class="icon icon-close ">
+                  <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="popup-covid--wrap popup-icon-size">
+              <h3 class="main-section--title--red"><span>Пожаловаться</span> на поездку !</h3>
+              <p class="main-section--title font-size-20 text-center"><span>Пожалуйста, предоставьте</span> больше информации</p>
+              <div class="col-xl-10 col-lg-10 trip-comment--content back-text-color-wrap">
+                <textarea class="trip-comment--textarea back-text-color" cols="10" rows="5" placeholder="Опишиет проблему подробнее"></textarea>
+              </div>
+              <div class="you-trip-cancel--buttons">
+                <div class="gogocar-gray-button" data-dismiss="modal" aria-label="Close">Я передумал</div>
+                <div class="gogocar-red-button">Пожаловаться</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <script src="static/js/jquery.hoverIntent.min.js"></script>
+    <script src="static/js/circle-progress.js"></script>
+    <script src="static/js/datepicker.js"></script>
+    <script src="static/js/datepicker.ru-RU.js"></script>
+    <script src="static/js/jquery.simplePagination.js"></script>
+  </body>
+</html>
