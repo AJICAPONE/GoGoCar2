@@ -600,6 +600,8 @@
 
 // @media 768px
 @media screen and (max-width: 767px)
+  .change-trip-people-and-time
+    flex-direction column
   .footer-town-trip--item
     padding 0
   .footer-town-trip--item:nth-child(3)
@@ -1004,6 +1006,35 @@
       order 6
     .blog-main--item__wrap:nth-child(6)
       order 5
+  .change-trip--where
+    margin-bottom 40px
+  .gogocar-title-input
+    font-size 18px
+  .change-trip-people-and-time
+    flex-direction column-reverse
+    .when-trip-date
+      width 100%
+      margin-bottom 30px !important
+      padding 0
+    .trip-choise-car--count
+      width 100%
+    .trip-choise-car--count-field
+      width 100%
+  .change-trip-people-covid
+    display none
+  .change-trip-people--wrap
+    .trip-choise-car--count
+      width 100%
+    .trip-choise-car--count-field
+      width 100%
+  .change-trip-go-back--buttons
+    flex-direction column
+    .gogocar-yellow-button
+      max-width 100%
+      margin-bottom 30px
+    .gogocar-gray-button
+      max-width 100%
+
 
 
 // @media 576px
@@ -1986,3 +2017,7 @@
     display none
   .you-trip-detail--copy,.you-trip-detail--cancel
     width 100%
+  .change-trip-people-and-time .when-trip-date
+    margin-bottom 0 !important
+  .change-trip-go-back--buttons .gogocar-yellow-button, .change-trip-go-back--buttons .gogocar-gray-button
+    font-size 12px
