@@ -292,7 +292,7 @@
                       <svg class="icon icon-logo2 ">
                         <use xlink:href="static/img/svg/symbol/sprite.svg#logo2"></use>
                       </svg><span class="account-control--bottom__panel--body--title">Расскажите, как вы узнали о GoGoCar?</span>
-                      <div class="gogocar-yellow-button gogocar-button--account-control">Ответить</div>
+                      <div class="gogocar-yellow-button gogocar-button--account-control" data-toggle="modal" data-target="#popup-gogocar">Ответить</div>
                     </div>
                   </div>
                 </div>
@@ -411,6 +411,44 @@
             </div>
           </div>
         </section>
+        <div class="modal fade" id="popup-gogocar" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered popup-modal--wrap" role="document">
+            <div class="modal-content popup-content">
+              <div class="popup-header">
+                <div class="popup-modal-close close" data-dismiss="modal" aria-label="Close">
+                  <svg class="icon icon-close ">
+                    <use xlink:href="static/img/svg/symbol/sprite.svg#close"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="popup-covid--wrap popup-icon-size">
+                <h3 class="main-section--title--v2 font-size-25 mb-4">Расскажите, <span>как вы узнали</span> о GoGoCar?</h3>
+                <p class="main-section--title font-size-20 text-center"><span>Выберите</span> готовый вариант <span>или</span> укажите свой ?</p>
+                <div class="trip-stops--wrap">
+                  <ul class="trip-stops--list trip-gogocar--knows">
+                    <li class="trip-stops--item">
+                      <div class="trip-stops--item--name__icon"><span>От друзей</span></div>
+                      <div class="popup-gogocar-cargo--checkbox"></div>
+                    </li>
+                    <li class="trip-stops--item">
+                      <div class="trip-stops--item--name__icon"><span>Из рекламы</span></div>
+                      <div class="popup-gogocar-cargo--checkbox"></div>
+                    </li>
+                    <li class="trip-stops--item">
+                      <div class="trip-stops--item--name__icon"><span>Увидел в интернете</span></div>
+                      <div class="popup-gogocar-cargo--checkbox"></div>
+                    </li>
+                  </ul>
+                  <div class="popup-text-gogocar-tell">
+                    <label>Свой вариант</label>
+                    <textarea class="gogocar-textarea" cols="5" rows="3" placeholder="Опишите проблему подробнее"></textarea>
+                  </div>
+                </div>
+                <div class="gogocar-yellow-button">Отправить</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="header-panel--fixed"><a class="header-panel--fixed--item" href="/trip.html">
           <svg class="icon icon-car-f ">

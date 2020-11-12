@@ -278,6 +278,43 @@
             </div>
           </div>
         </section>
+        <section class="ready-plan-trip">
+          <div class="container">
+            <div class="ready-plan-trip--wrap">
+              <h3 class="section-title mb-5">Попутчики</h3>
+              <div class="gogocar-companions--wrap row">
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 gogocar-companions--col">
+                  <div class="gogocar-companions--item">
+                    <div class="gogocar-companions--img" style="background-image:url('/static/img/content/drivers-avatar/driver1.png');"></div>
+                    <div class="gogocar-companions--info">
+                      <div class="gogocar-companions--name">Виктор Тереньтев</div>
+                      <div class="gogocar-companions--place">Переднее место №1</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 gogocar-companions--col">
+                  <div class="gogocar-companions--item">
+                    <div class="gogocar-companions--img" style="background-image:url('/static/img/content/drivers-avatar/driver2.png');"></div>
+                    <div class="gogocar-companions--info">
+                      <div class="gogocar-companions--name">Виктор Тереньтев</div>
+                      <div class="gogocar-companions--place">Переднее место №1</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 gogocar-companions--col">
+                  <div class="gogocar-companions--item gogocar-companions--empty">
+                    <div class="gogocar-companions--empty__text">Свободное заднее место №3</div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 gogocar-companions--col">
+                  <div class="gogocar-companions--item gogocar-companions--empty">
+                    <div class="gogocar-companions--empty__text">Свободное заднее место №4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section class="chat">
           <div class="container">
             <div class="chat-wrap">
@@ -650,24 +687,30 @@
                     </div><span>Пожаловаться</span></a>
                 </div>
               </div>
-              <div class="col-xl-9 col-lg-9 pl-0 mt-5"><a class="gogocar-yellow-button" href="/">Продолжить</a></div>
             </div>
           </div>
         </section>
         <section class="you-trip-detail pt-0">
           <div class="container">
             <div class="you-trip-detail--wrap gogocar-box">
-              <div class="you-trip-detail--buttons">
+              <div class="you-trip-detail--buttons you-trip-detail--buttons2">
                 <div class="you-trip-detail--copy">Обратная поездка</div>
-                <div class="you-trip-detail--cancel">Скопировать поездку</div>
-              </div>
-              <div class="gogocar-red-icons" data-target="#popup-trip-cancel" data-toggle="modal">
-                <svg class="icon icon-delete2 ">
-                  <use xlink:href="static/img/svg/symbol/sprite.svg#delete2"></use>
-                </svg>
+                <div class="you-trip-copy-and-delete">
+                  <div class="you-trip-detail--cancel">Скопировать поездку</div>
+                  <div class="you-trip-delete-and-change"><a class="gogocar-gray-icons" href="/">
+                      <svg class="icon icon-pen ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#pen"></use>
+                      </svg></a>
+                    <div class="gogocar-red-icons" data-target="#popup-trip-cancel" data-toggle="modal">
+                      <svg class="icon icon-delete2 ">
+                        <use xlink:href="static/img/svg/symbol/sprite.svg#delete2"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="gogocar-you-trip-detail--red" data-target="#popup-trip-cancel" data-toggle="modal">Удалить поездку</div>
+            <div class="gogocar-yellow-button w-370 m-0-auto">Завершить поездку</div>
           </div>
         </section>
         <div class="modal fade" id="popup-trip-cancel" tabindex="-1" role="dialog" aria-hidden="true">

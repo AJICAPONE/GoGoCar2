@@ -57,6 +57,33 @@ section.ready-plan-trip
                         .gogocar-ready-plan--covid--info
                             .gogocar-ready-plan--covid--title Только 1 человек!
                             .gogocar-ready-plan--covid--desc COVID-19
+
+section.ready-plan-trip
+    .container
+        .ready-plan-trip--wrap
+            h3.section-title.mb-5 Попутчики
+            .gogocar-companions--wrap.row
+                .col-xl-3.col-lg-3.col-md-6.col-sm-12.gogocar-companions--col
+                    .gogocar-companions--item
+                        .gogocar-companions--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
+                        .gogocar-companions--info
+                            .gogocar-companions--name Виктор Тереньтев
+                            .gogocar-companions--place Переднее место №1
+                .col-xl-3.col-lg-3.col-md-6.col-sm-12.gogocar-companions--col
+                    .gogocar-companions--item
+                        .gogocar-companions--img(style="background-image:url('/static/img/content/drivers-avatar/driver2.png')")
+                        .gogocar-companions--info
+                            .gogocar-companions--name Виктор Тереньтев
+                            .gogocar-companions--place Переднее место №1
+                .col-xl-3.col-lg-3.col-md-6.col-sm-12.gogocar-companions--col
+                    .gogocar-companions--item.gogocar-companions--empty
+                        .gogocar-companions--empty__text Свободное заднее место №3
+                .col-xl-3.col-lg-3.col-md-6.col-sm-12.gogocar-companions--col
+                    .gogocar-companions--item.gogocar-companions--empty
+                        .gogocar-companions--empty__text Свободное заднее место №4
+
+
+
 section.chat
     .container
         .chat-wrap
@@ -306,14 +333,18 @@ section.chat
                         .gogocar-gray-icons
                             +icon('warning')
                         span Пожаловаться
-            .col-xl-9.col-lg-9.pl-0.mt-5
-                a.gogocar-yellow-button(href="/") Продолжить
+
 section.you-trip-detail.pt-0
     .container
         .you-trip-detail--wrap.gogocar-box
-            .you-trip-detail--buttons
+            .you-trip-detail--buttons.you-trip-detail--buttons2
                 .you-trip-detail--copy Обратная поездка
-                .you-trip-detail--cancel Скопировать поездку
-            .gogocar-red-icons(data-target="#popup-trip-cancel" data-toggle="modal")
-                +icon('delete2')
-        .gogocar-you-trip-detail--red(data-target="#popup-trip-cancel" data-toggle="modal") Удалить поездку
+                .you-trip-copy-and-delete
+                    .you-trip-detail--cancel Скопировать поездку
+                    .you-trip-delete-and-change
+                        a.gogocar-gray-icons(href="/")
+                            +icon('pen')
+                        .gogocar-red-icons(data-target="#popup-trip-cancel" data-toggle="modal")
+                            +icon('delete2')
+        .gogocar-yellow-button.w-370.m-0-auto Завершить поездку
+

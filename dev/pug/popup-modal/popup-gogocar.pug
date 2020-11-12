@@ -1,0 +1,29 @@
+#popup-gogocar.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+            .popup-covid--wrap.popup-icon-size
+                h3.main-section--title--v2.font-size-25.mb-4 Расскажите, #[span как вы узнали] о GoGoCar?
+                p.main-section--title.font-size-20.text-center #[span Выберите] готовый вариант #[span или] укажите свой ?
+                .trip-stops--wrap
+
+                    ul.trip-stops--list.trip-gogocar--knows
+                        li.trip-stops--item
+                            .trip-stops--item--name__icon
+                                span От друзей
+                            .popup-gogocar-cargo--checkbox
+                        li.trip-stops--item
+                            .trip-stops--item--name__icon
+                                span Из рекламы
+                            .popup-gogocar-cargo--checkbox
+                        li.trip-stops--item
+                            .trip-stops--item--name__icon
+                                span Увидел в интернете
+                            .popup-gogocar-cargo--checkbox
+                    .popup-text-gogocar-tell
+                        label Свой вариант
+                        textarea.gogocar-textarea(cols="5" rows="3" placeholder="Опишите проблему подробнее")
+
+                .gogocar-yellow-button Отправить
