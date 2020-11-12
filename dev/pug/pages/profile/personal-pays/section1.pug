@@ -1,0 +1,31 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-4.col-md-5.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-8.col-md-7.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Способы оплаты
+                    form.personal-content--body
+                        .personal-content--body--content
+                            ul.personal-car--list.row
+                                li.col-xl-5.col-lg-5.col-md-12.col-sm-12.gogocar-added-pay-li
+                                    .personal-car--item.gogocar-box
+                                        .personal-car--item--left.personal-pay-item--left
+                                            .personal-pay-logo--card
+                                                img(src="/static/img/general/visa.png")
+                                            .personal-pay-item--card **** 2789
+
+
+                                        .personal-car--item--right
+                                            .gogocar-gray-icons.personal-car--item--setting
+                                                +icon('setting-car')
+                                            .gogocar-gray-icons.personal-car--item--delete.gogocar-red-icons
+                                                +icon('delete2')
+
+                                li.col-xl-5.col-lg-5.col-md-12.col-sm-12.gogocar-added-pay-li
+                                    .personal-car--item--add.gogocar-box
+                                        +icon('add')
+                                        span.personal-car--item--add__text Добавит способ оплаты
+                        button.gogocar-yellow-button.mt-4(type="submit") Сохранить
