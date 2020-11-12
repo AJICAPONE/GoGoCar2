@@ -1,0 +1,312 @@
+section.type-trip
+    .container
+        .change-trip--wrap
+            h1.main-section--title.text-center.mb-5 Редактировать #[span пездку]
+            .col-xl-8.col-lg-8.change-trip--list
+                .find-trip-change--wrap.change-trip--where
+                    .gogocar-title-input Откуда выезжаем ?
+                    .gogocar-input--wrapper
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('map2')
+                        input.gogocar-input-v1.gogocar-from(type="text" placeholder="Откуда...")
+                .change-trip-stops
+                    .gogocar-title-input Хотите добавить остановки, которые могут забронировать пассажиры?
+                    .change-trip--stop
+                        .find-trip-change--wrap.change-trip-input--wrap
+                            .gogocar-input-label Остановка 1
+                            .gogocar-input--wrapper
+                                .gogocar-input-icon.gogocar-gray-icons
+                                    +icon('map2')
+                                input.gogocar-input-v1.gogocar-from(type="text" placeholder="Остановка")
+                        .change-trip-people-and-time
+                            .trip-choise-car--count.mb-5.ml-0
+                                .trip-choise-car--count--minus
+                                    +icon('arrow-left')
+                                .trip-choise-car--count-field.gogocar-input--wrapper
+                                    .gogocar-gray-icons
+                                        +icon('man')
+                                    input.gogocar-input-v1.trip-choise-car--count--input(type="text" value="1" readonly)
+                                .trip-choise-car--count--plus
+                                    +icon('arrow-right')
+                            .when-trip-date.w-230.m-0-auto.mb-5
+                                select.gogocar-select-when-trip
+                                    option(value="00:00") 00:00
+                                    option(value="01:00") 01:00
+                                    option(value="02:00") 02:00
+                                    option(value="03:00") 03:00
+                                    option(value="04:00") 04:00
+                                    option(value="05:00") 05:00
+                                    option(value="06:00") 06:00
+                                    option(value="07:00") 07:00
+                                    option(value="08:00") 08:00
+                                    option(value="09:00") 09:00
+                                    option(value="10:00") 10:00
+                                    option(value="11:00") 11:00
+                                    option(value="12:00") 12:00
+                                    option(value="13:00") 13:00
+                                    option(value="14:00") 14:00
+                                    option(value="15:00") 15:00
+                                    option(value="16:00") 16:00
+                                    option(value="17:00") 17:00
+                                    option(value="18:00") 18:00
+                                    option(value="19:00") 19:00
+                                    option(value="20:00") 20:00
+                                    option(value="21:00") 21:00
+                                    option(value="22:00") 22:00
+                                    option(value="23:00") 23:00
+                                    option(value="24:00") 24:00
+                    .change-trip--stop
+                        .find-trip-change--wrap.change-trip-input--wrap
+                            .gogocar-input-label Остановка 2
+                            .gogocar-input--wrapper
+                                .gogocar-input-icon.gogocar-gray-icons
+                                    +icon('map2')
+                                input.gogocar-input-v1.gogocar-from(type="text" placeholder="Остановка")
+                        .change-trip-people-and-time
+                            .trip-choise-car--count.mb-5.ml-0
+                                .trip-choise-car--count--minus
+                                    +icon('arrow-left')
+                                .trip-choise-car--count-field.gogocar-input--wrapper
+                                    .gogocar-gray-icons
+                                        +icon('man')
+                                    input.gogocar-input-v1.trip-choise-car--count--input(type="text" value="1" readonly)
+                                .trip-choise-car--count--plus
+                                    +icon('arrow-right')
+                            .when-trip-date.w-230.m-0-auto.mb-5
+                                select.gogocar-select-when-trip
+                                    option(value="00:00") 00:00
+                                    option(value="01:00") 01:00
+                                    option(value="02:00") 02:00
+                                    option(value="03:00") 03:00
+                                    option(value="04:00") 04:00
+                                    option(value="05:00") 05:00
+                                    option(value="06:00") 06:00
+                                    option(value="07:00") 07:00
+                                    option(value="08:00") 08:00
+                                    option(value="09:00") 09:00
+                                    option(value="10:00") 10:00
+                                    option(value="11:00") 11:00
+                                    option(value="12:00") 12:00
+                                    option(value="13:00") 13:00
+                                    option(value="14:00") 14:00
+                                    option(value="15:00") 15:00
+                                    option(value="16:00") 16:00
+                                    option(value="17:00") 17:00
+                                    option(value="18:00") 18:00
+                                    option(value="19:00") 19:00
+                                    option(value="20:00") 20:00
+                                    option(value="21:00") 21:00
+                                    option(value="22:00") 22:00
+                                    option(value="23:00") 23:00
+                                    option(value="24:00") 24:00
+                    .gogocar-gray-button.gogocar-add-stops.w-270.m-0-auto Добавить еще остановку
+                .find-trip-change--wrap.change-trip--where
+                    .gogocar-title-input Где бы вы хотели высадить пассажиров ?
+                    .gogocar-input--wrapper
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('map2')
+                        input.gogocar-input-v1.gogocar-from(type="text" placeholder="")
+                .change-trip-time--wrap
+                    .gogocar-title-input Где бы вы хотели высадить пассажиров ?
+                    .change-trip-people-and-time
+                        .col-xl-8.col-lg-8.col-md-6.col-sm-12.gogocar-input--wrapper.mb-0
+                            .gogocar-input-icon.gogocar-gray-icons
+                                +icon('calendar')
+                            input.gogocar-input-v1.popup-show-calendar.popup-show-calendar-click.calendar-zone-height(type="text" readonly)
+                        .col-xl-4.col-lg-4.col-md-6.col-sm-12.when-trip-date
+                            select.gogocar-select-when-trip
+                                option(value="00:00") 00:00
+                                option(value="01:00") 01:00
+                                option(value="02:00") 02:00
+                                option(value="03:00") 03:00
+                                option(value="04:00") 04:00
+                                option(value="05:00") 05:00
+                                option(value="06:00") 06:00
+                                option(value="07:00") 07:00
+                                option(value="08:00") 08:00
+                                option(value="09:00") 09:00
+                                option(value="10:00") 10:00
+                                option(value="11:00") 11:00
+                                option(value="12:00") 12:00
+                                option(value="13:00") 13:00
+                                option(value="14:00") 14:00
+                                option(value="15:00") 15:00
+                                option(value="16:00") 16:00
+                                option(value="17:00") 17:00
+                                option(value="18:00") 18:00
+                                option(value="19:00") 19:00
+                                option(value="20:00") 20:00
+                                option(value="21:00") 21:00
+                                option(value="22:00") 22:00
+                                option(value="23:00") 23:00
+                                option(value="24:00") 24:00
+                .change-trip-car--wrap
+                    .gogocar-title-input На какой машине планируете ехать ?
+                    .trip-select-car--wrapper
+                        .trip-select-car
+                            .trip-select--icon--car
+                                .gogocar-gray-icons
+                                    +icon('taxi')
+                                .trip-select--car--name
+                                    .trip-select--car--name1 Audi A4
+                                    .trip-select--car--name2 (00 123 NN)
+                            .trip-select--arrow
+                                +icon('arrow-right')
+                        ul.trip-select-car--list
+                            li.trip-select-car--item.suggest-late--result--item
+                                .suggest-late--result--item__left
+                                    .gogocar-gray-icons
+                                        +icon('taxi')
+                                    .trip-select-car-name--number
+                                        .trip-select-car-name--number1 Audi A8
+                                        .trip-select-car-name--number2 (00 125 NN)
+                                .gogocar-gray-icons2
+                                    +icon('arrow-right3')
+                            li.trip-select-car--item.suggest-late--result--item
+                                .suggest-late--result--item__left
+                                    .gogocar-gray-icons
+                                        +icon('taxi')
+                                    .trip-select-car-name--number
+                                        .trip-select-car-name--number1 Лада Гранта
+                                        .trip-select-car-name--number2 (00 126 NN)
+                                .gogocar-gray-icons2
+                                    +icon('arrow-right3')
+                            li.trip-select-car--item.suggest-late--result--item
+                                .suggest-late--result--item__left
+                                    .gogocar-gray-icons
+                                        +icon('taxi')
+                                    .trip-select-car-name--number
+                                        .trip-select-car-name--number1 BMW X5
+                                        .trip-select-car-name--number2 (00 127 NN)
+                                .gogocar-gray-icons2
+                                    +icon('arrow-right3')
+                .change-trip-people--wrap
+                    .gogocar-title-input Сколько попутчиков возьмете в дорогу ?
+                    .trip-choise-car--count.mb-30.m-0
+                        .trip-choise-car--count--minus
+                            +icon('arrow-left')
+                        .trip-choise-car--count-field.gogocar-input--wrapper
+                            .gogocar-gray-icons
+                                +icon('man')
+                            input.gogocar-input-v1.trip-choise-car--count--input(type="text" value="1" readonly)
+                        .trip-choise-car--count--plus
+                            +icon('arrow-right')
+                    .change-trip-people-covid.popup-checkbox-remember
+                        input#popup-checkbox-remember(type="checkbox")
+                        label(for="popup-checkbox-remember") COVID-19:
+                            span Я согласен взять только одного попутчика и посадить его сзади
+                .change-trip-recomend--wrap
+                    .gogocar-title-input Изменить рекомендуемую цену за место
+                    .remove-price--content
+                        .gogocar-input--wrapper
+                            .remove-price--content__icon__route
+                                .gogocar-gray-icons
+                                    +icon('map2')
+                                .remove-price--route
+                                    span.remove-route--start Ташкент
+                                    .gogocar-trip--item__route
+                                        .gogocar-trip--item__route--start
+                                        .gogocar-trip--item__route--end
+                                    span.remove-route--end Узумчилик
+                            .remove-change--price
+                                .remove-change--price--minus
+                                    +icon('minus')
+                                .remove-change--price-text(data-change-price="5000" data-change-currency="UZS") 0 UZS
+                                .remove-change--price--plus
+                                    +icon('add')
+
+                        .gogocar-trip--item
+                            .gogocar-trip--item__top
+                                .gogocar-trip--item-town__route
+                                    .gogocar-trip--item__town
+                                        span Ташкент
+                                        span Андижан
+                                    .gogocar-trip--item__route
+                                        .gogocar-trip--item__route--start
+                                        .gogocar-trip--item__route--end
+                            .gogocar-trip--item__bottom
+                                .remove-change--price
+                                    .remove-change--price--minus
+                                        +icon('minus')
+                                    .remove-change--price-text(data-change-price="5000" data-change-currency="UZS") 0 UZS
+                                    .remove-change--price--plus
+                                        +icon('add')
+                    .remove-price--content
+                        .gogocar-input--wrapper
+                            .remove-price--content__icon__route
+                                .gogocar-gray-icons
+                                    +icon('map2')
+                                .remove-price--route
+                                    span.remove-route--start Ташкент
+                                    .gogocar-trip--item__route
+                                        .gogocar-trip--item__route--start
+                                        .gogocar-trip--item__route--end
+                                    span.remove-route--end Узумчилик
+                            .remove-change--price
+                                .remove-change--price--minus
+                                    +icon('minus')
+                                .remove-change--price-text(data-change-price="5000" data-change-currency="UZS") 0 UZS
+                                .remove-change--price--plus
+                                    +icon('add')
+
+                        .gogocar-trip--item
+                            .gogocar-trip--item__top
+                                .gogocar-trip--item-town__route
+                                    .gogocar-trip--item__town
+                                        span Ташкент
+                                        span Андижан
+                                    .gogocar-trip--item__route
+                                        .gogocar-trip--item__route--start
+                                        .gogocar-trip--item__route--end
+                            .gogocar-trip--item__bottom
+                                .remove-change--price
+                                    .remove-change--price--minus
+                                        +icon('minus')
+                                    .remove-change--price-text(data-change-price="5000" data-change-currency="UZS") 0 UZS
+                                    .remove-change--price--plus
+                                        +icon('add')
+                    .remove-price--content
+                        .gogocar-input--wrapper
+                            .remove-price--content__icon__route
+                                .gogocar-gray-icons
+                                    +icon('map2')
+                                .remove-price--route
+                                    span.remove-route--start Ташкент
+                                    .gogocar-trip--item__route
+                                        .gogocar-trip--item__route--start
+                                        .gogocar-trip--item__route--end
+                                    span.remove-route--end Узумчилик
+                            .remove-change--price
+                                .remove-change--price--minus
+                                    +icon('minus')
+                                .remove-change--price-text(data-change-price="5000" data-change-currency="UZS") 0 UZS
+                                .remove-change--price--plus
+                                    +icon('add')
+
+                        .gogocar-trip--item
+                            .gogocar-trip--item__top
+                                .gogocar-trip--item-town__route
+                                    .gogocar-trip--item__town
+                                        span Ташкент
+                                        span Андижан
+                                    .gogocar-trip--item__route
+                                        .gogocar-trip--item__route--start
+                                        .gogocar-trip--item__route--end
+                            .gogocar-trip--item__bottom
+                                .remove-change--price
+                                    .remove-change--price--minus
+                                        +icon('minus')
+                                    .remove-change--price-text(data-change-price="5000" data-change-currency="UZS") 0 UZS
+                                    .remove-change--price--plus
+                                        +icon('add')
+                .change-trip-go-back--wrap
+                    .gogocar-title-input Собираетесь назад? Опубликуйте обратную поездку сейчас!
+                    .change-trip-go-back--buttons
+                        .gogocar-yellow-button.gogocar-active-reg Я опубликую обратную поездку сейчас
+                        .gogocar-gray-button Я опубликую обратную поездку позже
+                .change-trip-comment--wrap
+                    .gogocar-title-input Измените комментарий о поездке?
+                    .trip-comment--content
+                        label Комментарий:
+                        textarea.trip-comment--textarea(rows="5" cols="10" placeholder="Здравствуйте! Я еду по работе, в багажнике много места. В салоне будем только мы.")
+            .gogocar-yellow-button(data-toggle="modal" data-target="#popup-change") Сохранить
