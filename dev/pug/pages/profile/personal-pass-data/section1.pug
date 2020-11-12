@@ -1,0 +1,47 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-4.col-md-5.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-8.col-md-7.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Паспортные даные
+                    form.personal-content--body
+                        .personal-content--body--content.row
+
+                            .col-xl-3.col-lg-3.personal-mb
+                                .all-trip--popup__col
+                                    label Серия:
+                                    input.gogocar-input--filter.personal-content--input(type="text" placeholder="Введите серию")
+                            .col-xl-5.col-lg-5.personal-mb
+                                .all-trip--popup__col
+                                    label Номер:
+                                    input.gogocar-input--filter.personal-content--input(type="text" placeholder="Введите номер")
+                            .col-xl-4.col-lg-4.personal-mb
+                                .all-trip--popup__col
+                                    label Код подразделения:
+                                    input.gogocar-input--filter.personal-content--input(type="email" placeholder="Введите код подразделения")
+                            .col-xl-8.col-lg-8.personal-mb
+                                .all-trip--popup__col
+                                    label Кем выдан:
+                                    input.gogocar-input--filter.personal-content--input(type="email" placeholder="Кем выдан?")
+                            .col-xl-4.col-lg-4.personal-mb
+                                .all-trip--popup__col
+                                    label Дата получения:
+                                    .notific-input-icon.personal-w
+                                        input.gogocar-input--filter.popup-show-calendar.personal-content--input.popup-show-calendar-click.calendar-zone-height(type="text" readonly="readonly")
+                                        .notific-calendar-icon
+                                            +icon('calendar2')
+                            .col-xl-12.col-lg-12.personal-mb
+                                .all-trip--popup__col
+                                    label Адрес прописки:
+                                    input.gogocar-input--filter.personal-content--input(type="email" placeholder="Адрес прописки")
+                            .col-xl-12.col-lg-12.personal-mb
+                                .password-scan--wrap
+                                    .password-added--scan
+                                        input.password-added-input(type="file" multiple)
+                                        .password-added--scan__icon
+                                            +icon('skrepka')
+                                        span Добавить скан
+                        button.gogocar-yellow-button.mt-4(type="submit") Сохранить

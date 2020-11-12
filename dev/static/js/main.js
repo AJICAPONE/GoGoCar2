@@ -1984,11 +1984,129 @@ $(document).ready(function () {
     });
 
 
+    var array_files3 = [];
+
+
+    $(function () {
+
+        var itemG;
+        $('.password-added-input').on('change', function (e) {
+            e.preventDefault;
+            //$('.chat-container--edit--message--file--add').addClass('active');
+
+            // пушим файлы в массив
+            for (var i = 0; i < e.target.files.length; i++) {
+                array_files3.push(e.target.files[i]);
+
+                itemG = i;
+
+            }
+
+            var data = new FormData(); var count = 0;
+            $.each(array_files3, function(i, file,ndx){
+                data.append(count, file);
+
+                count++;
 
 
 
+            });
+
+            // удаляем все старые иконки файлов на JS
+            var x = document.getElementsByClassName("password-scan--wrap");
+            for (var i = 0; i < x.length; i++) {
+
+                // удаляем с конца!!!
+                for (var y = x[i].childNodes.length - 1; y >= 0; y--) {
+                    if (x[i].childNodes[y].className == "password-scan--item")
+                        x[i].removeChild(x[i].childNodes[y]);
 
 
+
+                }
+
+
+            }
+
+
+            // здесь ты получал расширение только певого файла
+            // поэтому иконки для всех файлов были одинаковые
+
+
+            Array.from(array_files3).forEach(file => {
+
+
+
+                var file_name = file.name;
+                var substr = file_name.split('.').shift().substring(0,15);
+
+                // теперь расширение файла получается здесь
+                // поэтому иконки файлов правильные
+                var ext = file_name.split('.').pop();
+                var file_format = ext;
+
+                $('.password-scan--item').each(function(ndx){
+                    $(this).attr('id',ndx);
+
+                })
+                if(file_format == 'pdf'){
+                    $('.password-scan--wrap').append('<div class="password-scan--item"><div class="password-scan--item__left"><div class="password-scan--icon"><svg class="icon icon-pdf"><use xlink:href="./static/img/svg/symbol/sprite.svg#pdf"></use></svg></div><span class="password-scan--name">' + substr + '</span></div><div class="password-scan--item__del"><svg class="icon icon-close"><use xlink:href="./static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
+                } else if(file_format == 'png'){
+                    $('.password-scan--wrap').append('<div class="password-scan--item"><div class="password-scan--item__left"><div class="password-scan--icon"><svg class="icon icon-png"><use xlink:href="./static/img/svg/symbol/sprite.svg#png"></use></svg></div><span class="password-scan--name">' + substr + '</span></div><div class="password-scan--item__del"><svg class="icon icon-close"><use xlink:href="./static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
+                } else if(file_format == 'jpg' || 'jpeg'){
+                    $('.password-scan--wrap').append('<div class="password-scan--item"><div class="password-scan--item__left"><div class="password-scan--icon"><svg class="icon icon-jpg"><use xlink:href="./static/img/svg/symbol/sprite.svg#jpg"></use></svg></div><span class="password-scan--name">' + substr + '</span></div><div class="password-scan--item__del"><svg class="icon icon-close"><use xlink:href="./static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
+                } else if(file_format == 'docx'){
+                    $('.password-scan--wrap').append('<div class="password-scan--item"><div class="password-scan--item__left"><div class="password-scan--icon"><svg class="icon icon-doc"><use xlink:href="./static/img/svg/symbol/sprite.svg#doc"></use></svg></div><span class="password-scan--name">' + substr + '</span></div><div class="password-scan--item__del"><svg class="icon icon-close"><use xlink:href="./static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
+                } else if(file_format == 'zip'){
+                    $('.password-scan--wrap').append('<div class="password-scan--item"><div class="password-scan--item__left"><div class="password-scan--icon"><svg class="icon icon-zip"><use xlink:href="./static/img/svg/symbol/sprite.svg#zip"></use></svg></div><span class="password-scan--name">' + substr + '</span></div><div class="password-scan--item__del"><svg class="icon icon-close"><use xlink:href="./static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
+                } else if(file_format == 'txt'){
+                    $('.password-scan--wrap').append('<div class="password-scan--item"><div class="password-scan--item__left"><div class="password-scan--icon"><svg class="icon icon-txt"><use xlink:href="./static/img/svg/symbol/sprite.svg#txt"></use></svg></div><span class="password-scan--name">' + substr + '</span></div><div class="password-scan--item__del"><svg class="icon icon-close"><use xlink:href="./static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>')
+                }
+
+            });
+
+        });
+
+        $('.password-scan--wrap').on('click','.password-scan--item',function() {
+            var this_id = $(this).attr('id');
+            array_files3[this_id] = [];
+            $(this).remove();
+        });
+
+    });
+
+    $('.personal-categoryes-driver--wrap').click(function () {
+       $('.personal-categoryes--list').slideToggle(200);
+    });
+    function addItem(){
+        var get_user = $(this).text();
+        $('.section-bg-text--content').remove();
+        $(this).parents('.personal-driver-categ').children().children('.personal-categoryes-driver').append('<div class="section-yellow-bg--content"><span>'+ get_user +'</span><div class="section-yellow-bg--content__icon"><svg class="icon icon-close "><use xlink:href="static/img/svg/symbol/sprite.svg#close"></use></svg></div></div>');
+        $(this).off('click');
+    }
+    $('.personal-categoryes--item').on('click',addItem);
+
+    function removeItem(e){
+        e.stopPropagation();
+        var get_text = $(this).parents('.personal-categoryes-driver--wrap').nextAll().children('.personal-categoryes--item');
+        var get_click_text = $(this).prev().text();
+        for (let item of get_text){
+            if($(item).text() === get_click_text){
+                $(item).off('click');
+                $(item).on('click',addItem);
+            }
+        }
+        $(this).parent().remove();
+
+
+    }
+    $('.personal-categoryes-driver--wrap').on('click','.section-yellow-bg--content__icon',removeItem);
+    $(document).click(function (e) {
+        if (!$(e.target).closest(".personal-categoryes-driver--wrap,.personal-categoryes--list").length) {
+            $('.personal-categoryes--list').slideUp(150);
+        }
+        e.stopPropagation();
+    });
 });
 
 function copyReferal() {

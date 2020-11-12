@@ -1,0 +1,38 @@
+section.personal-settings.pt-0
+    .container
+        .personal-settings--wrap
+            .col-xl-3.col-lg-4.col-md-5.personal-sidebar
+                include ../../profile/sidebar-profile
+            .col-xl-9.col-lg-8.col-md-7.personal-content
+                .personal-content--main
+                    .personal-content--header
+                        h3.personal-content--header--title Водительское удостоверение
+                    form.personal-content--body
+                        .personal-content--body--content.row
+
+                            .col-xl-7.col-lg-7.personal-mb
+                                .all-trip--popup__col
+                                    label № Документа:
+                                    input.gogocar-input--filter.personal-content--input(type="text" placeholder="")
+                            .col-xl-5.col-lg-5.personal-mb
+                                .all-trip--popup__col.personal-driver-categ
+                                    label Категория:
+                                    .gogocar-input--filter.personal-content--input.personal-categoryes-driver--wrap
+                                        .gogocar-gray-icons
+                                            +icon('plus')
+                                        .personal-categoryes-driver
+
+                                    .personal-categoryes--list
+                                        .personal-categoryes--item B
+                                        .personal-categoryes--item D1
+
+
+
+                            .col-xl-12.col-lg-12.personal-mb
+                                .password-scan--wrap
+                                    .password-added--scan
+                                        input.password-added-input(type="file" multiple)
+                                        .password-added--scan__icon
+                                            +icon('skrepka')
+                                        span Добавить скан
+                        button.gogocar-yellow-button.mt-4(type="submit") Сохранить
