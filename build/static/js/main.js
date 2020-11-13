@@ -1547,6 +1547,16 @@ $(document).ready(function () {
         $(this).children('input').attr('checked',true);
     });
 
+    $('.personal-pay-pay-checkbox').click(function () {
+        $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            $(this).children('input').prop('checked',true);
+        } else {
+            $(this).children('input').prop('checked',false);
+        }
+
+    });
+
 
 
 

@@ -1,0 +1,29 @@
+#popup-pay-added.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+    .modal-dialog.modal-dialog-centered.popup-modal--wrap.modal-970.modap-pay-card(role='document')
+        .modal-content.popup-content
+            .popup-header
+                .popup-modal-close.close(data-dismiss="modal" aria-label="Close")
+                    +icon('close')
+                h3.main-section--title--v2.mb-5.text-center Добавить способ оплаты
+                .popup-pay-card--wrap
+                    .popup-pay-card-front
+                        .popup-pay-card-front--number.mb-30
+                            label Номер карты:
+                            input.popup-pay-card--input(type="text" data-mask="0000 0000 0000 0000" placeholder="**** **** **** ****")
+                        .popup-pay-card-front--bottom
+                            .popup-pay-card-front--number.w-63
+                                label Владелец карты:
+                                input.popup-pay-card--input(type="text" placeholder="Имя латиницей")
+                            .popup-pay-card-front--number.w-33
+                                label Срок действия:
+                                input.popup-pay-card--input(type="text" data-mask="00 / 00" placeholder="ММ / ГГ")
+                    .popup-pay-card-back
+                        .popup-pay-card-back--black
+                        .popup-pay-card-back--bottom
+                            .popup-pay-card-back--number
+                                .popup-pay-card-back--wrap
+                                    label CVV2/CVC2:
+                                    input.popup-pay-card--input(type="text" data-mask="0 0 0 0" placeholder="* * * *")
+                                span Цифровой код на обратной стороне
+
+            .gogocar-yellow-button.m-0-auto(data-dismiss="modal" aria-label="Close") Сохранить
