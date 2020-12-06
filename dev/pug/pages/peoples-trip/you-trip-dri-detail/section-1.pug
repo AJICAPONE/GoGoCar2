@@ -31,7 +31,9 @@ section.ready-plan-trip
                         .gogocar-ready-plan--bottom
                             .gogocar-ready-plan--km__place
                                 .gogocar-trip--item__km 352,7 км  #[span ( 5 ч. 40 мин. )]
-                                .gogocar-ready-plan--place 1 свободное место
+                                .gogocar-ready-plan--place
+                                    +icon('trip-place')
+                                    span 1 свободное место
                             .gogocar-ready-plan--car
                                 .gogocar-gray-icons
                                     +icon('taxi')
@@ -97,7 +99,7 @@ section.chat
                             .chat-container-header--img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
                             .chat-container-header--info__option
                                 .chat-container-header--info
-                                    .chat-container-header--name Матвей Федотов
+                                    .chat-container-header--name Матвей Федотов (Заднее место №1)
                                     .chat-container-header--desc Отвечает в течении 30 минут
                                 .chat-container-header--option--left--wrap
                                     .chat-container-header--option-delete__panel
@@ -290,7 +292,7 @@ section.chat
                                         .chat-content--review__trip--info
                                             .chat-content--review__trip--info__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
                                             .chat-content--review__trip--name__trip
-                                                span.chat-content--review__trip--name Андрей
+                                                span.chat-content--review__trip--name Андрей (П №1)
                                                 span.chat-content--review__trip--trip 09.06.2020
                                     .you-trip-chat-content--text
                                         p.chat-content--review__trip--text Leo tristique nisi condimen...
@@ -301,7 +303,7 @@ section.chat
                                         .chat-content--review__trip--info
                                             .chat-content--review__trip--info__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
                                             .chat-content--review__trip--name__trip
-                                                span.chat-content--review__trip--name Андрей
+                                                span.chat-content--review__trip--name Андрей (З №1)
                                                 span.chat-content--review__trip--trip 09.06.2020
                                     .you-trip-chat-content--text
                                         p.chat-content--review__trip--text.chat-writing Печатает...
@@ -311,7 +313,7 @@ section.chat
                                         .chat-content--review__trip--info
                                             .chat-content--review__trip--info__img(style="background-image:url('/static/img/content/drivers-avatar/driver1.png')")
                                             .chat-content--review__trip--name__trip
-                                                span.chat-content--review__trip--name Андрей
+                                                span.chat-content--review__trip--name Андрей (З №1)
                                                 span.chat-content--review__trip--trip 09.06.2020
                                     .you-trip-chat-content--text
                                         p.chat-content--review__trip--text Leo tristique nisi condimen...
@@ -322,7 +324,7 @@ section.chat
                                         .chat-content--review__trip--info
                                             .chat-content--review__trip--info__img(style="background-image:url('/static/img/content/drivers-avatar/driver2.png')")
                                             .chat-content--review__trip--name__trip
-                                                span.chat-content--review__trip--name Анна
+                                                span.chat-content--review__trip--name Анна (З №1)
                                                 span.chat-content--review__trip--trip 09.06.2020
                                     .you-trip-chat-content--text
                                         p.chat-content--review__trip--text Diam vitae magna nullam ultrices.

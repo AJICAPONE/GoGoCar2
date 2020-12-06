@@ -500,6 +500,9 @@
 .breadcrumbs--list
   display flex
   align-items center
+  overflow-y auto
+  &::-webkit-scrollbar
+    height 0
 
 .breadcrumbs
   padding 20px 0
@@ -511,12 +514,16 @@
   font-family 'Montserrat 500',sans-serif
   font-size 13px
   color rgba(255, 255, 255, 0.6)
+  white-space nowrap
   .icon
     size(9px)
     margin 0 10px
     fill rgba(255, 255, 255, 0)
     stroke-width 3px
     stroke rgba(255, 255, 255, 0.6)
+  &:last-child
+    .icon
+      display none
 
 .popup-show-pass.active
     &:before

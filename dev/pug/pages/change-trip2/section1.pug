@@ -4,13 +4,13 @@ section.type-trip.pt-0
             h1.main-section--title.text-center.mb-5 Редактировать #[span пездку]
             .col-xl-8.col-lg-8.change-trip--list
                 .find-trip-change--wrap.change-trip--where
-                    .gogocar-title-input Откуда выезжаем ?
+                    .gogocar-title-input Откуда везем груз ?
                     .gogocar-input--wrapper
                         .gogocar-input-icon.gogocar-gray-icons
                             +icon('map2')
                         input.gogocar-input-v1.gogocar-from(type="text" placeholder="Откуда...")
                 .change-trip-stops
-                    .gogocar-title-input Хотите добавить остановки, которые могут забронировать пассажиры?
+                    .gogocar-title-input Хотите добавить место выгрузки, которое могут забронировать пассажиры?
                     .change-trip--stop
                         .find-trip-change--wrap.change-trip-input--wrap
                             .gogocar-input-label Остановка 1
@@ -101,13 +101,13 @@ section.type-trip.pt-0
                                     option(value="24:00") 24:00
                     .gogocar-gray-button.gogocar-add-stops.w-270.m-0-auto Добавить еще остановку
                 .find-trip-change--wrap.change-trip--where
-                    .gogocar-title-input Где бы вы хотели высадить пассажиров ?
+                    .gogocar-title-input Куда везем груз ?
                     .gogocar-input--wrapper
                         .gogocar-input-icon.gogocar-gray-icons
                             +icon('map2')
                         input.gogocar-input-v1.gogocar-from(type="text" placeholder="")
                 .change-trip-time--wrap
-                    .gogocar-title-input Где бы вы хотели высадить пассажиров ?
+                    .gogocar-title-input Когда и в какое время состоится поездка ?
                     .change-trip-people-and-time
                         .col-xl-8.col-lg-8.col-md-6.col-sm-12.gogocar-input--wrapper.mb-0
                             .gogocar-input-icon.gogocar-gray-icons
@@ -180,23 +180,35 @@ section.type-trip.pt-0
                                         .trip-select-car-name--number2 (00 127 NN)
                                 .gogocar-gray-icons2
                                     +icon('arrow-right3')
-                .change-trip-people--wrap
-                    .gogocar-title-input Сколько попутчиков возьмете в дорогу ?
-                    .trip-choise-car--count.mb-30.m-0
-                        .trip-choise-car--count--minus
-                            +icon('arrow-left')
-                        .trip-choise-car--count-field.gogocar-input--wrapper
-                            .gogocar-gray-icons
-                                +icon('man')
-                            input.gogocar-input-v1.trip-choise-car--count--input(type="text" value="1" readonly)
-                        .trip-choise-car--count--plus
-                            +icon('arrow-right')
-                    .change-trip-people-covid.popup-checkbox-remember
-                        input#popup-checkbox-remember(type="checkbox")
-                        label(for="popup-checkbox-remember") COVID-19:
-                            span Я согласен взять только одного попутчика и посадить его сзади
+                .change-trip-cargo--weight--wrap
+                    .gogocar-title-input Итак, сколько груза можете взять в дорогу ?
+                    .gogocar-input--wrapper.gogocar-placeholder.w-48
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('weight')
+                        input.gogocar-input-v1(type="text")
+                        label Общий вес #[span (кг)]
+                    .gogocar-input--wrapper.gogocar-placeholder.w-48
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('volume')
+                        input.gogocar-input-v1(type="text")
+                        label Общий объем #[span (м3)]
+                    .gogocar-input--wrapper.gogocar-placeholder.w-48
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('gabar')
+                        input.gogocar-input-v1(type="text")
+                        label Макс. габарит #[span (м)]
+                .change-trip-cargo--type--wrap
+                    .gogocar-title-input Какие виды груза можете взять ?
+                    .gogocar-input--wrapper
+                        .gogocar-input-icon.gogocar-gray-icons
+                            +icon('type-cargo')
+                        .gogocar-input-hidden-cargo-find
+                        input.gogocar-input-v1.gogocar-from.ggc-type-cargo(type="hidden" placeholder="Типы груза...")
+                        .gogocar-add-cargo-type.gogocar-gray-icons(data-toggle="modal" data-target="#popup-cargo-type")
+                            +icon('plus')
+
                 .change-trip-recomend--wrap
-                    .gogocar-title-input Изменить рекомендуемую цену за место
+                    .gogocar-title-input Изменить рекомендуемую цену за 1 кг
                     .remove-price--content
                         .gogocar-input--wrapper
                             .remove-price--content__icon__route
