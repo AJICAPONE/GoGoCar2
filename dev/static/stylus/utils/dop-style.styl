@@ -917,3 +917,229 @@
   justify-content space-between
   label
     margin-bottom 0
+.blog-main-content--tab
+  display none
+.blog-main-content--tab.active
+  display block
+.tab-item
+  color #fff
+  transition all linear .2s
+  cursor pointer
+.tab-item.active
+  background-color #fdab3e
+  color #272727
+.blog-main-content--tab
+  .blog-main--bottom
+    display flex
+    flex-wrap wrap
+    justify-content space-between
+    margin 0
+  .go-read-all-articles
+    display flex
+    font-size 15px
+  .blog-main--item__wrap
+    width 31.3333%
+    &:nth-child(-n+2)
+      width 48.5%
+      .blog-main--item__desc
+        display block
+      .blog-main--item
+        flex-direction row
+        height 270px
+      .blog-main--item__img
+        width 270px
+      .blog-main--item__content
+        width 300px
+        height 100%
+        padding 20px 30px
+        &:before
+          display block
+      .blog-main--item__title
+        padding-bottom 15px
+        margin-bottom 15px
+        border-bottom: 1px solid rgba(119,132,156,0.4);
+        font-size 18px
+    .blog-main--item__desc
+      display none
+    .blog-main--item
+      flex-direction column
+      height 340px
+    .blog-main--item__img
+      width 100%
+    .blog-main--item__content
+      width 100%
+      height auto
+      padding 15px
+      &:before
+        display none
+    .blog-main--item__title
+      padding-bottom 0
+      margin-bottom 0
+      border-bottom 0
+      font-size 16px
+.blog-info--wrap
+  display flex
+.blog-info-content--col
+  .blog-main--title
+    padding-bottom 15px
+    border-bottom 1px solid rgba(255,255,255,0.1)
+    margin-bottom 20px
+.blog-info-article--date
+  display flex
+  align-items center
+  margin-bottom 20px
+.blog-info-date--icon
+  display flex
+  justify-content center
+  align-items center
+  margin-right 15px
+  .icon
+    size(26px)
+.blog-info-date
+  font-family 'Montserrat 500',sans-serif
+  font-size 15px
+  color rgba(255,255,255,0.6)
+.blog-info-content--main
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  justify-content space-between
+  p
+    font-family 'Montserrat 400',sans-serif
+    font-size 15px
+    color rgba(255,255,255,0.5)
+    line-height 1.8
+    margin-bottom 20px
+  img
+    width 100%
+    margin-bottom 30px
+  h1,h2,h3,h4,h5,h6
+    font-family 'Oswald 500',sans-serif
+    color #fff
+    margin-bottom 20px
+  .blog-sub--img
+    width 48%
+.blog-sub--img__wrap
+  display flex
+  align-items center
+  justify-content space-between
+  img
+    border-radius 10px
+.blog-comments--title
+  font-family 'Oswald 500',sans-serif
+  font-size 21px
+  color #fff
+  margin-bottom 20px
+.blog-comments--top
+  display flex
+  align-items center
+  margin-bottom 20px
+.blog-comments--link__profile
+  margin-right 20px
+  img
+    size(60px)
+    margin-bottom 0
+.blog-comments--name
+  font-family 'Oswald 500',sans-serif
+  font-size 17px
+  color #FDAB3E
+.blog-comments--textarea
+  background-color #343943
+  padding 15px
+  font-family 'Montserrat 400',sans-serif
+  font-size 14px
+  color rgba(255,255,255,0.6)
+  border none
+  border-radius 10px
+  margin-bottom 30px
+  width 100%
+.blog-comments--form
+  margin-bottom 40px
+.blog-comment--item__top
+  display flex
+  align-items center
+  margin-bottom 24px
+.blog-comment--img
+  background-position center
+  background-size cover
+  size(60px)
+  border-radius 10px
+  margin-right 15px
+.blog-comment--item__name
+  font-family 'Oswald 500',sans-serif
+  font-size 17px
+  color #FDAB3E
+  margin-bottom 5px
+.blog-comment--item__date
+  font-family 'Montserrat 400',sans-serif
+  font-size 15px
+  color rgba(255,255,255,0.4)
+.blog-comment-item__bottom
+  p
+    font-family 'Montserrat 400',sans-serif
+    font-size 14px
+    color #fff
+    line-height 1.7
+    border-bottom 1px solid rgba(255,255,255,0.1)
+    padding-bottom 15px
+.blog-comment-item-depth--count
+  display flex
+  align-items center
+  cursor pointer
+  margin-bottom 25px
+  width max-content
+  span
+    font-family 'Montserrat 400',sans-serif
+    font-size 14px
+    color #FDAB3E
+    margin-right 10px
+  .icon
+    size(12px)
+    fill #FDAB3E
+
+.blog-comment-item-depth2--item
+  display none
+  .blog-comment--item
+    padding-left 100px
+.blog-comment-item-depth--count.active
+  .icon
+    transform rotate(180deg)
+.blog-info-sidebar--sticky
+  position sticky
+  display inline-block
+  top 100px
+  height calc(100vh - 200px)
+  .gogocar-yellow-button
+    width 100%
+    max-width 100%
+.blog-info-sidebar--sticky--wrap
+  background-color #363D4A
+  border-radius 10px
+  margin-bottom 25px
+  height 100%
+.blog-info-sidebar--list
+  padding 15px
+  padding-bottom 0
+  overflow-y auto
+  height calc(100vh - 259px)
+  &::-webkit-scrollbar
+    width 0
+.blog-info-sidebar--title
+  font-family 'Oswald 500',sans-serif
+  font-size 19px
+  color #fff
+  padding 15px
+  border-bottom 1px solid rgba(255,255,255,0.3)
+.blog-info-sidebar--item
+  margin-bottom 15px
+  display block
+  img
+    width 100%
+    margin-bottom 10px
+.blog-info-sidebar--item__name
+  font-family 'Oswald 500',sans-serif
+  font-size 14px
+  color #fff
+.blog-info-sidebar--col
+  padding-bottom 81px
+

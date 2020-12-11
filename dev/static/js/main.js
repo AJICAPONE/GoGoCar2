@@ -2117,6 +2117,18 @@ $(document).ready(function () {
         }
         e.stopPropagation();
     });
+
+    $('.tab-item').click(function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        var get_tab = $(this).attr('data-tab');
+        $('.blog-main--tabs .' + get_tab).addClass('active').siblings().removeClass('active');
+    });
+
+    $('.blog-comment-item-depth--count').click(function () {
+        $(this).toggleClass('active');
+        $(this).next().slideToggle(200);
+    });
+
 });
 
 function copyReferal() {

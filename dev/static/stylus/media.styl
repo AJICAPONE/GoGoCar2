@@ -2,7 +2,8 @@
 
 // @media 1199px
 @media screen and (max-width: 1198px)
-
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2) .blog-main--item__content
+    padding 15px 20px
   .header-trip--wrap__link
     font-size 13px
     span
@@ -174,6 +175,34 @@
 
 // @media 992px
 @media screen and (max-width: 991px)
+  .blog-info-sidebar--col
+    display none
+  .blog-info-content--col
+    padding 0
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2)
+    width 100%
+  .blog-main-content--tab .blog-main--item__wrap
+    width 48%
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(2)
+    width 48%
+    .blog-main--item__desc
+      display none
+    .blog-main--item
+      flex-direction column
+      height 340px
+    .blog-main--item__img
+      width 100%
+    .blog-main--item__content
+      width 100%
+      height auto
+      padding 15px
+      &:before
+        display none
+    .blog-main--item__title
+      padding-bottom 0
+      margin-bottom 0
+      border-bottom 0
+      font-size 16px
   .why-choise-item--baner .icon
     width 100%
   .why-choise-item--baner
@@ -625,6 +654,35 @@
 
 // @media 768px
 @media screen and (max-width: 767px)
+  .blog-info-content--main p
+    font-size 13px
+  .blog-info-content--col .blog-main--title
+    font-size 20px
+  .blog-info-date--icon .icon
+    size(22px)
+  .blog-info-date
+    font-size 14px
+  .blog-comments--link__profile img
+    size(50px)
+  .blog-comments--form
+    .gogocar-yellow-button
+      max-width 100%
+  .blog-main--bottom .blog-main--item__wrap:nth-child(1)
+    order inherit !important
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2) .blog-main--item__content
+    width 50%
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2) .blog-main--item__img
+    width 50%
+  .blog-main-content--tab .blog-main--item__wrap .blog-main--item
+    height 280px
+  .blog-main--bottom .blog-main--item__wrap:nth-child(2)
+    order inherit !important
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2) .blog-main--item__content
+    width 100%
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(2) .blog-main--item
+    height 100%
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2) .blog-main--item__img
+    width 100%
   .why-choise-item--baner
     height 200px
   .change-trip-people-and-time
@@ -1070,6 +1128,53 @@
     width 40%
 
 @media screen and (max-width: 575px)
+  .blog-comment-item-depth2--item .blog-comment--item
+    padding-left 0
+  .blog-main-content--tab .blog-main--item__wrap
+    width 100%
+  .blog-main-content--tab .blog-main--item__wrap:nth-child(-n+2) .blog-main--item
+    flex-direction column
+    .blog-main--item__desc
+      display none
+    .blog-main--item
+      flex-direction column
+      height 340px
+    .blog-main--item__img
+      width 100%
+    .blog-main--item__content
+      width 100%
+      height auto
+      padding 15px
+      &:before
+        display none
+    .blog-main--item__title
+      padding-bottom 0
+      margin-bottom 0
+      border-bottom 0
+      font-size 16px
+  .blog-main--bottom .blog-main--item__wrap:nth-child(2)
+    width 100%
+    .blog-main--item
+      height 270px
+      width 100%
+      .blog-main--item__desc
+        display none
+      .blog-main--item
+        flex-direction column
+        height 340px
+      .blog-main--item__img
+        width 100%
+      .blog-main--item__content
+        width 100%
+        height auto
+        padding 15px
+        &:before
+          display none
+      .blog-main--item__title
+        padding-bottom 0
+        margin-bottom 0
+        border-bottom 0
+        font-size 16px
   .personal-absolute-chat--container
     height calc(100vh - 55px)
   .gogocar-select-country--wrap--reg,.gogocar-select-country--wrap
