@@ -3,15 +3,222 @@ section.car-place
         .car-place--wrapper
             h1.main-section--title.text-center.mb-5 На каком месте #[span вы хотите ехать ?]
             .car-place--content
-                .col-xl-5.car-place--position
+                .col-xl-5.car-place--position.car-choise-bus.active
                     .car-place--svg
-                        +icon('car-place')
-                    .car-place--svg--places.car-right-top-place(data-car-place="Переднее правое")
-                        +icon('car-right-top-place')
-                    .car-place--svg--places.car-right-bottom-place(data-car-place="Заднее правое")
-                        +icon('car-right-bottom-place')
-                    .car-place--svg--places.car-left-bottom-place(data-car-place="Заднее левое")
-                        +icon('car-left-bottom-place')
+                        +bus('item-bus')
+                    // Левая сторона
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-first(data-car-place="Левая сторона (Первый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-first(data-car-place="Левая сторона (Первый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-second.car-place--booked(data-car-place="Левая сторона (Второй ряд)" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-second(data-car-place="Левая сторона (Второй ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-three(data-car-place="Левая сторона (Третий ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-three(data-car-place="Левая сторона (Третий ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-four(data-car-place="Левая сторона (Четвертый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-four(data-car-place="Левая сторона (Четвертый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-five(data-car-place="Левая сторона (Пятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-five(data-car-place="Левая сторона (Пятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-six(data-car-place="Левая сторона (Шестой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-six(data-car-place="Левая сторона (Шестой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-seven(data-car-place="Левая сторона (Седьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-seven(data-car-place="Левая сторона (Седьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-eight(data-car-place="Левая сторона (Восьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-eight(data-car-place="Левая сторона (Восьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-left--bus.bus-top-nine(data-car-place="Левая сторона (Девятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-left-right--bus.bus-top-nine(data-car-place="Левая сторона (Девятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    // Правая сторона
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-second(data-car-place="Правая сторона (Второй ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-second(data-car-place="Правая сторона (Второй ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-three(data-car-place="Правая сторона (Третий ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-three(data-car-place="Правая сторона (Третий ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-four(data-car-place="Правая сторона (Четвертый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-four(data-car-place="Правая сторона (Четвертый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-five(data-car-place="Правая сторона (Пятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-five(data-car-place="Правая сторона (Пятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-six(data-car-place="Правая сторона (Шестой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-six(data-car-place="Правая сторона (Шестой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-seven(data-car-place="Правая сторона (Седьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-seven.car-place--booked(data-car-place="Правая сторона (Седьмой ряд)" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-eight(data-car-place="Правая сторона (Восьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-eight(data-car-place="Правая сторона (Восьмой ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-left--bus.bus-top-nine(data-car-place="Правая сторона (Девятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-right-right--bus.bus-top-nine(data-car-place="Правая сторона (Девятый ряд)")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    // Задние места
+                    .car-place--svg--places.car-place-back-1--bus(data-car-place="Заднее место 1")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-back-2--bus(data-car-place="Заднее место 2")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-back-3--bus(data-car-place="Заднее место 3")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-back-4--bus.car-place--booked(data-car-place="Заднее место 4" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+
+                .col-xl-5.car-place--position.car-choise-mini-bus
+                    .car-place--svg
+                        +bus2('minibus')
+                    // Водительский ряд
+                    .car-place--svg--places.car-place-front-left--minibus.minibus-front(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-front-right--minibus.minibus-front.car-place--booked(data-car-place="Второе место (Водительский ряд)" data-place-booked="Место забронировано")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    // Пасажирские места Top
+                    .car-place--svg--places.car-place-passenger-top--minibus__1.minibus-passanger-1(data-car-place="Первое место (Пасажирские места 'Верхний ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-top--minibus__2.minibus-passanger-1.car-place--booked(data-car-place="Второе место (Пасажирские места 'Верхний ряд')" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-top--minibus__3.minibus-passanger-1(data-car-place="Третье место (Пасажирские места 'Верхний ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    // Пасажирские места Middle
+                    .car-place--svg--places.car-place-passenger-middle--minibus__1.minibus-passanger-2(data-car-place="Первое место (Пасажирские места 'Центральный ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-middle--minibus__2.minibus-passanger-2.car-place--booked(data-car-place="Первое место (Пасажирские места 'Центральный ряд')" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-middle--minibus__3.minibus-passanger-2(data-car-place="Первое место (Пасажирские места 'Центральный ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    // Пасажирские места Левая сторона Bottom
+                    .car-place--svg--places.car-place-passenger-bottom-left--minibus__1(data-car-place="Первое место (Пасажирские места 'Левый-нижний ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-bottom-left--minibus__2.car-place--booked(data-car-place="Второе место (Пасажирские места 'Левый-нижний ряд')" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-bottom-left--minibus__3(data-car-place="Третье место (Пасажирские места 'Левый-нижний ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    // Пасажирские места Правая сторона Bottom
+                    .car-place--svg--places.car-place-passenger-bottom-right--minibus__1(data-car-place="Первое место (Пасажирские места 'Левый-нижний ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-bottom-right--minibus__2.car-place--booked(data-car-place="Второе место (Пасажирские места 'Левый-нижний ряд')" data-place-booked="Место забронировано")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passenger-bottom-right--minibus__3(data-car-place="Третье место (Пасажирские места 'Левый-нижний ряд')")
+                        +icon('bus-place-free')
+                        +icon('bus-place-booked','icon-car-place--booked')
+
+                .col-xl-5.car-place--position.car-choise-miniven
+                    .car-place--svg
+                        +miniven('miniven')
+                    // Водительский ряд
+                    .car-place--svg--places.car-place-front-left--miniven(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    //
+                    .car-place--svg--places.car-place-passanger--miniven__1(data-car-place="Второе место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--miniven__2.car-place--booked(data-car-place="Первое место (Водительский ряд)" data-place-booked="Место забронировано")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--miniven__3(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--miniven__4(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--miniven__5(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--miniven__6(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+
+                .col-xl-5.car-place--position.car-choise-car
+                    .car-place--svg
+                        +car('car')
+                    .car-place--svg--places.car-place-front-left--car(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    //
+                    .car-place--svg--places.car-place-passanger--car__1(data-car-place="Второе место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--car__2.car-place--booked(data-car-place="Первое место (Водительский ряд)" data-place-booked="Место забронировано")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+                    .car-place--svg--places.car-place-passanger--car__3(data-car-place="Первое место (Водительский ряд)")
+                        +icon('kreslo-free')
+                        +icon('kreslo-booked','icon-car-place--booked')
+
                 .col-xl-7.car-place--info
                     h3.section-title Выберите место на котором хотите ехать
                     p.section-desc Sapien neque nunc diam mi tortor. Senectus tincidunt mi nec at lectus egestas non faucibus. Quisque dui malesuada sed nisi odio nibh in imperdiet ultrices. Tortor augue vitae risus tellus mauris.
@@ -20,26 +227,43 @@ section.car-place
                             .gogocar-gray-icons
                                 +icon('taxi')
                             .trip-select--car--name
-                                .trip-select--car--name2 Легковой
+                                .trip-select--car--name2 Автобус
                         .trip-select--arrow
                             +icon('arrow-right')
                     ul.trip-select-car--list.car-select-car--list
-                        li.trip-select-car--item.suggest-late--result--item
+                        li.trip-select-car--item.suggest-late--result--item.choise-car-tab.active(data-car-choise="car-choise-bus")
                             .suggest-late--result--item__left
                                 .gogocar-gray-icons
                                     +icon('taxi')
                                 .trip-select-car-name--number
-                                    .trip-select-car-name--number2 Легковой
+                                    .trip-select-car-name--number2 Автобус
                             .gogocar-gray-icons2
                                 +icon('arrow-right3')
-                        li.trip-select-car--item.suggest-late--result--item
+                        li.trip-select-car--item.suggest-late--result--item.choise-car-tab(data-car-choise="car-choise-mini-bus")
                             .suggest-late--result--item__left
                                 .gogocar-gray-icons
                                     +icon('taxi')
                                 .trip-select-car-name--number
-                                    .trip-select-car-name--number2 Грузовой
+                                    .trip-select-car-name--number2 Мини-Автобус
                             .gogocar-gray-icons2
                                 +icon('arrow-right3')
+                        li.trip-select-car--item.suggest-late--result--item.choise-car-tab(data-car-choise="car-choise-miniven")
+                            .suggest-late--result--item__left
+                                .gogocar-gray-icons
+                                    +icon('taxi')
+                                .trip-select-car-name--number
+                                    .trip-select-car-name--number2 Минивен
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+                        li.trip-select-car--item.suggest-late--result--item.choise-car-tab(data-car-choise="car-choise-car")
+                            .suggest-late--result--item__left
+                                .gogocar-gray-icons
+                                    +icon('taxi')
+                                .trip-select-car-name--number
+                                    .trip-select-car-name--number2 Обычная
+                            .gogocar-gray-icons2
+                                +icon('arrow-right3')
+
                     .gogocar-ready-plan--covid
                         .gogocar-gray-icons
                             +icon('covid')

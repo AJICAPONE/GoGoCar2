@@ -10,6 +10,8 @@
     size(100%)
 .car-place--position
   position relative
+
+
 .car-place--svg--places
   position: absolute;
   cursor pointer
@@ -18,31 +20,281 @@
 
   .icon
     size(100%)
+    fill #fdab3ecc;
+  .icon-car-place--booked
+    display none
 
   &:hover
     opacity 1
 
 .car-place--svg--places.active
   opacity 1
+.car-place--booked
+  opacity 1
+  transition all linear .1s
+  cursor default
 
-.car-right-top-place
-  width: 54px;
-  height: 76.8px;
-  right: 174px;
-  top: 195px;
+  .icon
+    display none
+  .icon-car-place--booked
+    fill #141414b5;
+    display block
+  &:hover
 
-.car-right-bottom-place
-  width: 54px;
-  height: 76.8px;
-  right: 232px;
-  top: 284px;
+    &:before
+      content attr(data-place-booked);
+      absolute-center()
+      top -26px
+      background-color #464D5B
+      border-radius 8px
+      padding 5px 8px
+      font-family 'Oswald 500',sans-serif
+      font-size 12px
+      color #fff
+      white-space nowrap
+      z-index 2
+    &:after
+      content ''
+      size(14px)
+      absolute-center()
+      top -9px
+      background-color #464D5B
+      clip-path: polygon(100% 0, 0 0, 50% 94%);
+      z-index 1
 
 
-.car-left-bottom-place
-  width: 54px;
-  height: 76.8px;
-  right: 173px;
-  top: 284px;
+// Автобус
+.car-place-left-right--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 248px;
+
+.car-place-left-left--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 269px;
+
+.car-place-right-right--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 170px;
+
+.car-place-right-left--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 191px;
+
+.bus-top-first
+  top: 70px;
+.bus-top-second
+  top 109px
+.bus-top-three
+  top 149px
+.bus-top-four
+  top 186px
+.bus-top-five
+  top 223px
+.bus-top-six
+  top 260px
+.bus-top-seven
+  top 297px
+.bus-top-eight
+  top 335px
+.bus-top-nine
+  top 372px
+
+// Задние места
+.car-place-back-1--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 251px;
+  top: 409px;
+.car-place-back-2--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 230px;
+  top: 409px;
+.car-place-back-3--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 209px;
+  top: 409px;
+.car-place-back-4--bus
+  width: 21.3px;
+  height: 26.3px;
+  right: 188px;
+  top: 409px;
+
+//.car-left-bottom-place
+//  width: 54px;
+//  height: 76.8px;
+//  right: 173px;
+//  top: 284px;
+
+// Мини Автобус
+.car-place-front-left--minibus
+  width: 37px;
+  height: 61.5px;
+  right: 197px;
+.car-place-front-right--minibus
+  width: 37.5px;
+  height: 61.5px;
+  right: 160px;
+.car-place-passenger-top--minibus__1
+  width: 38.5px;
+  height: 50px;
+  right: 266px;
+.car-place-passenger-top--minibus__2
+  width: 38.5px;
+  height: 50px;
+  right: 227px;
+  &:before
+    transform: translate(-50%, -50%) rotate(180deg) !important
+    top 72px !important
+  &:after
+    transform: translate(-50%, -50%) rotate(180deg) !important
+    top 57px !important
+.car-place-passenger-top--minibus__3
+  width: 38.5px;
+  height: 50px;
+  right: 188px;
+.car-place-passenger-middle--minibus__1
+  width: 38.5px;
+  height: 50px;
+  right: 266px;
+.car-place-passenger-middle--minibus__2
+  width: 38.5px;
+  height: 50px;
+  right: 227px
+.car-place-passenger-middle--minibus__3
+  width: 38.5px;
+  height: 50px;
+  right: 157.5px;
+
+.car-place-passenger-bottom-left--minibus__1
+  width: 38.5px;
+  height: 50px;
+  right: 262px;
+  top: 296px;
+  transform: rotate(90deg);
+.car-place-passenger-bottom-left--minibus__2
+  width: 38.5px;
+  height: 50px;
+  right: 262px;
+  top: 335.5px;
+  transform: rotate(90deg);
+  &:before
+    transform translate(-50%, -50%) rotate(-90deg) !important
+    top 50% !important
+    left -25px !important
+  &:after
+    transform translate(-50%, -50%) rotate(-90deg) !important
+    top 50% !important
+    left -9px !important
+
+.car-place-passenger-bottom-left--minibus__3
+  width: 38.5px;
+  height: 50px;
+  right: 262px;
+  top: 374px;
+  transform: rotate(90deg);
+.car-place-passenger-bottom-right--minibus__1
+  width: 38.5px;
+  height: 50px;
+  right: 161px;
+  top: 296px;
+  transform: rotate(-90deg);
+.car-place-passenger-bottom-right--minibus__2
+  width: 38.5px;
+  height: 50px;
+  right: 161px;
+  top: 335px;
+  transform: rotate(-90deg);
+  &:before
+    transform translate(-50%, -50%) rotate(90deg) !important
+    top 50% !important
+    left 60px !important
+  &:after
+    transform translate(-50%, -50%) rotate(90deg) !important
+    top 50% !important
+    left 45px !important
+.car-place-passenger-bottom-right--minibus__3
+  width: 38.5px;
+  height: 50px;
+  right: 161px;
+  top: 374px;
+  transform: rotate(-90deg);
+
+.minibus-front
+  top 126px
+.minibus-passanger-1
+  top 191.5px
+  transform rotate(180deg)
+.minibus-passanger-2
+  top 252.5px
+
+
+
+// Минивен
+.car-place-front-left--miniven
+  width: 45px;
+  height: 75.5px;
+  right: 171.5px;
+  top: 150px;
+.car-place-passanger--miniven__1
+  width: 45px;
+  height: 75.5px;
+  right: 253px;
+  top: 231.7px;
+.car-place-passanger--miniven__2
+  width: 45px;
+  height: 75.5px;
+  right: 209px;
+  top: 231.7px;
+.car-place-passanger--miniven__3
+  width: 45px;
+  height: 75.5px;
+  right: 164.5px;
+  top: 231.7px;
+.car-place-passanger--miniven__4
+  width: 45px;
+  height: 75.5px;
+  right: 253px;
+  top: 313.7px;
+.car-place-passanger--miniven__5
+  width: 45px;
+  height: 75.5px;
+  right: 209px;
+  top: 313.7px;
+.car-place-passanger--miniven__6
+  width: 45px;
+  height: 75.5px;
+  right: 164.5px;
+  top: 313.7px;
+
+// Обычная
+.car-place-front-left--car
+  width: 50px;
+  height: 84px;
+  right: 169.5px;
+  top: 191px;
+.car-place-passanger--car__1
+  width: 50px;
+  height: 84px;
+  right: 255.5px;
+  top: 287.5px;
+.car-place-passanger--car__2
+  width: 50px;
+  height: 84px;
+  right: 207.5px;
+  top: 287.5px;
+.car-place-passanger--car__3
+  width: 50px;
+  height: 84px;
+  right: 158.5px;
+  top: 287.5px;
+
+
 .car-place--info
   display flex
   flex-direction column

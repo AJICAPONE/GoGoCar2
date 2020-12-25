@@ -1202,9 +1202,10 @@ $(document).ready(function () {
 
 
     $('.car-place--svg--places').click(function () {
-        $(this).addClass('active').siblings().removeClass('active');
-
+        $(this).toggleClass('active');
+        $('.car-place--booked').removeClass('active');
     });
+
 
 
     // при вводе текста в поиске выполнить
@@ -2127,6 +2128,12 @@ $(document).ready(function () {
     $('.blog-comment-item-depth--count').click(function () {
         $(this).toggleClass('active');
         $(this).next().slideToggle(200);
+    });
+
+    $('.choise-car-tab').click(function () {
+        var get_tab = $(this).attr('data-car-choise');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.car-place--content .'+ get_tab).addClass('active').siblings().removeClass('active');
     });
 
 });
